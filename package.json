@@ -1,56 +1,42 @@
 {
 	"name": "vscode-olua",
 	"description": "Unofficial Onset Lua language support for Visual Studio Code",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
 	"icon": "images/logo.png",
 	"publisher": "zoukidev",
 	"categories": [
-		"Languages",
 		"Snippets"
+	],
+	"keywords": [
+		"onset",
+		"lua",
+		"snippets",
+		"support"
 	],
 	"contributes": {
 		"snippets": [
 			{
-				"language": "olua",
+				"language": "lua",
 				"path": "./snippets/enums.json"
 			},
 			{
-				"language": "olua",
+				"language": "lua",
 				"path": "./snippets/client_events.json"
 			},
 			{
-				"language": "olua",
+				"language": "lua",
 				"path": "./snippets/server_events.json"
 			},
 			{
-				"language": "olua",
+				"language": "lua",
 				"path": "./snippets/client_functions.json"
 			},
 			{
-				"language": "olua",
+				"language": "lua",
 				"path": "./snippets/server_functions.json"
-			}
-		],
-		"languages": [
-			{
-				"id": "olua",
-				"aliases": [
-					"OLua"
-				],
-				"extensions": [
-					".lua"
-				],
-				"configuration": "./language-configuration.json"
-			}
-		],
-		"grammars": [
-			{
-				"language": "olua",
-				"scopeName": "source.lua",
-				"path": "./syntaxes/lua.tmLanguage"
 			}
 		]
 	},
