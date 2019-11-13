@@ -1,0 +1,198 @@
+{
+	"HitTypes.HIT_AIR":
+	{
+		"scope": "source.lua",
+		"body": "HIT_AIR",
+		"prefix": "HIT_AIR",
+		"description": "(Shared) Enum: HIT_AIR = 1"
+	},
+	"HitTypes.HIT_PLAYER":
+	{
+		"scope": "source.lua",
+		"body": "HIT_PLAYER",
+		"prefix": "HIT_PLAYER",
+		"description": "(Shared) Enum: HIT_AIR = 2"
+	},
+	"HitTypes.HIT_VEHICLE":
+	{
+		"scope": "source.lua",
+		"body": "HIT_VEHICLE",
+		"prefix": "HIT_VEHICLE",
+		"description": "(Shared) Enum: HIT_VEHICLE = 3"
+	},
+	"HitTypes.HIT_NPC":
+	{
+		"scope": "source.lua",
+		"body": "HIT_NPC",
+		"prefix": "HIT_NPC",
+		"description": "(Shared) Enum: HIT_NPC = 4"
+	},
+	"HitTypes.HIT_OBJECT":
+	{
+		"scope": "source.lua",
+		"body": "HIT_OBJECT",
+		"prefix": "HIT_OBJECT",
+		"description": "(Shared) Enum: HIT_OBJECT = 5"
+	},
+	"HitTypes.HIT_LANDSCAPE":
+	{
+		"scope": "source.lua",
+		"body": "HIT_LANDSCAPE",
+		"prefix": "HIT_LANDSCAPE",
+		"description": "(Shared) Enum: HIT_LANDSCAPE = 6"
+	},
+	"HitTypes.HIT_WATER":
+	{
+		"scope": "source.lua",
+		"body": "HIT_WATER",
+		"prefix": "HIT_WATER",
+		"description": "(Shared) Enum: HIT_WATER = 7"
+	},
+	"PlayerStateTypes.PS_NONE":
+	{
+		"scope": "source.lua",
+		"body": "PS_NONE",
+		"prefix": "PS_NONE",
+		"description": "(Shared) Enum: PS_NONE = 0"
+	},
+	"PlayerStateTypes.PS_ONFOOT":
+	{
+		"scope": "source.lua",
+		"body": "PS_ONFOOT",
+		"prefix": "PS_ONFOOT",
+		"description": "(Shared) Enum: PS_ONFOOT = 1"
+	},
+	"PlayerStateTypes.PS_DRIVER":
+	{
+		"scope": "source.lua",
+		"body": "PS_DRIVER",
+		"prefix": "PS_DRIVER",
+		"description": "(Shared) Enum: PS_DRIVER = 2"
+	},
+	"PlayerStateTypes.PS_PASSENGER":
+	{
+		"scope": "source.lua",
+		"body": "PS_PASSENGER",
+		"prefix": "PS_PASSENGER",
+		"description": "(Shared) Enum: PS_PASSENGER = 3"
+	},
+	"PlayerStateTypes.PS_ENTER_VEHICLE":
+	{
+		"scope": "source.lua",
+		"body": "PS_ENTER_VEHICLE",
+		"prefix": "PS_ENTER_VEHICLE",
+		"description": "(Shared) Enum: PS_ENTER_VEHICLE = 4"
+	},
+	"PlayerStateTypes.PS_EXIT_VEHICLE":
+	{
+		"scope": "source.lua",
+		"body": "PS_EXIT_VEHICLE",
+		"prefix": "PS_EXIT_VEHICLE",
+		"description": "(Shared) Enum: PS_EXIT_VEHICLE = 5"
+	},
+	"InputModesTypes.INPUT_GAME":
+	{
+		"scope": "source.lua",
+		"body": "INPUT_GAME",
+		"prefix": "INPUT_GAME",
+		"description": "(Shared) Enum: INPUT_GAME = 0"
+	},
+	"InputModesTypes.INPUT_GAMEANDUI":
+	{
+		"scope": "source.lua",
+		"body": "INPUT_GAMEANDUI",
+		"prefix": "INPUT_GAMEANDUI",
+		"description": "(Shared) Enum: INPUT_GAMEANDUI = 1"
+	},
+	"InputModesTypes.INPUT_UI":
+	{
+		"scope": "source.lua",
+		"body": "INPUT_UI",
+		"prefix": "INPUT_UI",
+		"description": "(Shared) Enum: INPUT_UI = 2"
+	},
+	"EditModesTypes.EDIT_NONE":
+	{
+		"scope": "source.lua",
+		"body": "EDIT_NONE",
+		"prefix": "EDIT_NONE",
+		"description": "(Shared) Enum: EDIT_NONE = 0"
+	},
+	"EditModesTypes.EDIT_LOCATION":
+	{
+		"scope": "source.lua",
+		"body": "EDIT_LOCATION",
+		"prefix": "EDIT_LOCATION",
+		"description": "(Shared) Enum: EDIT_LOCATION = 1"
+	},
+	"EditModesTypes.EDIT_ROTATION":
+	{
+		"scope": "source.lua",
+		"body": "EDIT_ROTATION",
+		"prefix": "EDIT_ROTATION",
+		"description": "(Shared) Enum: EDIT_ROTATION = 2"
+	},
+	"EditModesTypes.EDIT_SCALE":
+	{
+		"scope": "source.lua",
+		"body": "EDIT_SCALE",
+		"prefix": "EDIT_SCALE",
+		"description": "(Shared) Enum: EDIT_SCALE = 3"
+	},
+	"WebVisibilityTypes.":
+	{
+		"scope": "source.lua",
+		"body": "WEB_HIDDEN",
+		"prefix": "WEB_HIDDEN",
+		"description": "(Shared) Enum: WEB_HIDDEN = 0"
+	},
+	"WebVisibilityTypes.WEB_VISIBLE":
+	{
+		"scope": "source.lua",
+		"body": "WEB_VISIBLE",
+		"prefix": "WEB_VISIBLE",
+		"description": "(Shared) Enum: WEB_VISIBLE = 1"
+	},
+	"WebVisibilityTypes.WEB_HITINVISIBLE":
+	{
+		"scope": "source.lua",
+		"body": "WEB_HITINVISIBLE",
+		"prefix": "WEB_HITINVISIBLE",
+		"description": "(Shared) Enum: WEB_HITINVISIBLE = 2"
+	},
+	"AttachTypes.ATTACH_NONE":
+	{
+		"scope": "source.lua",
+		"body": "ATTACH_NONE",
+		"prefix": "ATTACH_NONE",
+		"description": "(Shared) Enum: ATTACH_NONE = 0"
+	},
+	"AttachTypes.ATTACH_PLAYER":
+	{
+		"scope": "source.lua",
+		"body": "ATTACH_PLAYER",
+		"prefix": "ATTACH_PLAYER",
+		"description": "(Shared) Enum: ATTACH_PLAYER = 1"
+	},
+	"AttachTypes.ATTACH_VEHICLE":
+	{
+		"scope": "source.lua",
+		"body": "ATTACH_VEHICLE",
+		"prefix": "ATTACH_VEHICLE",
+		"description": "(Shared) Enum: ATTACH_VEHICLE = 2"
+	},
+	"AttachTypes.ATTACH_OBJECT":
+	{
+		"scope": "source.lua",
+		"body": "ATTACH_OBJECT",
+		"prefix": "ATTACH_OBJECT",
+		"description": "(Shared) Enum: ATTACH_OBJECT = 3"
+	},
+	"AttachTypes.ATTACH_NPC":
+	{
+		"scope": "source.lua",
+		"body": "ATTACH_NPC",
+		"prefix": "ATTACH_NPC",
+		"description": "(Shared) Enum: ATTACH_NPC = 4"
+	}
+}

@@ -1,0 +1,1187 @@
+{
+    "Server.RGBA": {
+        "prefix": "RGBA",
+        "body": "RGBA(r, g, b, a)$0\r\n",
+        "description": "(Server) Function: RGBA(r, g, b, a)"
+    },
+    "Server.RGB": {
+        "prefix": "RGB",
+        "body": "RGB(r, g, b , a (optional))$0\r\n",
+        "description": "(Server) Function: RGB(r, g, b , a (optional))"
+    },
+    "Server.HexToRGBA": {
+        "prefix": "HexToRGBA",
+        "body": "HexToRGBA(HexColor)$0\r\n",
+        "description": "(Server) Function: HexToRGBA(HexColor)"
+    },
+    "Server.Random": {
+        "prefix": "Random",
+        "body": "Random(Min (optional), Max (optional))$0\r\n",
+        "description": "(Server) Function: Random(Min (optional), Max (optional))"
+    },
+    "Server.RandomFloat": {
+        "prefix": "RandomFloat",
+        "body": "RandomFloat(Min (optional), Max (optional))$0\r\n",
+        "description": "(Server) Function: RandomFloat(Min (optional), Max (optional))"
+    },
+    "Server.Base64Encode": {
+        "prefix": "Base64Encode",
+        "body": "Base64Encode(text)$0\r\n",
+        "description": "(Server) Function: Base64Encode(text)"
+    },
+    "Server.Base64Decode": {
+        "prefix": "Base64Decode",
+        "body": "Base64Decode(base64)$0\r\n",
+        "description": "(Server) Function: Base64Decode(base64)"
+    },
+    "Server.GetTimeSeconds": {
+        "prefix": "GetTimeSeconds",
+        "body": "GetTimeSeconds()$0\r\n",
+        "description": "(Server) Function: GetTimeSeconds()"
+    },
+    "Server.GetDeltaSeconds": {
+        "prefix": "GetDeltaSeconds",
+        "body": "GetDeltaSeconds()$0\r\n",
+        "description": "(Server) Function: GetDeltaSeconds()"
+    },
+    "Server.GetTickCount": {
+        "prefix": "GetTickCount",
+        "body": "GetTickCount()$0\r\n",
+        "description": "(Server) Function: GetTickCount()"
+    },
+    "Server.GetGameVersion": {
+        "prefix": "GetGameVersion",
+        "body": "GetGameVersion()$0\r\n",
+        "description": "(Server) Function: GetGameVersion()"
+    },
+    "Server.GetGameVersionString": {
+        "prefix": "GetGameVersionString",
+        "body": "GetGameVersionString()$0\r\n",
+        "description": "(Server) Function: GetGameVersionString()"
+    },
+    "Server.GetServerTickRate": {
+        "prefix": "GetServerTickRate",
+        "body": "GetServerTickRate()$0\r\n",
+        "description": "(Server) Function: GetServerTickRate()"
+    },
+    "Server.ServerExit": {
+        "prefix": "ServerExit",
+        "body": "ServerExit(ExitMessage (optional))$0\r\n",
+        "description": "(Server) Function: ServerExit(ExitMessage (optional))"
+    },
+    "Server.SetServerName": {
+        "prefix": "SetServerName",
+        "body": "SetServerName(ServerName)$0\r\n",
+        "description": "(Server) Function: SetServerName(ServerName)"
+    },
+    "Server.GetServerName": {
+        "prefix": "GetServerName",
+        "body": "GetServerName()$0\r\n",
+        "description": "(Server) Function: GetServerName()"
+    },
+    "Server.GetMaxPlayers": {
+        "prefix": "GetMaxPlayers",
+        "body": "GetMaxPlayers()$0\r\n",
+        "description": "(Server) Function: GetMaxPlayers()"
+    },
+    "Server.GetDistance2D": {
+        "prefix": "GetDistance2D",
+        "body": "GetDistance2D(x, y, x2, y2)$0\r\n",
+        "description": "(Server) Function: GetDistance2D(x, y, x2, y2)"
+    },
+    "Server.GetDistance3D": {
+        "prefix": "GetDistance3D",
+        "body": "GetDistance3D(x, y, z, x2, y2, z2)$0\r\n",
+        "description": "(Server) Function: GetDistance3D(x, y, z, x2, y2, z2)"
+    },
+    "Server.CreateExplosion": {
+        "prefix": "CreateExplosion",
+        "body": "CreateExplosion(explosionid, x, y, z , dimension , soundExplosion, camShakeRadius, radialForce (optional))$0\r\n",
+        "description": "(Server) Function: CreateExplosion(explosionid, x, y, z , dimension , soundExplosion, camShakeRadius, radialForce (optional))"
+    },
+    "Server.CreateDoor": {
+        "prefix": "CreateDoor",
+        "body": "CreateDoor(modelid, x, y, z, rotation, bEnableInteract (optional))$0\r\n",
+        "description": "(Server) Function: CreateDoor(modelid, x, y, z, rotation, bEnableInteract (optional))"
+    },
+    "Server.DestroyDoor": {
+        "prefix": "DestroyDoor",
+        "body": "DestroyDoor(door)$0\r\n",
+        "description": "(Server) Function: DestroyDoor(door)"
+    },
+    "Server.SetDoorOpen": {
+        "prefix": "SetDoorOpen",
+        "body": "SetDoorOpen(door, bOpen)$0\r\n",
+        "description": "(Server) Function: SetDoorOpen(door, bOpen)"
+    },
+    "Server.IsDoorOpen": {
+        "prefix": "IsDoorOpen",
+        "body": "IsDoorOpen(door)$0\r\n",
+        "description": "(Server) Function: IsDoorOpen(door)"
+    },
+    "Server.GetAllDoors": {
+        "prefix": "GetAllDoors",
+        "body": "GetAllDoors()$0\r\n",
+        "description": "(Server) Function: GetAllDoors()"
+    },
+    "Server.GetDoorCount": {
+        "prefix": "GetDoorCount",
+        "body": "GetDoorCount()$0\r\n",
+        "description": "(Server) Function: GetDoorCount()"
+    },
+    "Server.GetDoorModel": {
+        "prefix": "GetDoorModel",
+        "body": "GetDoorModel(door)$0\r\n",
+        "description": "(Server) Function: GetDoorModel(door)"
+    },
+    "Server.SetDoorLocation": {
+        "prefix": "SetDoorLocation",
+        "body": "SetDoorLocation(door, x, y, z)$0\r\n",
+        "description": "(Server) Function: SetDoorLocation(door, x, y, z)"
+    },
+    "Server.GetDoorLocation": {
+        "prefix": "GetDoorLocation",
+        "body": "GetDoorLocation(door)$0\r\n",
+        "description": "(Server) Function: GetDoorLocation(door)"
+    },
+    "Server.SetDoorDimension": {
+        "prefix": "SetDoorDimension",
+        "body": "SetDoorDimension(vehicle, dimension)$0\r\n",
+        "description": "(Server) Function: SetDoorDimension(vehicle, dimension)"
+    },
+    "Server.GetDoorDimension": {
+        "prefix": "GetDoorDimension",
+        "body": "GetDoorDimension(door)$0\r\n",
+        "description": "(Server) Function: GetDoorDimension(door)"
+    },
+    "Server.GetLightCount": {
+        "prefix": "GetLightCount",
+        "body": "GetLightCount()$0\r\n",
+        "description": "(Server) Function: GetLightCount()"
+    },
+    "Server.GetAllLights": {
+        "prefix": "GetAllLights",
+        "body": "GetAllLights()$0\r\n",
+        "description": "(Server) Function: GetAllLights()"
+    },
+    "Server.CreateLight": {
+        "prefix": "CreateLight",
+        "body": "CreateLight(lighttype, intensity, x, y, z , rx, ry, rz (optional))$0\r\n",
+        "description": "(Server) Function: CreateLight(lighttype, intensity, x, y, z , rx, ry, rz (optional))"
+    },
+    "Server.DestroyLight": {
+        "prefix": "DestroyLight",
+        "body": "DestroyLight(light)$0\r\n",
+        "description": "(Server) Function: DestroyLight(light)"
+    },
+    "Server.IsValidLight": {
+        "prefix": "IsValidLight",
+        "body": "IsValidLight(light)$0\r\n",
+        "description": "(Server) Function: IsValidLight(light)"
+    },
+    "Server.GetNetworkStats": {
+        "prefix": "GetNetworkStats",
+        "body": "GetNetworkStats()$0\r\n",
+        "description": "(Server) Function: GetNetworkStats()"
+    },
+    "Server.DumpNetworkStats": {
+        "prefix": "DumpNetworkStats",
+        "body": "DumpNetworkStats(verbosity)$0\r\n",
+        "description": "(Server) Function: DumpNetworkStats(verbosity)"
+    },
+    "Server.CreateNPC": {
+        "prefix": "CreateNPC",
+        "body": "CreateNPC(modelid, x, y, z, h)$0\r\n",
+        "description": "(Server) Function: CreateNPC(modelid, x, y, z, h)"
+    },
+    "Server.DestroyNPC": {
+        "prefix": "DestroyNPC",
+        "body": "DestroyNPC(npc)$0\r\n",
+        "description": "(Server) Function: DestroyNPC(npc)"
+    },
+    "Server.IsValidNPC": {
+        "prefix": "IsValidNPC",
+        "body": "IsValidNPC(npc)$0\r\n",
+        "description": "(Server) Function: IsValidNPC(npc)"
+    },
+    "Server.GetAllNPC": {
+        "prefix": "GetAllNPC",
+        "body": "GetAllNPC()$0\r\n",
+        "description": "(Server) Function: GetAllNPC()"
+    },
+    "Server.GetNPCCount": {
+        "prefix": "GetNPCCount",
+        "body": "GetNPCCount()$0\r\n",
+        "description": "(Server) Function: GetNPCCount()"
+    },
+    "Server.IsNPCStreamedIn": {
+        "prefix": "IsNPCStreamedIn",
+        "body": "IsNPCStreamedIn(player, npc)$0\r\n",
+        "description": "(Server) Function: IsNPCStreamedIn(player, npc)"
+    },
+    "Server.GetNPCModel": {
+        "prefix": "GetNPCModel",
+        "body": "GetNPCModel(npc)$0\r\n",
+        "description": "(Server) Function: GetNPCModel(npc)"
+    },
+    "Server.SetNPCLocation": {
+        "prefix": "SetNPCLocation",
+        "body": "SetNPCLocation(npc, x, y, z)$0\r\n",
+        "description": "(Server) Function: SetNPCLocation(npc, x, y, z)"
+    },
+    "Server.GetNPCLocation": {
+        "prefix": "GetNPCLocation",
+        "body": "GetNPCLocation(npc)$0\r\n",
+        "description": "(Server) Function: GetNPCLocation(npc)"
+    },
+    "Server.SetNPCHealth": {
+        "prefix": "SetNPCHealth",
+        "body": "SetNPCHealth(npc, health)$0\r\n",
+        "description": "(Server) Function: SetNPCHealth(npc, health)"
+    },
+    "Server.GetNPCHealth": {
+        "prefix": "GetNPCHealth",
+        "body": "GetNPCHealth(npc)$0\r\n",
+        "description": "(Server) Function: GetNPCHealth(npc)"
+    },
+    "Server.SetNPCAnimation": {
+        "prefix": "SetNPCAnimation",
+        "body": "SetNPCAnimation(npc, animation, loop)$0\r\n",
+        "description": "(Server) Function: SetNPCAnimation(npc, animation, loop)"
+    },
+    "Server.SetNPCHeading": {
+        "prefix": "SetNPCHeading",
+        "body": "SetNPCHeading(npc, heading)$0\r\n",
+        "description": "(Server) Function: SetNPCHeading(npc, heading)"
+    },
+    "Server.GetNPCHeading": {
+        "prefix": "GetNPCHeading",
+        "body": "GetNPCHeading(npc)$0\r\n",
+        "description": "(Server) Function: GetNPCHeading(npc)"
+    },
+    "Server.SetNPCTargetLocation": {
+        "prefix": "SetNPCTargetLocation",
+        "body": "SetNPCTargetLocation(npc, x, y, z , speed (optional))$0\r\n",
+        "description": "(Server) Function: SetNPCTargetLocation(npc, x, y, z , speed (optional))"
+    },
+    "Server.SetNPCFollowPlayer": {
+        "prefix": "SetNPCFollowPlayer",
+        "body": "SetNPCFollowPlayer(npc, player , speed (optional))$0\r\n",
+        "description": "(Server) Function: SetNPCFollowPlayer(npc, player , speed (optional))"
+    },
+    "Server.SetNPCFollowVehicle": {
+        "prefix": "SetNPCFollowVehicle",
+        "body": "SetNPCFollowVehicle(npc, vehicle , speed (optional))$0\r\n",
+        "description": "(Server) Function: SetNPCFollowVehicle(npc, vehicle , speed (optional))"
+    },
+    "Server.CreateObject": {
+        "prefix": "CreateObject",
+        "body": "CreateObject(modelid, x, y, z, rx (optional), ry (optional), rz (optional), sx (optional), sy (optional), sz (optional))$0\r\n",
+        "description": "(Server) Function: CreateObject(modelid, x, y, z, rx (optional), ry (optional), rz (optional), sx (optional), sy (optional), sz (optional))"
+    },
+    "Server.DestroyObject": {
+        "prefix": "DestroyObject",
+        "body": "DestroyObject(object)$0\r\n",
+        "description": "(Server) Function: DestroyObject(object)"
+    },
+    "Server.IsValidObject": {
+        "prefix": "IsValidObject",
+        "body": "IsValidObject(object)$0\r\n",
+        "description": "(Server) Function: IsValidObject(object)"
+    },
+    "Server.GetObjectCount": {
+        "prefix": "GetObjectCount",
+        "body": "GetObjectCount()$0\r\n",
+        "description": "(Server) Function: GetObjectCount()"
+    },
+    "Server.GetObjectModel": {
+        "prefix": "GetObjectModel",
+        "body": "GetObjectModel(object)$0\r\n",
+        "description": "(Server) Function: GetObjectModel(object)"
+    },
+    "Server.IsObjectStreamedIn": {
+        "prefix": "IsObjectStreamedIn",
+        "body": "IsObjectStreamedIn(player, object)$0\r\n",
+        "description": "(Server) Function: IsObjectStreamedIn(player, object)"
+    },
+    "Server.SetObjectStreamDistance": {
+        "prefix": "SetObjectStreamDistance",
+        "body": "SetObjectStreamDistance(object, distance)$0\r\n",
+        "description": "(Server) Function: SetObjectStreamDistance(object, distance)"
+    },
+    "Server.SetObjectLocation": {
+        "prefix": "SetObjectLocation",
+        "body": "SetObjectLocation(object, x, y, z)$0\r\n",
+        "description": "(Server) Function: SetObjectLocation(object, x, y, z)"
+    },
+    "Server.GetObjectLocation": {
+        "prefix": "GetObjectLocation",
+        "body": "GetObjectLocation(object)$0\r\n",
+        "description": "(Server) Function: GetObjectLocation(object)"
+    },
+    "Server.SetObjectRotation": {
+        "prefix": "SetObjectRotation",
+        "body": "SetObjectRotation(object, rx, ry, rz)$0\r\n",
+        "description": "(Server) Function: SetObjectRotation(object, rx, ry, rz)"
+    },
+    "Server.GetObjectRotation": {
+        "prefix": "GetObjectRotation",
+        "body": "GetObjectRotation(object)$0\r\n",
+        "description": "(Server) Function: GetObjectRotation(object)"
+    },
+    "Server.SetObjectScale": {
+        "prefix": "SetObjectScale",
+        "body": "SetObjectScale(object, sx, sy, sz)$0\r\n",
+        "description": "(Server) Function: SetObjectScale(object, sx, sy, sz)"
+    },
+    "Server.GetObjectScale": {
+        "prefix": "GetObjectScale",
+        "body": "GetObjectScale(object)$0\r\n",
+        "description": "(Server) Function: GetObjectScale(object)"
+    },
+    "Server.SetObjectAttached": {
+        "prefix": "SetObjectAttached",
+        "body": "SetObjectAttached(object, attachtype, attachid, x, y, z, rx (optional), ry (optional), rz (optional), SocketName (optional))$0\r\n",
+        "description": "(Server) Function: SetObjectAttached(object, attachtype, attachid, x, y, z, rx (optional), ry (optional), rz (optional), SocketName (optional))"
+    },
+    "Server.SetObjectDetached": {
+        "prefix": "SetObjectDetached",
+        "body": "SetObjectDetached(object)$0\r\n",
+        "description": "(Server) Function: SetObjectDetached(object)"
+    },
+    "Server.IsObjectAttached": {
+        "prefix": "IsObjectAttached",
+        "body": "IsObjectAttached(object)$0\r\n",
+        "description": "(Server) Function: IsObjectAttached(object)"
+    },
+    "Server.GetObjectAttachmentInfo": {
+        "prefix": "GetObjectAttachmentInfo",
+        "body": "GetObjectAttachmentInfo(object)$0\r\n",
+        "description": "(Server) Function: GetObjectAttachmentInfo(object)"
+    },
+    "Server.IsObjectMoving": {
+        "prefix": "IsObjectMoving",
+        "body": "IsObjectMoving(object)$0\r\n",
+        "description": "(Server) Function: IsObjectMoving(object)"
+    },
+    "Server.SetObjectMoveTo": {
+        "prefix": "SetObjectMoveTo",
+        "body": "SetObjectMoveTo(object, x, y, z , speed (optional))$0\r\n",
+        "description": "(Server) Function: SetObjectMoveTo(object, x, y, z , speed (optional))"
+    },
+    "Server.StopObjectMove": {
+        "prefix": "StopObjectMove",
+        "body": "StopObjectMove(object)$0\r\n",
+        "description": "(Server) Function: StopObjectMove(object)"
+    },
+    "Server.SetObjectRotateAxis": {
+        "prefix": "SetObjectRotateAxis",
+        "body": "SetObjectRotateAxis(object, x, y, z)$0\r\n",
+        "description": "(Server) Function: SetObjectRotateAxis(object, x, y, z)"
+    },
+    "Server.ImportPackage": {
+        "prefix": "ImportPackage",
+        "body": "ImportPackage(PackageName)$0\r\n",
+        "description": "(Server) Function: ImportPackage(PackageName)"
+    },
+    "Server.AddFunctionExport": {
+        "prefix": "AddFunctionExport",
+        "body": "AddFunctionExport(ExportName, ExportFunction)$0\r\n",
+        "description": "(Server) Function: AddFunctionExport(ExportName, ExportFunction)"
+    },
+    "Server.AddEvent": {
+        "prefix": "AddEvent",
+        "body": "AddEvent(EventName, LuaFunction )$0\r\n",
+        "description": "(Server) Function: AddEvent(EventName, LuaFunction )"
+    },
+    "Server.CallEvent": {
+        "prefix": "CallEvent",
+        "body": "CallEvent(EventName , UserArgs (optional))$0\r\n",
+        "description": "(Server) Function: CallEvent(EventName , UserArgs (optional))"
+    },
+    "Server.AddRemoteEvent": {
+        "prefix": "AddRemoteEvent",
+        "body": "AddRemoteEvent(RemoteEventName, LuaFunction)$0\r\n",
+        "description": "(Server) Function: AddRemoteEvent(RemoteEventName, LuaFunction)"
+    },
+    "Server.AddCommand": {
+        "prefix": "AddCommand",
+        "body": "AddCommand(CommandName, LuaFunction)$0\r\n",
+        "description": "(Server) Function: AddCommand(CommandName, LuaFunction)"
+    },
+    "Server.StartPackage": {
+        "prefix": "StartPackage",
+        "body": "StartPackage(PackageName)$0\r\n",
+        "description": "(Server) Function: StartPackage(PackageName)"
+    },
+    "Server.StopPackage": {
+        "prefix": "StopPackage",
+        "body": "StopPackage(PackageName)$0\r\n",
+        "description": "(Server) Function: StopPackage(PackageName)"
+    },
+    "Server.GetAllPackages": {
+        "prefix": "GetAllPackages",
+        "body": "GetAllPackages()$0\r\n",
+        "description": "(Server) Function: GetAllPackages()"
+    },
+    "Server.GetPackageName": {
+        "prefix": "GetPackageName",
+        "body": "GetPackageName()$0\r\n",
+        "description": "(Server) Function: GetPackageName()"
+    },
+    "Server.IsPackageStarted": {
+        "prefix": "IsPackageStarted",
+        "body": "IsPackageStarted(PackageName)$0\r\n",
+        "description": "(Server) Function: IsPackageStarted(PackageName)"
+    },
+    "Server.GetPickupCount": {
+        "prefix": "GetPickupCount",
+        "body": "GetPickupCount()$0\r\n",
+        "description": "(Server) Function: GetPickupCount()"
+    },
+    "Server.GetAllPickups": {
+        "prefix": "GetAllPickups",
+        "body": "GetAllPickups()$0\r\n",
+        "description": "(Server) Function: GetAllPickups()"
+    },
+    "Server.CreatePickup": {
+        "prefix": "CreatePickup",
+        "body": "CreatePickup(modelid, x, y, z)$0\r\n",
+        "description": "(Server) Function: CreatePickup(modelid, x, y, z)"
+    },
+    "Server.DestroyPickup": {
+        "prefix": "DestroyPickup",
+        "body": "DestroyPickup(pickup)$0\r\n",
+        "description": "(Server) Function: DestroyPickup(pickup)"
+    },
+    "Server.IsValidPickup": {
+        "prefix": "IsValidPickup",
+        "body": "IsValidPickup(pickup)$0\r\n",
+        "description": "(Server) Function: IsValidPickup(pickup)"
+    },
+    "Server.SetPickupScale": {
+        "prefix": "SetPickupScale",
+        "body": "SetPickupScale(pickup, sx, sy, sz)$0\r\n",
+        "description": "(Server) Function: SetPickupScale(pickup, sx, sy, sz)"
+    },
+    "Server.GetPickupScale": {
+        "prefix": "GetPickupScale",
+        "body": "GetPickupScale(pickup)$0\r\n",
+        "description": "(Server) Function: GetPickupScale(pickup)"
+    },
+    "Server.IsValidPlayer": {
+        "prefix": "IsValidPlayer",
+        "body": "IsValidPlayer(player)$0\r\n",
+        "description": "(Server) Function: IsValidPlayer(player)"
+    },
+    "Server.CallRemoteEvent": {
+        "prefix": "CallRemoteEvent",
+        "body": "CallRemoteEvent(player, EventName, UserArgs (optional))$0\r\n",
+        "description": "(Server) Function: CallRemoteEvent(player, EventName, UserArgs (optional))"
+    },
+    "Server.GetPlayerCount": {
+        "prefix": "GetPlayerCount",
+        "body": "GetPlayerCount()$0\r\n",
+        "description": "(Server) Function: GetPlayerCount()"
+    },
+    "Server.GetAllPlayers": {
+        "prefix": "GetAllPlayers",
+        "body": "GetAllPlayers()$0\r\n",
+        "description": "(Server) Function: GetAllPlayers()"
+    },
+    "Server.GetNearestPlayer2D": {
+        "prefix": "GetNearestPlayer2D",
+        "body": "GetNearestPlayer2D(x, y)$0\r\n",
+        "description": "(Server) Function: GetNearestPlayer2D(x, y)"
+    },
+    "Server.GetPlayersInRange2D": {
+        "prefix": "GetPlayersInRange2D",
+        "body": "GetPlayersInRange2D(x, y, range)$0\r\n",
+        "description": "(Server) Function: GetPlayersInRange2D(x, y, range)"
+    },
+    "Server.GetPlayersInRange3D": {
+        "prefix": "GetPlayersInRange3D",
+        "body": "GetPlayersInRange3D(x, y, z, range)$0\r\n",
+        "description": "(Server) Function: GetPlayersInRange3D(x, y, z, range)"
+    },
+    "Server.GetStreamedPlayersForPlayer": {
+        "prefix": "GetStreamedPlayersForPlayer",
+        "body": "GetStreamedPlayersForPlayer(player)$0\r\n",
+        "description": "(Server) Function: GetStreamedPlayersForPlayer(player)"
+    },
+    "Server.SetPlayerName": {
+        "prefix": "SetPlayerName",
+        "body": "SetPlayerName(player, name)$0\r\n",
+        "description": "(Server) Function: SetPlayerName(player, name)"
+    },
+    "Server.GetPlayerName": {
+        "prefix": "GetPlayerName",
+        "body": "GetPlayerName(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerName(player)"
+    },
+    "Server.GetPlayerSteamId": {
+        "prefix": "GetPlayerSteamId",
+        "body": "GetPlayerSteamId(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerSteamId(player)"
+    },
+    "Server.GetPlayerNetworkStats": {
+        "prefix": "GetPlayerNetworkStats",
+        "body": "GetPlayerNetworkStats(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerNetworkStats(player)"
+    },
+    "Server.SetPlayerSpawnLocation": {
+        "prefix": "SetPlayerSpawnLocation",
+        "body": "SetPlayerSpawnLocation(player, x, y, z, h)$0\r\n",
+        "description": "(Server) Function: SetPlayerSpawnLocation(player, x, y, z, h)"
+    },
+    "Server.IsPlayerStreamedIn": {
+        "prefix": "IsPlayerStreamedIn",
+        "body": "IsPlayerStreamedIn(player, otherid)$0\r\n",
+        "description": "(Server) Function: IsPlayerStreamedIn(player, otherid)"
+    },
+    "Server.SetPlayerVoiceEnabled": {
+        "prefix": "SetPlayerVoiceEnabled",
+        "body": "SetPlayerVoiceEnabled(player, enable)$0\r\n",
+        "description": "(Server) Function: SetPlayerVoiceEnabled(player, enable)"
+    },
+    "Server.IsPlayerVoiceEnabled": {
+        "prefix": "IsPlayerVoiceEnabled",
+        "body": "IsPlayerVoiceEnabled(player)$0\r\n",
+        "description": "(Server) Function: IsPlayerVoiceEnabled(player)"
+    },
+    "Server.IsPlayerTalking": {
+        "prefix": "IsPlayerTalking",
+        "body": "IsPlayerTalking(player)$0\r\n",
+        "description": "(Server) Function: IsPlayerTalking(player)"
+    },
+    "Server.AddPlayerChat": {
+        "prefix": "AddPlayerChat",
+        "body": "AddPlayerChat(player, message)$0\r\n",
+        "description": "(Server) Function: AddPlayerChat(player, message)"
+    },
+    "Server.AddPlayerChatRange": {
+        "prefix": "AddPlayerChatRange",
+        "body": "AddPlayerChatRange(x, y, range, message)$0\r\n",
+        "description": "(Server) Function: AddPlayerChatRange(x, y, range, message)"
+    },
+    "Server.AddPlayerChatAll": {
+        "prefix": "AddPlayerChatAll",
+        "body": "AddPlayerChatAll(message)$0\r\n",
+        "description": "(Server) Function: AddPlayerChatAll(message)"
+    },
+    "Server.GetPlayerState": {
+        "prefix": "GetPlayerState",
+        "body": "GetPlayerState(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerState(player)"
+    },
+    "Server.GetPlayerMovementMode": {
+        "prefix": "GetPlayerMovementMode",
+        "body": "GetPlayerMovementMode(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerMovementMode(player)"
+    },
+    "Server.GetPlayerMovementSpeed": {
+        "prefix": "GetPlayerMovementSpeed",
+        "body": "GetPlayerMovementSpeed(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerMovementSpeed(player)"
+    },
+    "Server.IsPlayerAiming": {
+        "prefix": "IsPlayerAiming",
+        "body": "IsPlayerAiming(player)$0\r\n",
+        "description": "(Server) Function: IsPlayerAiming(player)"
+    },
+    "Server.IsPlayerReloading": {
+        "prefix": "IsPlayerReloading",
+        "body": "IsPlayerReloading(player)$0\r\n",
+        "description": "(Server) Function: IsPlayerReloading(player)"
+    },
+    "Server.GetVehicleLicensePlate": {
+        "prefix": "GetVehicleLicensePlate",
+        "body": "GetVehicleLicensePlate(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleLicensePlate(vehicle)"
+    },
+    "Server.GetPlayerVehicle": {
+        "prefix": "GetPlayerVehicle",
+        "body": "GetPlayerVehicle(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerVehicle(player)"
+    },
+    "Server.GetPlayerVehicleSeat": {
+        "prefix": "GetPlayerVehicleSeat",
+        "body": "GetPlayerVehicleSeat(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerVehicleSeat(player)"
+    },
+    "Server.SetPlayerInVehicle": {
+        "prefix": "SetPlayerInVehicle",
+        "body": "SetPlayerInVehicle(player, vehicle , seat (optional))$0\r\n",
+        "description": "(Server) Function: SetPlayerInVehicle(player, vehicle , seat (optional))"
+    },
+    "Server.RemovePlayerFromVehicle": {
+        "prefix": "RemovePlayerFromVehicle",
+        "body": "RemovePlayerFromVehicle(player)$0\r\n",
+        "description": "(Server) Function: RemovePlayerFromVehicle(player)"
+    },
+    "Server.SetPlayerLocation": {
+        "prefix": "SetPlayerLocation",
+        "body": "SetPlayerLocation(player, x, y, z)$0\r\n",
+        "description": "(Server) Function: SetPlayerLocation(player, x, y, z)"
+    },
+    "Server.GetPlayerLocation": {
+        "prefix": "GetPlayerLocation",
+        "body": "GetPlayerLocation(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerLocation(player)"
+    },
+    "Server.SetPlayerWeaponStat": {
+        "prefix": "SetPlayerWeaponStat",
+        "body": "SetPlayerWeaponStat(player, weaponid, stat, value)$0\r\n",
+        "description": "(Server) Function: SetPlayerWeaponStat(player, weaponid, stat, value)"
+    },
+    "Server.SetPlayerWeapon": {
+        "prefix": "SetPlayerWeapon",
+        "body": "SetPlayerWeapon(player, weapon_model, ammo, equip, weapon_slot)$0\r\n",
+        "description": "(Server) Function: SetPlayerWeapon(player, weapon_model, ammo, equip, weapon_slot)"
+    },
+    "Server.GetPlayerWeapon": {
+        "prefix": "GetPlayerWeapon",
+        "body": "GetPlayerWeapon(player, weaponslot (optional))$0\r\n",
+        "description": "(Server) Function: GetPlayerWeapon(player, weaponslot (optional))"
+    },
+    "Server.GetPlayerEquippedWeaponSlot": {
+        "prefix": "GetPlayerEquippedWeaponSlot",
+        "body": "GetPlayerEquippedWeaponSlot(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerEquippedWeaponSlot(player)"
+    },
+    "Server.EquipPlayerWeaponSlot": {
+        "prefix": "EquipPlayerWeaponSlot",
+        "body": "EquipPlayerWeaponSlot(player, weaponslot)$0\r\n",
+        "description": "(Server) Function: EquipPlayerWeaponSlot(player, weaponslot)"
+    },
+    "Server.GetPlayerEquippedWeapon": {
+        "prefix": "GetPlayerEquippedWeapon",
+        "body": "GetPlayerEquippedWeapon(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerEquippedWeapon(player)"
+    },
+    "Server.SetPlayerHeading": {
+        "prefix": "SetPlayerHeading",
+        "body": "SetPlayerHeading(player, heading)$0\r\n",
+        "description": "(Server) Function: SetPlayerHeading(player, heading)"
+    },
+    "Server.GetPlayerHeading": {
+        "prefix": "GetPlayerHeading",
+        "body": "GetPlayerHeading(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerHeading(player)"
+    },
+    "Server.SetPlayerSpectate": {
+        "prefix": "SetPlayerSpectate",
+        "body": "SetPlayerSpectate(player, bSpectate)$0\r\n",
+        "description": "(Server) Function: SetPlayerSpectate(player, bSpectate)"
+    },
+    "Server.ResetPlayerCamera": {
+        "prefix": "ResetPlayerCamera",
+        "body": "ResetPlayerCamera(player)$0\r\n",
+        "description": "(Server) Function: ResetPlayerCamera(player)"
+    },
+    "Server.IsPlayerDead": {
+        "prefix": "IsPlayerDead",
+        "body": "IsPlayerDead(player)$0\r\n",
+        "description": "(Server) Function: IsPlayerDead(player)"
+    },
+    "Server.SetPlayerHealth": {
+        "prefix": "SetPlayerHealth",
+        "body": "SetPlayerHealth(player, health)$0\r\n",
+        "description": "(Server) Function: SetPlayerHealth(player, health)"
+    },
+    "Server.GetPlayerHealth": {
+        "prefix": "GetPlayerHealth",
+        "body": "GetPlayerHealth(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerHealth(player)"
+    },
+    "Server.SetPlayerArmor": {
+        "prefix": "SetPlayerArmor",
+        "body": "SetPlayerArmor(player, armor)$0\r\n",
+        "description": "(Server) Function: SetPlayerArmor(player, armor)"
+    },
+    "Server.GetPlayerArmor": {
+        "prefix": "GetPlayerArmor",
+        "body": "GetPlayerArmor(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerArmor(player)"
+    },
+    "Server.SetPlayerRespawnTime": {
+        "prefix": "SetPlayerRespawnTime",
+        "body": "SetPlayerRespawnTime(player, mstime)$0\r\n",
+        "description": "(Server) Function: SetPlayerRespawnTime(player, mstime)"
+    },
+    "Server.GetPlayerRespawnTime": {
+        "prefix": "GetPlayerRespawnTime",
+        "body": "GetPlayerRespawnTime(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerRespawnTime(player)"
+    },
+    "Server.SetPlayerModel": {
+        "prefix": "SetPlayerModel",
+        "body": "SetPlayerModel(player, modelid)$0\r\n",
+        "description": "(Server) Function: SetPlayerModel(player, modelid)"
+    },
+    "Server.GetPlayerModel": {
+        "prefix": "GetPlayerModel",
+        "body": "GetPlayerModel(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerModel(player)"
+    },
+    "Server.GetPlayerIP": {
+        "prefix": "GetPlayerIP",
+        "body": "GetPlayerIP(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerIP(player)"
+    },
+    "Server.GetPlayerPing": {
+        "prefix": "GetPlayerPing",
+        "body": "GetPlayerPing(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerPing(player)"
+    },
+    "Server.KickPlayer": {
+        "prefix": "KickPlayer",
+        "body": "KickPlayer(player, reason)$0\r\n",
+        "description": "(Server) Function: KickPlayer(player, reason)"
+    },
+    "Server.GetPlayerLocale": {
+        "prefix": "GetPlayerLocale",
+        "body": "GetPlayerLocale(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerLocale(player)"
+    },
+    "Server.GetPlayerGUID": {
+        "prefix": "GetPlayerGUID",
+        "body": "GetPlayerGUID(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerGUID(player)"
+    },
+    "Server.GetPlayerGameVersion": {
+        "prefix": "GetPlayerGameVersion",
+        "body": "GetPlayerGameVersion(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerGameVersion(player)"
+    },
+    "Server.SetPlayerAnimation": {
+        "prefix": "SetPlayerAnimation",
+        "body": "SetPlayerAnimation(player, animation)$0\r\n",
+        "description": "(Server) Function: SetPlayerAnimation(player, animation)"
+    },
+    "Server.AttachPlayerParachute": {
+        "prefix": "AttachPlayerParachute",
+        "body": "AttachPlayerParachute(player, bAttach)$0\r\n",
+        "description": "(Server) Function: AttachPlayerParachute(player, bAttach)"
+    },
+    "Server.SetPlayerHeadSize": {
+        "prefix": "SetPlayerHeadSize",
+        "body": "SetPlayerHeadSize(player, size)$0\r\n",
+        "description": "(Server) Function: SetPlayerHeadSize(player, size)"
+    },
+    "Server.GetPlayerHeadSize": {
+        "prefix": "GetPlayerHeadSize",
+        "body": "GetPlayerHeadSize(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerHeadSize(player)"
+    },
+    "Server.GetText3DCount": {
+        "prefix": "GetText3DCount",
+        "body": "GetText3DCount()$0\r\n",
+        "description": "(Server) Function: GetText3DCount()"
+    },
+    "Server.GetAllText3D": {
+        "prefix": "GetAllText3D",
+        "body": "GetAllText3D()$0\r\n",
+        "description": "(Server) Function: GetAllText3D()"
+    },
+    "Server.CreateText3D": {
+        "prefix": "CreateText3D",
+        "body": "CreateText3D(text, size, x, y, z, rx, ry, rz)$0\r\n",
+        "description": "(Server) Function: CreateText3D(text, size, x, y, z, rx, ry, rz)"
+    },
+    "Server.DestroyText3D": {
+        "prefix": "DestroyText3D",
+        "body": "DestroyText3D(text3d)$0\r\n",
+        "description": "(Server) Function: DestroyText3D(text3d)"
+    },
+    "Server.IsValidText3D": {
+        "prefix": "IsValidText3D",
+        "body": "IsValidText3D(text3d)$0\r\n",
+        "description": "(Server) Function: IsValidText3D(text3d)"
+    },
+    "Server.SetText3DAttached": {
+        "prefix": "SetText3DAttached",
+        "body": "SetText3DAttached(object, attachtype, attachid, x, y, z , rx (optional), ry (optional), rz (optional), SocketName (optional))$0\r\n",
+        "description": "(Server) Function: SetText3DAttached(object, attachtype, attachid, x, y, z , rx (optional), ry (optional), rz (optional), SocketName (optional))"
+    },
+    "Server.GetTimerCount": {
+        "prefix": "GetTimerCount",
+        "body": "GetTimerCount()$0\r\n",
+        "description": "(Server) Function: GetTimerCount()"
+    },
+    "Server.GetAllTimers": {
+        "prefix": "GetAllTimers",
+        "body": "GetAllTimers()$0\r\n",
+        "description": "(Server) Function: GetAllTimers()"
+    },
+    "Server.IsValidTimer": {
+        "prefix": "IsValidTimer",
+        "body": "IsValidTimer(timer)$0\r\n",
+        "description": "(Server) Function: IsValidTimer(timer)"
+    },
+    "Server.CreateTimer": {
+        "prefix": "CreateTimer",
+        "body": "CreateTimer(LuaFunction, Interval , UserArgs (optional))$0\r\n",
+        "description": "(Server) Function: CreateTimer(LuaFunction, Interval , UserArgs (optional))"
+    },
+    "Server.CreateCountTimer": {
+        "prefix": "CreateCountTimer",
+        "body": "CreateCountTimer(LuaFunction, Interval, Count, UserArgs (optional))$0\r\n",
+        "description": "(Server) Function: CreateCountTimer(LuaFunction, Interval, Count, UserArgs (optional))"
+    },
+    "Server.DestroyTimer": {
+        "prefix": "DestroyTimer",
+        "body": "DestroyTimer(timer)$0\r\n",
+        "description": "(Server) Function: DestroyTimer(timer)"
+    },
+    "Server.PauseTimer": {
+        "prefix": "PauseTimer",
+        "body": "PauseTimer(timer)$0\r\n",
+        "description": "(Server) Function: PauseTimer(timer)"
+    },
+    "Server.UnpauseTimer": {
+        "prefix": "UnpauseTimer",
+        "body": "UnpauseTimer(timer)$0\r\n",
+        "description": "(Server) Function: UnpauseTimer(timer)"
+    },
+    "Server.GetTimerRemainingTime": {
+        "prefix": "GetTimerRemainingTime",
+        "body": "GetTimerRemainingTime(timer)$0\r\n",
+        "description": "(Server) Function: GetTimerRemainingTime(timer)"
+    },
+    "Server.GetVehicleCount": {
+        "prefix": "GetVehicleCount",
+        "body": "GetVehicleCount()$0\r\n",
+        "description": "(Server) Function: GetVehicleCount()"
+    },
+    "Server.GetAllVehicles": {
+        "prefix": "GetAllVehicles",
+        "body": "GetAllVehicles()$0\r\n",
+        "description": "(Server) Function: GetAllVehicles()"
+    },
+    "Server.GetVehicleModel": {
+        "prefix": "GetVehicleModel",
+        "body": "GetVehicleModel(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleModel(vehicle)"
+    },
+    "Server.GetVehicleModelName": {
+        "prefix": "GetVehicleModelName",
+        "body": "GetVehicleModelName(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleModelName(vehicle)"
+    },
+    "Server.SetVehicleRespawnParams": {
+        "prefix": "SetVehicleRespawnParams",
+        "body": "SetVehicleRespawnParams(vehicle, EnableRespawn , RespawnTime, RepairOnRespawn (optional))$0\r\n",
+        "description": "(Server) Function: SetVehicleRespawnParams(vehicle, EnableRespawn , RespawnTime, RepairOnRespawn (optional))"
+    },
+    "Server.IsVehicleStreamedIn": {
+        "prefix": "IsVehicleStreamedIn",
+        "body": "IsVehicleStreamedIn(player, vehicle)$0\r\n",
+        "description": "(Server) Function: IsVehicleStreamedIn(player, vehicle)"
+    },
+    "Server.GetStreamedVehiclesForPlayer": {
+        "prefix": "GetStreamedVehiclesForPlayer",
+        "body": "GetStreamedVehiclesForPlayer(player)$0\r\n",
+        "description": "(Server) Function: GetStreamedVehiclesForPlayer(player)"
+    },
+    "Server.SetVehicleLocation": {
+        "prefix": "SetVehicleLocation",
+        "body": "SetVehicleLocation(vehicle, x, y, z)$0\r\n",
+        "description": "(Server) Function: SetVehicleLocation(vehicle, x, y, z)"
+    },
+    "Server.GetVehicleLocation": {
+        "prefix": "GetVehicleLocation",
+        "body": "GetVehicleLocation(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleLocation(vehicle)"
+    },
+    "Server.SetVehicleRotation": {
+        "prefix": "SetVehicleRotation",
+        "body": "SetVehicleRotation(vehicle, x, y, z)$0\r\n",
+        "description": "(Server) Function: SetVehicleRotation(vehicle, x, y, z)"
+    },
+    "Server.GetVehicleRotation": {
+        "prefix": "GetVehicleRotation",
+        "body": "GetVehicleRotation(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleRotation(vehicle)"
+    },
+    "Server.SetVehicleHeading": {
+        "prefix": "SetVehicleHeading",
+        "body": "SetVehicleHeading(vehicle, h)$0\r\n",
+        "description": "(Server) Function: SetVehicleHeading(vehicle, h)"
+    },
+    "Server.GetVehicleHeading": {
+        "prefix": "GetVehicleHeading",
+        "body": "GetVehicleHeading(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleHeading(vehicle)"
+    },
+    "Server.SetVehicleHealth": {
+        "prefix": "SetVehicleHealth",
+        "body": "SetVehicleHealth(vehicle, health)$0\r\n",
+        "description": "(Server) Function: SetVehicleHealth(vehicle, health)"
+    },
+    "Server.GetVehicleHealth": {
+        "prefix": "GetVehicleHealth",
+        "body": "GetVehicleHealth(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleHealth(vehicle)"
+    },
+    "Server.SetVehicleLicensePlate": {
+        "prefix": "SetVehicleLicensePlate",
+        "body": "SetVehicleLicensePlate(vehicle, text)$0\r\n",
+        "description": "(Server) Function: SetVehicleLicensePlate(vehicle, text)"
+    },
+    "Server.GetVehicleVelocity": {
+        "prefix": "GetVehicleVelocity",
+        "body": "GetVehicleVelocity(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleVelocity(vehicle)"
+    },
+    "Server.CreateVehicle": {
+        "prefix": "CreateVehicle",
+        "body": "CreateVehicle(modelid, x, y, z, heading (optional))$0\r\n",
+        "description": "(Server) Function: CreateVehicle(modelid, x, y, z, heading (optional))"
+    },
+    "Server.DestroyVehicle": {
+        "prefix": "DestroyVehicle",
+        "body": "DestroyVehicle(vehicle)$0\r\n",
+        "description": "(Server) Function: DestroyVehicle(vehicle)"
+    },
+    "Server.IsValidVehicle": {
+        "prefix": "IsValidVehicle",
+        "body": "IsValidVehicle(vehicle)$0\r\n",
+        "description": "(Server) Function: IsValidVehicle(vehicle)"
+    },
+    "Server.GetVehicleDriver": {
+        "prefix": "GetVehicleDriver",
+        "body": "GetVehicleDriver(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleDriver(vehicle)"
+    },
+    "Server.GetVehiclePassenger": {
+        "prefix": "GetVehiclePassenger",
+        "body": "GetVehiclePassenger(vehicle, seat)$0\r\n",
+        "description": "(Server) Function: GetVehiclePassenger(vehicle, seat)"
+    },
+    "Server.GetVehicleNumberOfSeats": {
+        "prefix": "GetVehicleNumberOfSeats",
+        "body": "GetVehicleNumberOfSeats(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleNumberOfSeats(vehicle)"
+    },
+    "Server.SetVehicleColor": {
+        "prefix": "SetVehicleColor",
+        "body": "SetVehicleColor(vehicle, HexColor)$0\r\n",
+        "description": "(Server) Function: SetVehicleColor(vehicle, HexColor)"
+    },
+    "Server.GetVehicleColor": {
+        "prefix": "GetVehicleColor",
+        "body": "GetVehicleColor(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleColor(vehicle)"
+    },
+    "Server.SetVehicleLinearVelocity": {
+        "prefix": "SetVehicleLinearVelocity",
+        "body": "SetVehicleLinearVelocity(vehicle, x, y, z , reset (optional))$0\r\n",
+        "description": "(Server) Function: SetVehicleLinearVelocity(vehicle, x, y, z , reset (optional))"
+    },
+    "Server.SetVehicleAngularVelocity": {
+        "prefix": "SetVehicleAngularVelocity",
+        "body": "SetVehicleAngularVelocity(vehicle, x, y, z , reset (optional))$0\r\n",
+        "description": "(Server) Function: SetVehicleAngularVelocity(vehicle, x, y, z , reset (optional))"
+    },
+    "Server.GetVehicleGear": {
+        "prefix": "GetVehicleGear",
+        "body": "GetVehicleGear(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleGear(vehicle)"
+    },
+    "Server.SetVehicleHoodRatio": {
+        "prefix": "SetVehicleHoodRatio",
+        "body": "SetVehicleHoodRatio(vehicle, openRatio)$0\r\n",
+        "description": "(Server) Function: SetVehicleHoodRatio(vehicle, openRatio)"
+    },
+    "Server.GetVehicleHoodRatio": {
+        "prefix": "GetVehicleHoodRatio",
+        "body": "GetVehicleHoodRatio(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleHoodRatio(vehicle)"
+    },
+    "Server.SetVehicleTrunkRatio": {
+        "prefix": "SetVehicleTrunkRatio",
+        "body": "SetVehicleTrunkRatio(vehicle, openRatio)$0\r\n",
+        "description": "(Server) Function: SetVehicleTrunkRatio(vehicle, openRatio)"
+    },
+    "Server.GetVehicleTrunkRatio": {
+        "prefix": "GetVehicleTrunkRatio",
+        "body": "GetVehicleTrunkRatio(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleTrunkRatio(vehicle)"
+    },
+    "Server.StartVehicleEngine": {
+        "prefix": "StartVehicleEngine",
+        "body": "StartVehicleEngine(vehicle)$0\r\n",
+        "description": "(Server) Function: StartVehicleEngine(vehicle)"
+    },
+    "Server.StopVehicleEngine": {
+        "prefix": "StopVehicleEngine",
+        "body": "StopVehicleEngine(vehicle)$0\r\n",
+        "description": "(Server) Function: StopVehicleEngine(vehicle)"
+    },
+    "Server.GetVehicleEngineState": {
+        "prefix": "GetVehicleEngineState",
+        "body": "GetVehicleEngineState(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleEngineState(vehicle)"
+    },
+    "Server.SetVehicleLightEnabled": {
+        "prefix": "SetVehicleLightEnabled",
+        "body": "SetVehicleLightEnabled(vehicle, enabled)$0\r\n",
+        "description": "(Server) Function: SetVehicleLightEnabled(vehicle, enabled)"
+    },
+    "Server.GetVehicleLightState": {
+        "prefix": "GetVehicleLightState",
+        "body": "GetVehicleLightState(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleLightState(vehicle)"
+    },
+    "Server.GetVehicleLightColor": {
+        "prefix": "GetVehicleLightColor",
+        "body": "GetVehicleLightColor(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleLightColor(vehicle)"
+    },
+    "Server.SetVehicleDamage": {
+        "prefix": "SetVehicleDamage",
+        "body": "SetVehicleDamage(vehicle, damageIndex, damage)$0\r\n",
+        "description": "(Server) Function: SetVehicleDamage(vehicle, damageIndex, damage)"
+    },
+    "Server.GetVehicleDamage": {
+        "prefix": "GetVehicleDamage",
+        "body": "GetVehicleDamage(vehicle, damageIndex)$0\r\n",
+        "description": "(Server) Function: GetVehicleDamage(vehicle, damageIndex)"
+    },
+    "Server.AttachVehicleNitro": {
+        "prefix": "AttachVehicleNitro",
+        "body": "AttachVehicleNitro(vehicle , attach (optional))$0\r\n",
+        "description": "(Server) Function: AttachVehicleNitro(vehicle , attach (optional))"
+    },
+    "Server.SetPlayerDimension": {
+        "prefix": "SetPlayerDimension",
+        "body": "SetPlayerDimension(player, dimension)$0\r\n",
+        "description": "(Server) Function: SetPlayerDimension(player, dimension)"
+    },
+    "Server.SetVehicleDimension": {
+        "prefix": "SetVehicleDimension",
+        "body": "SetVehicleDimension(vehicle, dimension)$0\r\n",
+        "description": "(Server) Function: SetVehicleDimension(vehicle, dimension)"
+    },
+    "Server.SetObjectDimension": {
+        "prefix": "SetObjectDimension",
+        "body": "SetObjectDimension(object, dimension)$0\r\n",
+        "description": "(Server) Function: SetObjectDimension(object, dimension)"
+    },
+    "Server.SetLightDimension": {
+        "prefix": "SetLightDimension",
+        "body": "SetLightDimension(light, dimension)$0\r\n",
+        "description": "(Server) Function: SetLightDimension(light, dimension)"
+    },
+    "Server.SetPickupDimension": {
+        "prefix": "SetPickupDimension",
+        "body": "SetPickupDimension(pickup, dimension)$0\r\n",
+        "description": "(Server) Function: SetPickupDimension(pickup, dimension)"
+    },
+    "Server.SetText3DDimension": {
+        "prefix": "SetText3DDimension",
+        "body": "SetText3DDimension(text3d, dimension)$0\r\n",
+        "description": "(Server) Function: SetText3DDimension(text3d, dimension)"
+    },
+    "Server.SetNPCDimension": {
+        "prefix": "SetNPCDimension",
+        "body": "SetNPCDimension(npc, dimension)$0\r\n",
+        "description": "(Server) Function: SetNPCDimension(npc, dimension)"
+    },
+    "Server.GetPlayerDimension": {
+        "prefix": "GetPlayerDimension",
+        "body": "GetPlayerDimension(player)$0\r\n",
+        "description": "(Server) Function: GetPlayerDimension(player)"
+    },
+    "Server.GetVehicleDimension": {
+        "prefix": "GetVehicleDimension",
+        "body": "GetVehicleDimension(vehicle)$0\r\n",
+        "description": "(Server) Function: GetVehicleDimension(vehicle)"
+    },
+    "Server.GetObjectDimension": {
+        "prefix": "GetObjectDimension",
+        "body": "GetObjectDimension(object)$0\r\n",
+        "description": "(Server) Function: GetObjectDimension(object)"
+    },
+    "Server.GetLightDimension": {
+        "prefix": "GetLightDimension",
+        "body": "GetLightDimension(light)$0\r\n",
+        "description": "(Server) Function: GetLightDimension(light)"
+    },
+    "Server.GetPickupDimension": {
+        "prefix": "GetPickupDimension",
+        "body": "GetPickupDimension(pickup)$0\r\n",
+        "description": "(Server) Function: GetPickupDimension(pickup)"
+    },
+    "Server.GetText3DDimension": {
+        "prefix": "GetText3DDimension",
+        "body": "GetText3DDimension(text3d)$0\r\n",
+        "description": "(Server) Function: GetText3DDimension(text3d)"
+    },
+    "Server.GetNPCDimension": {
+        "prefix": "GetNPCDimension",
+        "body": "GetNPCDimension(npc)$0\r\n",
+        "description": "(Server) Function: GetNPCDimension(npc)"
+    },
+    "Server.SetPlayerPropertyValue": {
+        "prefix": "SetPlayerPropertyValue",
+        "body": "SetPlayerPropertyValue(player, PropertyName, Value, bSync (optional))$0\r\n",
+        "description": "(Server) Function: SetPlayerPropertyValue(player, PropertyName, Value, bSync (optional))"
+    },
+    "Server.GetPlayerPropertyValue": {
+        "prefix": "GetPlayerPropertyValue",
+        "body": "GetPlayerPropertyValue(player, PropertyName)$0\r\n",
+        "description": "(Server) Function: GetPlayerPropertyValue(player, PropertyName)"
+    },
+    "Server.SetVehiclePropertyValue": {
+        "prefix": "SetVehiclePropertyValue",
+        "body": "SetVehiclePropertyValue(vehicle, PropertyName, Value, bSync (optional))$0\r\n",
+        "description": "(Server) Function: SetVehiclePropertyValue(vehicle, PropertyName, Value, bSync (optional))"
+    },
+    "Server.GetVehiclePropertyValue": {
+        "prefix": "GetVehiclePropertyValue",
+        "body": "GetVehiclePropertyValue(vehicle, PropertyName)$0\r\n",
+        "description": "(Server) Function: GetVehiclePropertyValue(vehicle, PropertyName)"
+    },
+    "Server.SetObjectPropertyValue": {
+        "prefix": "SetObjectPropertyValue",
+        "body": "SetObjectPropertyValue(object, PropertyName, Value, bSync (optional))$0\r\n",
+        "description": "(Server) Function: SetObjectPropertyValue(object, PropertyName, Value, bSync (optional))"
+    },
+    "Server.GetObjectPropertyValue": {
+        "prefix": "GetObjectPropertyValue",
+        "body": "GetObjectPropertyValue(object, PropertyName)$0\r\n",
+        "description": "(Server) Function: GetObjectPropertyValue(object, PropertyName)"
+    },
+    "Server.SetNPCPropertyValue": {
+        "prefix": "SetNPCPropertyValue",
+        "body": "SetNPCPropertyValue(npc, PropertyName, Value, bSync (optional))$0\r\n",
+        "description": "(Server) Function: SetNPCPropertyValue(npc, PropertyName, Value, bSync (optional))"
+    },
+    "Server.GetNPCPropertyValue": {
+        "prefix": "GetNPCPropertyValue",
+        "body": "GetNPCPropertyValue(npc, PropertyName)$0\r\n",
+        "description": "(Server) Function: GetNPCPropertyValue(npc, PropertyName)"
+    },
+    "Server.SetText3DPropertyValue": {
+        "prefix": "SetText3DPropertyValue",
+        "body": "SetText3DPropertyValue(text3d, PropertyName, Value, bSync (optional))$0\r\n",
+        "description": "(Server) Function: SetText3DPropertyValue(text3d, PropertyName, Value, bSync (optional))"
+    },
+    "Server.GetText3DPropertyValue": {
+        "prefix": "GetText3DPropertyValue",
+        "body": "GetText3DPropertyValue(text3d, PropertyName)$0\r\n",
+        "description": "(Server) Function: GetText3DPropertyValue(text3d, PropertyName)"
+    },
+    "Server.SetPickupPropertyValue": {
+        "prefix": "SetPickupPropertyValue",
+        "body": "SetPickupPropertyValue(pickup, PropertyName, Value, bSync (optional))$0\r\n",
+        "description": "(Server) Function: SetPickupPropertyValue(pickup, PropertyName, Value, bSync (optional))"
+    },
+    "Server.GetPickupPropertyValue": {
+        "prefix": "GetPickupPropertyValue",
+        "body": "GetPickupPropertyValue(pickup, PropertyName)$0\r\n",
+        "description": "(Server) Function: GetPickupPropertyValue(pickup, PropertyName)"
+    }
+}
