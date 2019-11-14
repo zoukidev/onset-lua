@@ -1,147 +1,147 @@
 {
     "Server.OnPlayerPickupHit": {
         "prefix": "OnPlayerPickupHit",
-        "body": "AddEvent(\"OnPlayerPickupHit\", function()\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerPickupHit\", function()\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerPickupHit()"
     },
     "Server.OnPlayerStreamIn": {
         "prefix": "OnPlayerStreamIn",
-        "body": "AddEvent(\"OnPlayerStreamIn\", function(player, otherplayer)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerStreamIn\", function(player, otherplayer)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerStreamIn(player, otherplayer)"
     },
     "Server.OnPlayerStreamOut": {
         "prefix": "OnPlayerStreamOut",
-        "body": "AddEvent(\"OnPlayerStreamOut\", function(player, otherplayer)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerStreamOut\", function(player, otherplayer)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerStreamOut(player, otherplayer)"
     },
     "Server.OnPlayerJoin": {
         "prefix": "OnPlayerJoin",
-        "body": "AddEvent(\"OnPlayerJoin\", function(player)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerJoin\", function(player)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerJoin(player)"
     },
     "Server.OnPlayerQuit": {
         "prefix": "OnPlayerQuit",
-        "body": "AddEvent(\"OnPlayerQuit\", function(player)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerQuit\", function(player)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerQuit(player)"
     },
     "Server.OnPlayerSpawn": {
         "prefix": "OnPlayerSpawn",
-        "body": "AddEvent(\"OnPlayerSpawn\", function(player)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerSpawn\", function(player)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerSpawn(player)"
     },
     "Server.OnPlayerDeath": {
         "prefix": "OnPlayerDeath",
-        "body": "AddEvent(\"OnPlayerDeath\", function(player, instigator)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerDeath\", function(player, instigator)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerDeath(player, instigator)"
     },
     "Server.OnPlayerWeaponShot": {
         "prefix": "OnPlayerWeaponShot",
-        "body": "AddEvent(\"OnPlayerWeaponShot\", function(player, player, hittype, hitid, hitX, hitY, hitZ, startX, startY, startY, normalX, normalY, normalZ)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerWeaponShot\", function(player, player, hittype, hitid, hitX, hitY, hitZ, startX, startY, startY, normalX, normalY, normalZ)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerWeaponShot(player, player, hittype, hitid, hitX, hitY, hitZ, startX, startY, startY, normalX, normalY, normalZ)"
     },
     "Server.OnPlayerDamage": {
         "prefix": "OnPlayerDamage",
-        "body": "AddEvent(\"OnPlayerDamage\", function(player, damagetype, amount)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerDamage\", function(player, damagetype, amount)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerDamage(player, damagetype, amount)"
     },
     "Server.OnPlayerChat": {
         "prefix": "OnPlayerChat",
-        "body": "AddEvent(\"OnPlayerChat\", function(player, text)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerChat\", function(player, text)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerChat(player, text)"
     },
     "Server.OnPlayerChatCommand": {
         "prefix": "OnPlayerChatCommand",
-        "body": "AddEvent(\"OnPlayerChatCommand\", function(player, command, exists)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerChatCommand\", function(player, command, exists)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerChatCommand(player, command, exists)"
     },
     "Server.OnPlayerInteractDoor": {
         "prefix": "OnPlayerInteractDoor",
-        "body": "AddEvent(\"OnPlayerInteractDoor\", function(player, door, bWantsOpen)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerInteractDoor\", function(player, door, bWantsOpen)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerInteractDoor(player, door, bWantsOpen)"
     },
     "Server.OnPlayerEnterVehicle": {
         "prefix": "OnPlayerEnterVehicle",
-        "body": "AddEvent(\"OnPlayerEnterVehicle\", function(player, vehicle, seat)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerEnterVehicle\", function(player, vehicle, seat)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerEnterVehicle(player, vehicle, seat)"
     },
     "Server.OnPlayerLeaveVehicle": {
         "prefix": "OnPlayerLeaveVehicle",
-        "body": "AddEvent(\"OnPlayerLeaveVehicle\", function(player, vehicle, seat)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerLeaveVehicle\", function(player, vehicle, seat)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerLeaveVehicle(player, vehicle, seat)"
     },
     "Server.OnPlayerStateChange": {
         "prefix": "OnPlayerStateChange",
-        "body": "AddEvent(\"OnPlayerStateChange\", function(player, newstate, oldstate)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerStateChange\", function(player, newstate, oldstate)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerStateChange(player, newstate, oldstate)"
     },
     "Server.OnVehicleRespawn": {
         "prefix": "OnVehicleRespawn",
-        "body": "AddEvent(\"OnVehicleRespawn\", function(vehicle)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnVehicleRespawn\", function(vehicle)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnVehicleRespawn(vehicle)"
     },
     "Server.OnVehicleStreamIn": {
         "prefix": "OnVehicleStreamIn",
-        "body": "AddEvent(\"OnVehicleStreamIn\", function(vehicle, player)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnVehicleStreamIn\", function(vehicle, player)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnVehicleStreamIn(vehicle, player)"
     },
     "Server.OnVehicleStreamOut": {
         "prefix": "OnVehicleStreamOut",
-        "body": "AddEvent(\"OnVehicleStreamOut\", function(vehicle, player)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnVehicleStreamOut\", function(vehicle, player)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnVehicleStreamOut(vehicle, player)"
     },
     "Server.OnGameTick": {
         "prefix": "OnGameTick",
-        "body": "AddEvent(\"OnGameTick\", function(DeltaSeconds)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnGameTick\", function(DeltaSeconds)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnGameTick(DeltaSeconds)"
     },
     "Server.OnClientConnectionRequest": {
         "prefix": "OnClientConnectionRequest",
-        "body": "AddEvent(\"OnClientConnectionRequest\", function(ip, port)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnClientConnectionRequest\", function(ip, port)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnClientConnectionRequest(ip, port)"
     },
     "Server.OnPlayerServerAuth": {
         "prefix": "OnPlayerServerAuth",
-        "body": "AddEvent(\"OnPlayerServerAuth\", function(player)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerServerAuth\", function(player)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerServerAuth(player)"
     },
     "Server.OnPlayerSteamAuth": {
         "prefix": "OnPlayerSteamAuth",
-        "body": "AddEvent(\"OnPlayerSteamAuth\", function(player)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerSteamAuth\", function(player)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerSteamAuth(player)"
     },
     "Server.OnPlayerDownloadFile": {
         "prefix": "OnPlayerDownloadFile",
-        "body": "AddEvent(\"OnPlayerDownloadFile\", function(player, FileName, Checksum)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerDownloadFile\", function(player, FileName, Checksum)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerDownloadFile(player, FileName, Checksum)"
     },
     "Server.OnPackageStart": {
         "prefix": "OnPackageStart",
-        "body": "AddEvent(\"OnPackageStart\", function()\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPackageStart\", function()\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPackageStart()"
     },
     "Server.OnPackageStop": {
         "prefix": "OnPackageStop",
-        "body": "AddEvent(\"OnPackageStop\", function()\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPackageStop\", function()\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPackageStop()"
     },
     "Server.OnNPCReachTarget": {
         "prefix": "OnNPCReachTarget",
-        "body": "AddEvent(\"OnNPCReachTarget\", function()\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnNPCReachTarget\", function()\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnNPCReachTarget()"
     },
     "Server.OnNPCDamage": {
         "prefix": "OnNPCDamage",
-        "body": "AddEvent(\"OnNPCDamage\", function()\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnNPCDamage\", function()\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnNPCDamage()"
     },
     "Server.OnNPCSpawn": {
         "prefix": "OnNPCSpawn",
-        "body": "AddEvent(\"OnNPCSpawn\", function()\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnNPCSpawn\", function()\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnNPCSpawn()"
     },
     "Server.OnNPCDeath": {
         "prefix": "OnNPCDeath",
-        "body": "AddEvent(\"OnNPCDeath\", function(npc, player)\r\n\t${3}\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnNPCDeath\", function(npc, player)\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnNPCDeath(npc, player)"
     }
 }
