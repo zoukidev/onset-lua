@@ -6,113 +6,113 @@
     },
     "Server.OnPlayerStreamIn": {
         "prefix": "OnPlayerStreamIn",
-        "body": "AddEvent(\"OnPlayerStreamIn\", function(player, otherplayer)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerStreamIn(player, otherplayer)"
+        "body": "AddEvent(\"OnPlayerStreamIn\", function( ${1:player}, ${2:otherplayer} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerStreamIn(player,otherplayer)"
     },
     "Server.OnPlayerStreamOut": {
         "prefix": "OnPlayerStreamOut",
-        "body": "AddEvent(\"OnPlayerStreamOut\", function(player, otherplayer)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerStreamOut(player, otherplayer)"
+        "body": "AddEvent(\"OnPlayerStreamOut\", function( ${1:player}, ${2:otherplayer} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerStreamOut(player,otherplayer)"
     },
     "Server.OnPlayerJoin": {
         "prefix": "OnPlayerJoin",
-        "body": "AddEvent(\"OnPlayerJoin\", function(player)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerJoin\", function( ${1:player} )\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerJoin(player)"
     },
     "Server.OnPlayerQuit": {
         "prefix": "OnPlayerQuit",
-        "body": "AddEvent(\"OnPlayerQuit\", function(player)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerQuit\", function( ${1:player} )\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerQuit(player)"
     },
     "Server.OnPlayerSpawn": {
         "prefix": "OnPlayerSpawn",
-        "body": "AddEvent(\"OnPlayerSpawn\", function(player)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerSpawn(player)"
+        "body": "AddEvent(\"OnPlayerSpawn\", function( ${1:playerid} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerSpawn(playerid)"
     },
     "Server.OnPlayerDeath": {
         "prefix": "OnPlayerDeath",
-        "body": "AddEvent(\"OnPlayerDeath\", function(player, instigator)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerDeath(player, instigator)"
+        "body": "AddEvent(\"OnPlayerDeath\", function( ${1:player}, ${2:instigator} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerDeath(player,instigator)"
     },
     "Server.OnPlayerWeaponShot": {
         "prefix": "OnPlayerWeaponShot",
-        "body": "AddEvent(\"OnPlayerWeaponShot\", function(player, player, hittype, hitid, hitX, hitY, hitZ, startX, startY, startY, normalX, normalY, normalZ)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerWeaponShot(player, player, hittype, hitid, hitX, hitY, hitZ, startX, startY, startY, normalX, normalY, normalZ)"
+        "body": "AddEvent(\"OnPlayerWeaponShot\", function( ${1:player}, ${2:player}, ${3:hittype}, ${4:hitid}, ${5:hitX}, ${6:hitY}, ${7:hitZ}, ${8:startX}, ${9:startY}, ${10:startY}, ${11:normalX}, ${12:normalY}, ${13:normalZ} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerWeaponShot(player,player,hittype,hitid,hitX,hitY,hitZ,startX,startY,startY,normalX,normalY,normalZ)"
     },
     "Server.OnPlayerDamage": {
         "prefix": "OnPlayerDamage",
-        "body": "AddEvent(\"OnPlayerDamage\", function(player, damagetype, amount)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerDamage(player, damagetype, amount)"
+        "body": "AddEvent(\"OnPlayerDamage\", function( ${1:player}, ${2:damagetype}, ${3:amount} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerDamage(player,damagetype,amount)"
     },
     "Server.OnPlayerChat": {
         "prefix": "OnPlayerChat",
-        "body": "AddEvent(\"OnPlayerChat\", function(player, text)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerChat(player, text)"
+        "body": "AddEvent(\"OnPlayerChat\", function( ${1:player}, ${2:text} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerChat(player,text)"
     },
     "Server.OnPlayerChatCommand": {
         "prefix": "OnPlayerChatCommand",
-        "body": "AddEvent(\"OnPlayerChatCommand\", function(player, command, exists)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerChatCommand(player, command, exists)"
+        "body": "AddEvent(\"OnPlayerChatCommand\", function( ${1:player}, ${2:command}, ${3:exists} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerChatCommand(player,command,exists)"
     },
     "Server.OnPlayerInteractDoor": {
         "prefix": "OnPlayerInteractDoor",
-        "body": "AddEvent(\"OnPlayerInteractDoor\", function(player, door, bWantsOpen)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerInteractDoor(player, door, bWantsOpen)"
+        "body": "AddEvent(\"OnPlayerInteractDoor\", function( ${1:player}, ${2:door}, ${3:bWantsOpen} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerInteractDoor(player,door,bWantsOpen)"
     },
     "Server.OnPlayerEnterVehicle": {
         "prefix": "OnPlayerEnterVehicle",
-        "body": "AddEvent(\"OnPlayerEnterVehicle\", function(player, vehicle, seat)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerEnterVehicle(player, vehicle, seat)"
+        "body": "AddEvent(\"OnPlayerEnterVehicle\", function( ${1:player}, ${2:vehicle}, ${3:seat} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerEnterVehicle(player,vehicle,seat)"
     },
     "Server.OnPlayerLeaveVehicle": {
         "prefix": "OnPlayerLeaveVehicle",
-        "body": "AddEvent(\"OnPlayerLeaveVehicle\", function(player, vehicle, seat)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerLeaveVehicle(player, vehicle, seat)"
+        "body": "AddEvent(\"OnPlayerLeaveVehicle\", function( ${1:player}, ${2:vehicle}, ${3:seat} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerLeaveVehicle(player,vehicle,seat)"
     },
     "Server.OnPlayerStateChange": {
         "prefix": "OnPlayerStateChange",
-        "body": "AddEvent(\"OnPlayerStateChange\", function(player, newstate, oldstate)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerStateChange(player, newstate, oldstate)"
+        "body": "AddEvent(\"OnPlayerStateChange\", function( ${1:player}, ${2:newstate}, ${3:oldstate} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerStateChange(player,newstate,oldstate)"
     },
     "Server.OnVehicleRespawn": {
         "prefix": "OnVehicleRespawn",
-        "body": "AddEvent(\"OnVehicleRespawn\", function(vehicle)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnVehicleRespawn\", function( ${1:vehicle} )\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnVehicleRespawn(vehicle)"
     },
     "Server.OnVehicleStreamIn": {
         "prefix": "OnVehicleStreamIn",
-        "body": "AddEvent(\"OnVehicleStreamIn\", function(vehicle, player)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnVehicleStreamIn(vehicle, player)"
+        "body": "AddEvent(\"OnVehicleStreamIn\", function( ${1:vehicle}, ${2:player} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnVehicleStreamIn(vehicle,player)"
     },
     "Server.OnVehicleStreamOut": {
         "prefix": "OnVehicleStreamOut",
-        "body": "AddEvent(\"OnVehicleStreamOut\", function(vehicle, player)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnVehicleStreamOut(vehicle, player)"
+        "body": "AddEvent(\"OnVehicleStreamOut\", function( ${1:vehicle}, ${2:player} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnVehicleStreamOut(vehicle,player)"
     },
     "Server.OnGameTick": {
         "prefix": "OnGameTick",
-        "body": "AddEvent(\"OnGameTick\", function(DeltaSeconds)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnGameTick\", function( ${1:DeltaSeconds} )\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnGameTick(DeltaSeconds)"
     },
     "Server.OnClientConnectionRequest": {
         "prefix": "OnClientConnectionRequest",
-        "body": "AddEvent(\"OnClientConnectionRequest\", function(ip, port)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnClientConnectionRequest(ip, port)"
+        "body": "AddEvent(\"OnClientConnectionRequest\", function( ${1:ip}, ${2:port} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnClientConnectionRequest(ip,port)"
     },
     "Server.OnPlayerServerAuth": {
         "prefix": "OnPlayerServerAuth",
-        "body": "AddEvent(\"OnPlayerServerAuth\", function(player)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerServerAuth\", function( ${1:player} )\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerServerAuth(player)"
     },
     "Server.OnPlayerSteamAuth": {
         "prefix": "OnPlayerSteamAuth",
-        "body": "AddEvent(\"OnPlayerSteamAuth\", function(player)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerSteamAuth\", function( ${1:player} )\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerSteamAuth(player)"
     },
     "Server.OnPlayerDownloadFile": {
         "prefix": "OnPlayerDownloadFile",
-        "body": "AddEvent(\"OnPlayerDownloadFile\", function(player, FileName, Checksum)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerDownloadFile(player, FileName, Checksum)"
+        "body": "AddEvent(\"OnPlayerDownloadFile\", function( ${1:player}, ${2:FileName}, ${3:Checksum} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerDownloadFile(player,FileName,Checksum)"
     },
     "Server.OnPackageStart": {
         "prefix": "OnPackageStart",
@@ -141,7 +141,17 @@
     },
     "Server.OnNPCDeath": {
         "prefix": "OnNPCDeath",
-        "body": "AddEvent(\"OnNPCDeath\", function(npc, player)\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnNPCDeath(npc, player)"
+        "body": "AddEvent(\"OnNPCDeath\", function( ${1:npc}, ${2:player} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnNPCDeath(npc,player)"
+    },
+    "Server.OnNPCStreamIn": {
+        "prefix": "OnNPCStreamIn",
+        "body": "AddEvent(\"OnNPCStreamIn\", function( ${1:npc}, ${2:player} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnNPCStreamIn(npc,player)"
+    },
+    "Server.OnNPCStreamOut": {
+        "prefix": "OnNPCStreamOut",
+        "body": "AddEvent(\"OnNPCStreamOut\", function( ${1:npc}, ${2:player} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnNPCStreamOut(npc,player)"
     }
 }

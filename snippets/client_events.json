@@ -1,37 +1,37 @@
 {
     "Client.OnCollisionEnter": {
         "prefix": "OnCollisionEnter",
-        "body": "AddEvent(\"OnCollisionEnter\", function(collision, hittype, hitid)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnCollisionEnter(collision, hittype, hitid)"
+        "body": "AddEvent(\"OnCollisionEnter\", function( ${1:collision}, ${2:hittype}, ${3:hitid} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnCollisionEnter(collision,hittype,hitid)"
     },
     "Client.OnCollisionLeave": {
         "prefix": "OnCollisionLeave",
-        "body": "AddEvent(\"OnCollisionLeave\", function(collision, hittype, hitid)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnCollisionLeave(collision, hittype, hitid)"
+        "body": "AddEvent(\"OnCollisionLeave\", function( ${1:collision}, ${2:hittype}, ${3:hitid} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnCollisionLeave(collision,hittype,hitid)"
     },
     "Client.OnGameTick": {
         "prefix": "OnGameTick",
-        "body": "AddEvent(\"OnGameTick\", function(DeltaSeconds)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnGameTick\", function( ${1:DeltaSeconds} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnGameTick(DeltaSeconds)"
     },
     "Client.OnSteamOverlayActivated": {
         "prefix": "OnSteamOverlayActivated",
-        "body": "AddEvent(\"OnSteamOverlayActivated\", function(bActive)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnSteamOverlayActivated\", function( ${1:bActive} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnSteamOverlayActivated(bActive)"
     },
     "Client.OnPlayerSwitchCamera": {
         "prefix": "OnPlayerSwitchCamera",
-        "body": "AddEvent(\"OnPlayerSwitchCamera\", function(bIsFirstPerson)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerSwitchCamera\", function( ${1:bIsFirstPerson} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnPlayerSwitchCamera(bIsFirstPerson)"
     },
     "Client.OnResolutionChange": {
         "prefix": "OnResolutionChange",
-        "body": "AddEvent(\"OnResolutionChange\", function(width, height)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnResolutionChange(width, height)"
+        "body": "AddEvent(\"OnResolutionChange\", function( ${1:width}, ${2:height} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnResolutionChange(width,height)"
     },
     "Client.OnScriptError": {
         "prefix": "OnScriptError",
-        "body": "AddEvent(\"OnScriptError\", function(message)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnScriptError\", function( ${1:message} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnScriptError(message)"
     },
     "Client.OnRenderHUD": {
@@ -41,18 +41,18 @@
     },
     "Client.OnPlayerChatCommand": {
         "prefix": "OnPlayerChatCommand",
-        "body": "AddEvent(\"OnPlayerChatCommand\", function(player, command, exists)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerChatCommand(player, command, exists)"
+        "body": "AddEvent(\"OnPlayerChatCommand\", function( ${1:player}, ${2:command}, ${3:exists} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerChatCommand(player,command,exists)"
     },
     "Client.OnPlayerChat": {
         "prefix": "OnPlayerChat",
-        "body": "AddEvent(\"OnPlayerChat\", function(player, text)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerChat(player, text)"
+        "body": "AddEvent(\"OnPlayerChat\", function( ${1:player}, ${2:text} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerChat(player,text)"
     },
     "Client.OnPlayerSpawn": {
         "prefix": "OnPlayerSpawn",
-        "body": "AddEvent(\"OnPlayerSpawn\", function(player)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerSpawn(player)"
+        "body": "AddEvent(\"OnPlayerSpawn\", function( ${1:playerid} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerSpawn(playerid)"
     },
     "Client.OnPlayerCrouch": {
         "prefix": "OnPlayerCrouch",
@@ -76,23 +76,23 @@
     },
     "Client.OnPlayerStartEnterVehicle": {
         "prefix": "OnPlayerStartEnterVehicle",
-        "body": "AddEvent(\"OnPlayerStartEnterVehicle\", function(vehicle, seat)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerStartEnterVehicle(vehicle, seat)"
+        "body": "AddEvent(\"OnPlayerStartEnterVehicle\", function( ${1:vehicle}, ${2:seat} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerStartEnterVehicle(vehicle,seat)"
     },
     "Client.OnPlayerStartExitVehicle": {
         "prefix": "OnPlayerStartExitVehicle",
-        "body": "AddEvent(\"OnPlayerStartExitVehicle\", function(vehicle)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerStartExitVehicle\", function( ${1:vehicle} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnPlayerStartExitVehicle(vehicle)"
     },
     "Client.OnPlayerEnterVehicle": {
         "prefix": "OnPlayerEnterVehicle",
-        "body": "AddEvent(\"OnPlayerEnterVehicle\", function(player, vehicle, seat)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerEnterVehicle(player, vehicle, seat)"
+        "body": "AddEvent(\"OnPlayerEnterVehicle\", function( ${1:player}, ${2:vehicle}, ${3:seat} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerEnterVehicle(player,vehicle,seat)"
     },
     "Client.OnPlayerLeaveVehicle": {
         "prefix": "OnPlayerLeaveVehicle",
-        "body": "AddEvent(\"OnPlayerLeaveVehicle\", function(player, vehicle, seat)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerLeaveVehicle(player, vehicle, seat)"
+        "body": "AddEvent(\"OnPlayerLeaveVehicle\", function( ${1:player}, ${2:vehicle}, ${3:seat} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerLeaveVehicle(player,vehicle,seat)"
     },
     "Client.OnPlayerEnterWater": {
         "prefix": "OnPlayerEnterWater",
@@ -106,13 +106,13 @@
     },
     "Client.OnPlayerDeath": {
         "prefix": "OnPlayerDeath",
-        "body": "AddEvent(\"OnPlayerDeath\", function(player, instigator)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerDeath(player, instigator)"
+        "body": "AddEvent(\"OnPlayerDeath\", function( ${1:player}, ${2:instigator} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerDeath(player,instigator)"
     },
     "Client.OnPlayerWeaponShot": {
         "prefix": "OnPlayerWeaponShot",
-        "body": "AddEvent(\"OnPlayerWeaponShot\", function(player, player, hittype, hitid, hitX, hitY, hitZ, startX, startY, startY, normalX, normalY, normalZ)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerWeaponShot(player, player, hittype, hitid, hitX, hitY, hitZ, startX, startY, startY, normalX, normalY, normalZ)"
+        "body": "AddEvent(\"OnPlayerWeaponShot\", function( ${1:player}, ${2:player}, ${3:hittype}, ${4:hitid}, ${5:hitX}, ${6:hitY}, ${7:hitZ}, ${8:startX}, ${9:startY}, ${10:startY}, ${11:normalX}, ${12:normalY}, ${13:normalZ} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerWeaponShot(player,player,hittype,hitid,hitX,hitY,hitZ,startX,startY,startY,normalX,normalY,normalZ)"
     },
     "Client.OnPlayerReloaded": {
         "prefix": "OnPlayerReloaded",
@@ -151,42 +151,47 @@
     },
     "Client.OnObjectHit": {
         "prefix": "OnObjectHit",
-        "body": "AddEvent(\"OnObjectHit\", function(object, hittype, hitid, hitX, hitY, hitZ, normalX, normalY, normalZ)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnObjectHit(object, hittype, hitid, hitX, hitY, hitZ, normalX, normalY, normalZ)"
+        "body": "AddEvent(\"OnObjectHit\", function( ${1:object}, ${2:hittype}, ${3:hitid}, ${4:hitX}, ${5:hitY}, ${6:hitZ}, ${7:normalX}, ${8:normalY}, ${9:normalZ} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnObjectHit(object,hittype,hitid,hitX,hitY,hitZ,normalX,normalY,normalZ)"
     },
     "Client.OnPlayerEndEditObject": {
         "prefix": "OnPlayerEndEditObject",
-        "body": "AddEvent(\"OnPlayerEndEditObject\", function(object)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerEndEditObject\", function( ${1:object} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnPlayerEndEditObject(object)"
     },
     "Client.OnPlayerBeginEditObject": {
         "prefix": "OnPlayerBeginEditObject",
-        "body": "AddEvent(\"OnPlayerBeginEditObject\", function(object)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPlayerBeginEditObject\", function( ${1:object} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnPlayerBeginEditObject(object)"
     },
     "Client.OnKeyPress": {
         "prefix": "OnKeyPress",
-        "body": "AddEvent(\"OnKeyPress\", function(key)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnKeyPress\", function( ${1:key} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnKeyPress(key)"
     },
     "Client.OnKeyRelease": {
         "prefix": "OnKeyRelease",
-        "body": "AddEvent(\"OnKeyRelease\", function(key)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnKeyRelease\", function( ${1:key} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnKeyRelease(key)"
     },
     "Client.OnLightStreamIn": {
         "prefix": "OnLightStreamIn",
-        "body": "AddEvent(\"OnLightStreamIn\", function(light)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnLightStreamIn\", function( ${1:light} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnLightStreamIn(light)"
     },
     "Client.OnNPCStreamIn": {
         "prefix": "OnNPCStreamIn",
-        "body": "AddEvent(\"OnNPCStreamIn\", function(npc, player)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnNPCStreamIn(npc, player)"
+        "body": "AddEvent(\"OnNPCStreamIn\", function( ${1:npc}, ${2:player} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnNPCStreamIn(npc,player)"
+    },
+    "Client.OnNPCStreamOut": {
+        "prefix": "OnNPCStreamOut",
+        "body": "AddEvent(\"OnNPCStreamOut\", function( ${1:npc}, ${2:player} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnNPCStreamOut(npc,player)"
     },
     "Client.OnObjectStreamIn": {
         "prefix": "OnObjectStreamIn",
-        "body": "AddEvent(\"OnObjectStreamIn\", function(object)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnObjectStreamIn\", function( ${1:object} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnObjectStreamIn(object)"
     },
     "Client.OnPackageStart": {
@@ -201,47 +206,47 @@
     },
     "Client.OnPickupStreamIn": {
         "prefix": "OnPickupStreamIn",
-        "body": "AddEvent(\"OnPickupStreamIn\", function(pickup)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnPickupStreamIn\", function( ${1:pickup} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnPickupStreamIn(pickup)"
     },
     "Client.OnPlayerStreamIn": {
         "prefix": "OnPlayerStreamIn",
-        "body": "AddEvent(\"OnPlayerStreamIn\", function(player, otherplayer)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerStreamIn(player, otherplayer)"
+        "body": "AddEvent(\"OnPlayerStreamIn\", function( ${1:player}, ${2:otherplayer} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerStreamIn(player,otherplayer)"
     },
     "Client.OnPlayerStreamOut": {
         "prefix": "OnPlayerStreamOut",
-        "body": "AddEvent(\"OnPlayerStreamOut\", function(player, otherplayer)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerStreamOut(player, otherplayer)"
+        "body": "AddEvent(\"OnPlayerStreamOut\", function( ${1:player}, ${2:otherplayer} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerStreamOut(player,otherplayer)"
     },
     "Client.OnSoundFinished": {
         "prefix": "OnSoundFinished",
-        "body": "AddEvent(\"OnSoundFinished\", function(sound)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnSoundFinished\", function( ${1:sound} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnSoundFinished(sound)"
     },
     "Client.OnText3DStreamIn": {
         "prefix": "OnText3DStreamIn",
-        "body": "AddEvent(\"OnText3DStreamIn\", function(text3d)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnText3DStreamIn\", function( ${1:text3d} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnText3DStreamIn(text3d)"
     },
     "Client.OnVehicleStreamOut": {
         "prefix": "OnVehicleStreamOut",
-        "body": "AddEvent(\"OnVehicleStreamOut\", function(vehicle, player)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnVehicleStreamOut(vehicle, player)"
+        "body": "AddEvent(\"OnVehicleStreamOut\", function( ${1:vehicle}, ${2:player} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnVehicleStreamOut(vehicle,player)"
     },
     "Client.OnVehicleStreamIn": {
         "prefix": "OnVehicleStreamIn",
-        "body": "AddEvent(\"OnVehicleStreamIn\", function(vehicle, player)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnVehicleStreamIn(vehicle, player)"
+        "body": "AddEvent(\"OnVehicleStreamIn\", function( ${1:vehicle}, ${2:player} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnVehicleStreamIn(vehicle,player)"
     },
     "Client.OnWebLoadComplete": {
         "prefix": "OnWebLoadComplete",
-        "body": "AddEvent(\"OnWebLoadComplete\", function(web)\r\n\t\r\nend)$0\r\n",
+        "body": "AddEvent(\"OnWebLoadComplete\", function( ${1:web} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnWebLoadComplete(web)"
     },
     "Client.OnSoundUpdateMeta": {
         "prefix": "OnSoundUpdateMeta",
-        "body": "AddEvent(\"OnSoundUpdateMeta\", function(sound, meta)\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnSoundUpdateMeta(sound, meta)"
+        "body": "AddEvent(\"OnSoundUpdateMeta\", function( ${1:sound}, ${2:meta} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnSoundUpdateMeta(sound,meta)"
     }
 }
