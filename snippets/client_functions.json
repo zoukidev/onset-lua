@@ -59,6 +59,11 @@
         "body": "HexToRGBA( ${1:HexColor} )$0\r\n",
         "description": "(Client) Function: HexToRGBA(HexColor)"
     },
+    "Client.HexToRGBAFloat": {
+        "prefix": "HexToRGBAFloat",
+        "body": "HexToRGBAFloat(${1:HexColor})$0\r\n",
+        "description": "(Client) Function: HexToRGBAFloat(HexColor)"
+    },
     "Client.Random": {
         "prefix": "Random",
         "body": "Random( ${1:Min (optional)}, ${2:Max (optional)} )$0\r\n",
