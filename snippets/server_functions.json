@@ -419,11 +419,6 @@
         "body": "IsPackageStarted( ${1:PackageName} )$0\r\n",
         "description": "(Server) Function: IsPackageStarted(PackageName)"
     },
-    "Server.SetPickupVisibleForPlayers": {
-        "prefix": "SetPickupVisibleForPlayers",
-        "body": "SetPickupVisibleForPlayers( ${1:Pickup}, ${2:Players} )$0\r\n",
-        "description": "(Server) Function: SetPickupVisibleForPlayers(Pickup,Players)"
-    },
     "Server.GetPickupCount": {
         "prefix": "GetPickupCount",
         "body": "GetPickupCount()$0\r\n",
