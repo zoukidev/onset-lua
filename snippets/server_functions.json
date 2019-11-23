@@ -14,6 +14,11 @@
         "body": "HexToRGBA( ${1:HexColor} )$0\r\n",
         "description": "(Server) Function: HexToRGBA(HexColor)"
     },
+    "Server.HexToRGBAFloat": {
+        "prefix": "HexToRGBAFloat",
+        "body": "HexToRGBAFloat(${1:HexColor})$0\r\n",
+        "description": "(Server) Function: HexToRGBAFloat(HexColor)"
+    },
     "Server.Random": {
         "prefix": "Random",
         "body": "Random( ${1:Min (optional)}, ${2:Max (optional)} )$0\r\n",
