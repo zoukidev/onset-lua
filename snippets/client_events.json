@@ -174,11 +174,6 @@
         "body": "AddEvent(\"OnKeyRelease\", function( ${1:key} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnKeyRelease(key)"
     },
-    "Client.OnLightStreamIn": {
-        "prefix": "OnLightStreamIn",
-        "body": "AddEvent(\"OnLightStreamIn\", function( ${1:light} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnLightStreamIn(light)"
-    },
     "Client.OnNPCStreamIn": {
         "prefix": "OnNPCStreamIn",
         "body": "AddEvent(\"OnNPCStreamIn\", function( ${1:npc}, ${2:player} )\r\n\t\r\nend)$0\r\n",

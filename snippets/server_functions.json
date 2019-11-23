@@ -14,11 +14,6 @@
         "body": "HexToRGBA( ${1:HexColor} )$0\r\n",
         "description": "(Server) Function: HexToRGBA(HexColor)"
     },
-    "Server.HexToRGBAFloat": {
-        "prefix": "HexToRGBAFloat",
-        "body": "HexToRGBAFloat(${1:HexColor})$0\r\n",
-        "description": "(Server) Function: HexToRGBAFloat(HexColor)"
-    },
     "Server.Random": {
         "prefix": "Random",
         "body": "Random( ${1:Min (optional)}, ${2:Max (optional)} )$0\r\n",
@@ -204,11 +199,6 @@
         "body": "IsNPCStreamedIn( ${1:player}, ${2:npc} )$0\r\n",
         "description": "(Server) Function: IsNPCStreamedIn(player,npc)"
     },
-    "Server.GetNPCModel": {
-        "prefix": "GetNPCModel",
-        "body": "GetNPCModel( ${1:npc} )$0\r\n",
-        "description": "(Server) Function: GetNPCModel(npc)"
-    },
     "Server.SetNPCLocation": {
         "prefix": "SetNPCLocation",
         "body": "SetNPCLocation( ${1:npc}, ${2:x}, ${3:y}, ${4:z} )$0\r\n",
@@ -386,8 +376,8 @@
     },
     "Server.AddRemoteEvent": {
         "prefix": "AddRemoteEvent",
-        "body": "AddRemoteEvent( ${1:player}, ${2:RemoteEventName}, ${3:LuaFunction} )$0\r\n",
-        "description": "(Server) Function: AddRemoteEvent(player,RemoteEventName,LuaFunction)"
+        "body": "AddRemoteEvent( ${1:RemoteEventName}, ${2:LuaFunction} )$0\r\n",
+        "description": "(Server) Function: AddRemoteEvent(RemoteEventName,LuaFunction)"
     },
     "Server.AddCommand": {
         "prefix": "AddCommand",
@@ -526,18 +516,23 @@
     },
     "Server.SetPlayerVoiceEnabled": {
         "prefix": "SetPlayerVoiceEnabled",
-        "body": "SetPlayerVoiceEnabled( ${1:player}, ${2:enable} )$0\r\n",
-        "description": "(Server) Function: SetPlayerVoiceEnabled(player,enable)"
+        "body": "SetPlayerVoiceEnabled( ${1:playerid}, ${2:bEnable} )$0\r\n",
+        "description": "(Server) Function: SetPlayerVoiceEnabled(playerid,bEnable)"
     },
     "Server.IsPlayerVoiceEnabled": {
         "prefix": "IsPlayerVoiceEnabled",
-        "body": "IsPlayerVoiceEnabled( ${1:player} )$0\r\n",
-        "description": "(Server) Function: IsPlayerVoiceEnabled(player)"
+        "body": "IsPlayerVoiceEnabled( ${1:playerid} )$0\r\n",
+        "description": "(Server) Function: IsPlayerVoiceEnabled(playerid)"
     },
     "Server.IsPlayerTalking": {
         "prefix": "IsPlayerTalking",
         "body": "IsPlayerTalking( ${1:player} )$0\r\n",
         "description": "(Server) Function: IsPlayerTalking(player)"
+    },
+    "Server.SetPlayerVoiceDimension": {
+        "prefix": "SetPlayerVoiceDimension",
+        "body": "SetPlayerVoiceDimension( ${1:playerid}, ${2:dimensionid} )$0\r\n",
+        "description": "(Server) Function: SetPlayerVoiceDimension(playerid,dimensionid)"
     },
     "Server.AddPlayerChat": {
         "prefix": "AddPlayerChat",
@@ -699,16 +694,6 @@
         "body": "GetPlayerRespawnTime( ${1:player} )$0\r\n",
         "description": "(Server) Function: GetPlayerRespawnTime(player)"
     },
-    "Server.SetPlayerModel": {
-        "prefix": "SetPlayerModel",
-        "body": "SetPlayerModel( ${1:player}, ${2:modelid} )$0\r\n",
-        "description": "(Server) Function: SetPlayerModel(player,modelid)"
-    },
-    "Server.GetPlayerModel": {
-        "prefix": "GetPlayerModel",
-        "body": "GetPlayerModel( ${1:player} )$0\r\n",
-        "description": "(Server) Function: GetPlayerModel(player)"
-    },
     "Server.GetPlayerIP": {
         "prefix": "GetPlayerIP",
         "body": "GetPlayerIP( ${1:player} )$0\r\n",
@@ -716,8 +701,8 @@
     },
     "Server.GetPlayerPing": {
         "prefix": "GetPlayerPing",
-        "body": "GetPlayerPing( ${1:player} )$0\r\n",
-        "description": "(Server) Function: GetPlayerPing(player)"
+        "body": "GetPlayerPing( ${1:playerid} )$0\r\n",
+        "description": "(Server) Function: GetPlayerPing(playerid)"
     },
     "Server.KickPlayer": {
         "prefix": "KickPlayer",
@@ -786,8 +771,8 @@
     },
     "Server.SetText3DAttached": {
         "prefix": "SetText3DAttached",
-        "body": "SetText3DAttached( ${1:object}, ${2:attachtype}, ${3:attachid}, ${4:x}, ${5:y}, ${6:z }, ${7:rx (optional)}, ${8:ry (optional)}, ${9:rz (optional)}, ${10:SocketName (optional)} )$0\r\n",
-        "description": "(Server) Function: SetText3DAttached(object,attachtype,attachid,x,y,z ,rx (optional),ry (optional),rz (optional),SocketName (optional))"
+        "body": "SetText3DAttached( ${1:text3d}, ${2:attachtype}, ${3:attachid}, ${4:x}, ${5:y}, ${6:z }, ${7:rx (optional)}, ${8:ry (optional)}, ${9:rz (optional)}, ${10:SocketName (optional)} )$0\r\n",
+        "description": "(Server) Function: SetText3DAttached(text3d,attachtype,attachid,x,y,z ,rx (optional),ry (optional),rz (optional),SocketName (optional))"
     },
     "Server.GetTimerCount": {
         "prefix": "GetTimerCount",
@@ -1054,11 +1039,6 @@
         "body": "SetObjectDimension( ${1:object}, ${2:dimension} )$0\r\n",
         "description": "(Server) Function: SetObjectDimension(object,dimension)"
     },
-    "Server.SetLightDimension": {
-        "prefix": "SetLightDimension",
-        "body": "SetLightDimension( ${1:light}, ${2:dimension} )$0\r\n",
-        "description": "(Server) Function: SetLightDimension(light,dimension)"
-    },
     "Server.SetPickupDimension": {
         "prefix": "SetPickupDimension",
         "body": "SetPickupDimension( ${1:pickup}, ${2:dimension} )$0\r\n",
@@ -1088,11 +1068,6 @@
         "prefix": "GetObjectDimension",
         "body": "GetObjectDimension( ${1:object} )$0\r\n",
         "description": "(Server) Function: GetObjectDimension(object)"
-    },
-    "Server.GetLightDimension": {
-        "prefix": "GetLightDimension",
-        "body": "GetLightDimension( ${1:light} )$0\r\n",
-        "description": "(Server) Function: GetLightDimension(light)"
     },
     "Server.GetPickupDimension": {
         "prefix": "GetPickupDimension",
@@ -1173,5 +1148,30 @@
         "prefix": "Delay",
         "body": "Delay( ${1:Milliseconds}, ${2:LuaFunction}, ${3:UserArgs (optional) (optional)} )$0\r\n",
         "description": "(Server) Function: Delay(Milliseconds,LuaFunction,UserArgs (optional) (optional))"
+    },
+    "Server.SetPickupVisibility": {
+        "prefix": "SetPickupVisibility",
+        "body": "SetPickupVisibility( ${1:pickupid} )$0\r\n",
+        "description": "(Server) Function: SetPickupVisibility(pickupid)"
+    },
+    "Server.SetPlayerRagdoll": {
+        "prefix": "SetPlayerRagdoll",
+        "body": "SetPlayerRagdoll( ${1:playerid}, ${2:-} )$0\r\n",
+        "description": "(Server) Function: SetPlayerRagdoll(playerid,-)"
+    },
+    "Server.SetNPCRagdoll": {
+        "prefix": "SetNPCRagdoll",
+        "body": "SetNPCRagdoll( ${1:npcid}, ${2:bStatus} )$0\r\n",
+        "description": "(Server) Function: SetNPCRagdoll(npcid,bStatus)"
+    },
+    "Server.HexToRGBAFloat": {
+        "prefix": "HexToRGBAFloat",
+        "body": "HexToRGBAFloat( ${1:HexColor} )$0\r\n",
+        "description": "(Server) Function: HexToRGBAFloat(HexColor)"
+    },
+    "Server:SetPlayerVoiceDimension": {
+        "prefix": "SetPlayerVoiceDimension",
+        "body": "SetPlayerVoiceDimension( ${1:playerid}, ${2:dimensionid} )$0\r\n",
+        "description": "(Server) Function: SetPlayerVoiceDimension(playerid, dimensionid)"
     }
 }

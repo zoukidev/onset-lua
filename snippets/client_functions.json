@@ -59,11 +59,6 @@
         "body": "HexToRGBA( ${1:HexColor} )$0\r\n",
         "description": "(Client) Function: HexToRGBA(HexColor)"
     },
-    "Client.HexToRGBAFloat": {
-        "prefix": "HexToRGBAFloat",
-        "body": "HexToRGBAFloat(${1:HexColor})$0\r\n",
-        "description": "(Client) Function: HexToRGBAFloat(HexColor)"
-    },
     "Client.Random": {
         "prefix": "Random",
         "body": "Random( ${1:Min (optional)}, ${2:Max (optional)} )$0\r\n",
@@ -271,8 +266,8 @@
     },
     "Client.StopCameraShake": {
         "prefix": "StopCameraShake",
-        "body": "StopCameraShake( ${1:}, ${2:bImmediate (optional)} )$0\r\n",
-        "description": "(Client) Function: StopCameraShake(,bImmediate (optional))"
+        "body": "StopCameraShake( ${1:bImmediate (optional)} )$0\r\n",
+        "description": "(Client) Function: StopCameraShake(bImmediate (optional))"
     },
     "Client.SetCameraShakeLocation": {
         "prefix": "SetCameraShakeLocation",
@@ -604,16 +599,6 @@
         "body": "SetWeather( ${1:weather} )$0\r\n",
         "description": "(Client) Function: SetWeather(weather)"
     },
-    "Client.GetStreamedLights": {
-        "prefix": "GetStreamedLights",
-        "body": "GetStreamedLights()$0\r\n",
-        "description": "(Client) Function: GetStreamedLights()"
-    },
-    "Client.GetLightLocation": {
-        "prefix": "GetLightLocation",
-        "body": "GetLightLocation( ${1:light} )$0\r\n",
-        "description": "(Client) Function: GetLightLocation(light)"
-    },
     "Client.GetPing": {
         "prefix": "GetPing",
         "body": "GetPing()$0\r\n",
@@ -771,8 +756,8 @@
     },
     "Client.AddRemoteEvent": {
         "prefix": "AddRemoteEvent",
-        "body": "AddRemoteEvent( ${2:RemoteEventName}, ${3:LuaFunction} )$0\r\n",
-        "description": "(Client) Function: AddRemoteEvent(player,RemoteEventName,LuaFunction)"
+        "body": "AddRemoteEvent( ${1:RemoteEventName}, ${2:LuaFunction} )$0\r\n",
+        "description": "(Client) Function: AddRemoteEvent(RemoteEventName,LuaFunction)"
     },
     "Client.CallRemoteEvent": {
         "prefix": "CallRemoteEvent",
@@ -978,11 +963,6 @@
         "prefix": "SetSoundFadeOut",
         "body": "SetSoundFadeOut( ${1:sound}, ${2:Duration}, ${3:VolumeLevel} )$0\r\n",
         "description": "(Client) Function: SetSoundFadeOut(sound,Duration,VolumeLevel)"
-    },
-    "Client.GetSoundDuration": {
-        "prefix": "GetSoundDuration",
-        "body": "GetSoundDuration( ${1:sound} )$0\r\n",
-        "description": "(Client) Function: GetSoundDuration(sound)"
     },
     "Client.GetText3DCount": {
         "prefix": "GetText3DCount",
@@ -1388,5 +1368,40 @@
         "prefix": "SetControllerOrientedMovement",
         "body": "SetControllerOrientedMovement( ${1:bStatus} )$0\r\n",
         "description": "(Client) Function: SetControllerOrientedMovement(bStatus)"
+    },
+    "Client.HexToRGBAFloat": {
+        "prefix": "HexToRGBAFloat",
+        "body": "HexToRGBAFloat( ${1:HexColor} )$0\r\n",
+        "description": "(Client) Function: HexToRGBAFloat(HexColor)"
+    },
+    "Client.GetObjectStaticMeshComponent": {
+        "prefix": "GetObjectStaticMeshComponent",
+        "body": "GetObjectStaticMeshComponent( ${1:object} )$0\r\n",
+        "description": "(Client) Function: GetObjectStaticMeshComponent(object)"
+    },
+    "Client.GetNPCSkeletalMeshComponent": {
+        "prefix": "GetNPCSkeletalMeshComponent",
+        "body": "GetNPCSkeletalMeshComponent( ${1:npc} )$0\r\n",
+        "description": "(Client) Function: GetNPCSkeletalMeshComponent(npc)"
+    },
+    "Client.GetPickupStaticMeshComponent": {
+        "prefix": "GetPickupStaticMeshComponent",
+        "body": "GetPickupStaticMeshComponent( ${1:pickup} )$0\r\n",
+        "description": "(Client) Function: GetPickupStaticMeshComponent(pickup)"
+    },
+    "Client.SetPlayerClothingPreset": {
+        "prefix": "SetPlayerClothingPreset",
+        "body": "SetPlayerClothingPreset( ${1:} )$0\r\n",
+        "description": "(Client) Function: SetPlayerClothingPreset()"
+    },
+    "Client.SetNPCClothingPreset": {
+        "prefix": "SetNPCClothingPreset",
+        "body": "SetNPCClothingPreset( ${1:} )$0\r\n",
+        "description": "(Client) Function: SetNPCClothingPreset()"
+    },
+    "Client.DrawMaterial": {
+        "prefix": "DrawMaterial",
+        "body": "DrawMaterial( ${1:} )$0\r\n",
+        "description": "(Client) Function: DrawMaterial()"
     }
 }
