@@ -4,6 +4,16 @@
         "body": "AddEvent(\"OnPlayerPickupHit\", function()\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerPickupHit()"
     },
+    "Server.OnPlayerServerAuth": {
+        "prefix": "OnPlayerServerAuth",
+        "body": "AddEvent(\"OnPlayerServerAuth\", function( ${1:player} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerServerAuth(player)"
+    },
+    "Server.OnPlayerSteamAuth": {
+        "prefix": "OnPlayerSteamAuth",
+        "body": "AddEvent(\"OnPlayerSteamAuth\", function( ${1:player} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerSteamAuth(player)"
+    },
     "Server.OnPlayerStreamIn": {
         "prefix": "OnPlayerStreamIn",
         "body": "AddEvent(\"OnPlayerStreamIn\", function( ${1:player}, ${2:otherplayer} )\r\n\t\r\nend)$0\r\n",
@@ -99,21 +109,6 @@
         "body": "AddEvent(\"OnClientConnectionRequest\", function( ${1:ip}, ${2:port} )\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnClientConnectionRequest(ip,port)"
     },
-    "Server.OnPlayerServerAuth": {
-        "prefix": "OnPlayerServerAuth",
-        "body": "AddEvent(\"OnPlayerServerAuth\", function( ${1:player} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerServerAuth(player)"
-    },
-    "Server.OnPlayerSteamAuth": {
-        "prefix": "OnPlayerSteamAuth",
-        "body": "AddEvent(\"OnPlayerSteamAuth\", function( ${1:player} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerSteamAuth(player)"
-    },
-    "Server.OnPlayerDownloadFile": {
-        "prefix": "OnPlayerDownloadFile",
-        "body": "AddEvent(\"OnPlayerDownloadFile\", function( ${1:player}, ${2:FileName}, ${3:Checksum} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerDownloadFile(player,FileName,Checksum)"
-    },
     "Server.OnPackageStart": {
         "prefix": "OnPackageStart",
         "body": "AddEvent(\"OnPackageStart\", function()\r\n\t\r\nend)$0\r\n",
@@ -153,5 +148,10 @@
         "prefix": "OnNPCStreamOut",
         "body": "AddEvent(\"OnNPCStreamOut\", function( ${1:npc}, ${2:player} )\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnNPCStreamOut(npc,player)"
+    },
+    "Server.OnPlayerDownloadFile": {
+        "prefix": "OnPlayerDownloadFile",
+        "body": "AddEvent(\"OnPlayerDownloadFile\", function( ${1:player}, ${2:FileName}, ${3:Checksum} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerDownloadFile(player,FileName,Checksum)"
     }
 }

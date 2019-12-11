@@ -44,6 +44,16 @@
         "body": "IsGameDevMode()$0\r\n",
         "description": "(Client) Function: IsGameDevMode()"
     },
+    "Client.IsPlayerInMainMenu": {
+        "prefix": "IsPlayerInMainMenu",
+        "body": "IsPlayerInMainMenu()$0\r\n",
+        "description": "(Client) Function: IsPlayerInMainMenu()"
+    },
+    "Client.InvokeDamageFX": {
+        "prefix": "InvokeDamageFX",
+        "body": "InvokeDamageFX( ${1:value} )$0\r\n",
+        "description": "(Client) Function: InvokeDamageFX(value)"
+    },
     "Client.RGBA": {
         "prefix": "RGBA",
         "body": "RGBA( ${1:r}, ${2:g}, ${3:b}, ${4:a} )$0\r\n",
@@ -139,55 +149,20 @@
         "body": "GetDeltaSeconds()$0\r\n",
         "description": "(Client) Function: GetDeltaSeconds()"
     },
-    "Client.GetMouseHitLocation": {
-        "prefix": "GetMouseHitLocation",
-        "body": "GetMouseHitLocation()$0\r\n",
-        "description": "(Client) Function: GetMouseHitLocation()"
+    "Client.GetPlayerId": {
+        "prefix": "GetPlayerId",
+        "body": "GetPlayerId()$0\r\n",
+        "description": "(Client) Function: GetPlayerId()"
     },
-    "Client.GetMouseHitEntity": {
-        "prefix": "GetMouseHitEntity",
-        "body": "GetMouseHitEntity()$0\r\n",
-        "description": "(Client) Function: GetMouseHitEntity()"
+    "Client.SetPlayerPropertyValue": {
+        "prefix": "SetPlayerPropertyValue",
+        "body": "SetPlayerPropertyValue( ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)} )$0\r\n",
+        "description": "(Client) Function: SetPlayerPropertyValue(player,PropertyName,Value,bSync (optional))"
     },
-    "Client.IsPlayerInMainMenu": {
-        "prefix": "IsPlayerInMainMenu",
-        "body": "IsPlayerInMainMenu()$0\r\n",
-        "description": "(Client) Function: IsPlayerInMainMenu()"
-    },
-    "Client.InvokeDamageFX": {
-        "prefix": "InvokeDamageFX",
-        "body": "InvokeDamageFX( ${1:value} )$0\r\n",
-        "description": "(Client) Function: InvokeDamageFX(value)"
-    },
-    "Client.GetPlayerFOV": {
-        "prefix": "GetPlayerFOV",
-        "body": "GetPlayerFOV()$0\r\n",
-        "description": "(Client) Function: GetPlayerFOV()"
-    },
-    "Client.SetPlayerFOV": {
-        "prefix": "SetPlayerFOV",
-        "body": "SetPlayerFOV( ${1:fov} )$0\r\n",
-        "description": "(Client) Function: SetPlayerFOV(fov)"
-    },
-    "Client.SetCameraViewDistance": {
-        "prefix": "SetCameraViewDistance",
-        "body": "SetCameraViewDistance( ${1:distance} )$0\r\n",
-        "description": "(Client) Function: SetCameraViewDistance(distance)"
-    },
-    "Client.GetCameraViewDistance": {
-        "prefix": "GetCameraViewDistance",
-        "body": "GetCameraViewDistance()$0\r\n",
-        "description": "(Client) Function: GetCameraViewDistance()"
-    },
-    "Client.SetCameraLocation": {
-        "prefix": "SetCameraLocation",
-        "body": "SetCameraLocation( ${1:x}, ${2:y}, ${3:z}, ${4:bWorldSpace (optional)} )$0\r\n",
-        "description": "(Client) Function: SetCameraLocation(x,y,z,bWorldSpace (optional))"
-    },
-    "Client.SetCameraRotation": {
-        "prefix": "SetCameraRotation",
-        "body": "SetCameraRotation( ${1:pitch}, ${2:yaw}, ${3:roll }, ${4:bWorldSpace (optional)} )$0\r\n",
-        "description": "(Client) Function: SetCameraRotation(pitch,yaw,roll ,bWorldSpace (optional))"
+    "Client.GetPlayerPropertyValue": {
+        "prefix": "GetPlayerPropertyValue",
+        "body": "GetPlayerPropertyValue( ${2:PropertyName} )$0\r\n",
+        "description": "(Client) Function: GetPlayerPropertyValue(player,PropertyName)"
     },
     "Client.SetPlayerRotationRate": {
         "prefix": "SetPlayerRotationRate",
@@ -219,6 +194,11 @@
         "body": "GetPlayerBoneNames()$0\r\n",
         "description": "(Client) Function: GetPlayerBoneNames()"
     },
+    "Client.GetPlayerSkeletalMeshComponent": {
+        "prefix": "GetPlayerSkeletalMeshComponent",
+        "body": "GetPlayerSkeletalMeshComponent( ${2:ComponentName} )$0\r\n",
+        "description": "(Client) Function: GetPlayerSkeletalMeshComponent(player,ComponentName)"
+    },
     "Client.LineTrace": {
         "prefix": "LineTrace",
         "body": "LineTrace( ${1:sX}, ${2:sY}, ${3:sZ}, ${4:eX}, ${5:eY}, ${6:eZ }, ${7:complex (optional)} )$0\r\n",
@@ -248,6 +228,126 @@
         "prefix": "IsFirstPersonCamera",
         "body": "IsFirstPersonCamera()$0\r\n",
         "description": "(Client) Function: IsFirstPersonCamera()"
+    },
+    "Client.ConnectToServer": {
+        "prefix": "ConnectToServer",
+        "body": "ConnectToServer( ${1:Address}, ${2:Port}, ${3:Password (optional)} )$0\r\n",
+        "description": "(Client) Function: ConnectToServer(Address,Port,Password (optional))"
+    },
+    "Client.SetControllerOrientedMovement": {
+        "prefix": "SetControllerOrientedMovement",
+        "body": "SetControllerOrientedMovement( ${1:bStatus} )$0\r\n",
+        "description": "(Client) Function: SetControllerOrientedMovement(bStatus)"
+    },
+    "Client.IsValidPlayer": {
+        "prefix": "IsValidPlayer",
+        "body": "IsValidPlayer()$0\r\n",
+        "description": "(Client) Function: IsValidPlayer(player)"
+    },
+    "Client.GetPlayerName": {
+        "prefix": "GetPlayerName",
+        "body": "GetPlayerName()$0\r\n",
+        "description": "(Client) Function: GetPlayerName(player)"
+    },
+    "Client.GetStreamedPlayers": {
+        "prefix": "GetStreamedPlayers",
+        "body": "GetStreamedPlayers()$0\r\n",
+        "description": "(Client) Function: GetStreamedPlayers()"
+    },
+    "Client.GetPlayerLocation": {
+        "prefix": "GetPlayerLocation",
+        "body": "GetPlayerLocation()$0\r\n",
+        "description": "(Client) Function: GetPlayerLocation(player)"
+    },
+    "Client.GetPlayerHeading": {
+        "prefix": "GetPlayerHeading",
+        "body": "GetPlayerHeading()$0\r\n",
+        "description": "(Client) Function: GetPlayerHeading(player)"
+    },
+    "Client.IsPlayerTalking": {
+        "prefix": "IsPlayerTalking",
+        "body": "IsPlayerTalking()$0\r\n",
+        "description": "(Client) Function: IsPlayerTalking(player)"
+    },
+    "Client.GetPlayerHealth": {
+        "prefix": "GetPlayerHealth",
+        "body": "GetPlayerHealth()$0\r\n",
+        "description": "(Client) Function: GetPlayerHealth(player)"
+    },
+    "Client.GetPlayerArmor": {
+        "prefix": "GetPlayerArmor",
+        "body": "GetPlayerArmor()$0\r\n",
+        "description": "(Client) Function: GetPlayerArmor(player)"
+    },
+    "Client.GetPlayerMovementMode": {
+        "prefix": "GetPlayerMovementMode",
+        "body": "GetPlayerMovementMode()$0\r\n",
+        "description": "(Client) Function: GetPlayerMovementMode(player)"
+    },
+    "Client.GetPlayerMovementSpeed": {
+        "prefix": "GetPlayerMovementSpeed",
+        "body": "GetPlayerMovementSpeed()$0\r\n",
+        "description": "(Client) Function: GetPlayerMovementSpeed(player)"
+    },
+    "Client.IsPlayerAiming": {
+        "prefix": "IsPlayerAiming",
+        "body": "IsPlayerAiming()$0\r\n",
+        "description": "(Client) Function: IsPlayerAiming(player)"
+    },
+    "Client.IsPlayerReloading": {
+        "prefix": "IsPlayerReloading",
+        "body": "IsPlayerReloading()$0\r\n",
+        "description": "(Client) Function: IsPlayerReloading(player)"
+    },
+    "Client.IsPlayerDead": {
+        "prefix": "IsPlayerDead",
+        "body": "IsPlayerDead()$0\r\n",
+        "description": "(Client) Function: IsPlayerDead(player)"
+    },
+    "Client.GetPlayerBoneLocation": {
+        "prefix": "GetPlayerBoneLocation",
+        "body": "GetPlayerBoneLocation( ${2:BoneName }, ${3:BoneSpace (optional)} )$0\r\n",
+        "description": "(Client) Function: GetPlayerBoneLocation(player,BoneName ,BoneSpace (optional))"
+    },
+    "Client.SetPlayerOutline": {
+        "prefix": "SetPlayerOutline",
+        "body": "SetPlayerOutline( ${1:player }, ${2:bEnable (optional)} )$0\r\n",
+        "description": "(Client) Function: SetPlayerOutline(player ,bEnable (optional))"
+    },
+    "Client.SetPlayerClothingPreset": {
+        "prefix": "SetPlayerClothingPreset",
+        "body": "SetPlayerClothingPreset( ${2:clothing_preset} )$0\r\n",
+        "description": "(Client) Function: SetPlayerClothingPreset(player,clothing_preset)"
+    },
+    "Client.GetPlayerVehicle": {
+        "prefix": "GetPlayerVehicle",
+        "body": "GetPlayerVehicle()$0\r\n",
+        "description": "(Client) Function: GetPlayerVehicle(player)"
+    },
+    "Client.IsPlayerInVehicle": {
+        "prefix": "IsPlayerInVehicle",
+        "body": "IsPlayerInVehicle( ${1:player (optional)} )$0\r\n",
+        "description": "(Client) Function: IsPlayerInVehicle(player (optional))"
+    },
+    "Client.GetPlayerEquippedWeaponSlot": {
+        "prefix": "GetPlayerEquippedWeaponSlot",
+        "body": "GetPlayerEquippedWeaponSlot()$0\r\n",
+        "description": "(Client) Function: GetPlayerEquippedWeaponSlot(player)"
+    },
+    "Client.GetPlayerForwardVector": {
+        "prefix": "GetPlayerForwardVector",
+        "body": "GetPlayerForwardVector()$0\r\n",
+        "description": "(Client) Function: GetPlayerForwardVector(player)"
+    },
+    "Client.GetPlayerRightVector": {
+        "prefix": "GetPlayerRightVector",
+        "body": "GetPlayerRightVector()$0\r\n",
+        "description": "(Client) Function: GetPlayerRightVector(player)"
+    },
+    "Client.GetPlayerUpVector": {
+        "prefix": "GetPlayerUpVector",
+        "body": "GetPlayerUpVector()$0\r\n",
+        "description": "(Client) Function: GetPlayerUpVector(player)"
     },
     "Client.StartCameraFade": {
         "prefix": "StartCameraFade",
@@ -289,10 +389,20 @@
         "body": "GetScreenSize()$0\r\n",
         "description": "(Client) Function: GetScreenSize()"
     },
+    "Client.SetCameraLocation": {
+        "prefix": "SetCameraLocation",
+        "body": "SetCameraLocation( ${1:x}, ${2:y}, ${3:z}, ${4:bWorldSpace (optional)} )$0\r\n",
+        "description": "(Client) Function: SetCameraLocation(x,y,z,bWorldSpace (optional))"
+    },
     "Client.GetCameraLocation": {
         "prefix": "GetCameraLocation",
         "body": "GetCameraLocation( ${1:bSpectateCamera (optional)} )$0\r\n",
         "description": "(Client) Function: GetCameraLocation(bSpectateCamera (optional))"
+    },
+    "Client.SetCameraRotation": {
+        "prefix": "SetCameraRotation",
+        "body": "SetCameraRotation( ${1:pitch}, ${2:yaw}, ${3:roll }, ${4:bWorldSpace (optional)} )$0\r\n",
+        "description": "(Client) Function: SetCameraRotation(pitch,yaw,roll ,bWorldSpace (optional))"
     },
     "Client.GetCameraRotation": {
         "prefix": "GetCameraRotation",
@@ -319,10 +429,35 @@
         "body": "GetInputAxisValue( ${1:AxisName} )$0\r\n",
         "description": "(Client) Function: GetInputAxisValue(AxisName)"
     },
-    "Client.SetWaypoint": {
-        "prefix": "SetWaypoint",
-        "body": "SetWaypoint( ${1:slot}, ${2:name}, ${3:x}, ${4:y}, ${5:z} )$0\r\n",
-        "description": "(Client) Function: SetWaypoint(slot,name,x,y,z)"
+    "Client.GetPlayerFOV": {
+        "prefix": "GetPlayerFOV",
+        "body": "GetPlayerFOV()$0\r\n",
+        "description": "(Client) Function: GetPlayerFOV()"
+    },
+    "Client.SetPlayerFOV": {
+        "prefix": "SetPlayerFOV",
+        "body": "SetPlayerFOV( ${1:fov} )$0\r\n",
+        "description": "(Client) Function: SetPlayerFOV(fov)"
+    },
+    "Client.SetCameraViewDistance": {
+        "prefix": "SetCameraViewDistance",
+        "body": "SetCameraViewDistance( ${1:distance} )$0\r\n",
+        "description": "(Client) Function: SetCameraViewDistance(distance)"
+    },
+    "Client.GetCameraViewDistance": {
+        "prefix": "GetCameraViewDistance",
+        "body": "GetCameraViewDistance()$0\r\n",
+        "description": "(Client) Function: GetCameraViewDistance()"
+    },
+    "Client.CreateWaypoint": {
+        "prefix": "CreateWaypoint",
+        "body": "CreateWaypoint( ${1:x}, ${2:y}, ${3:z}, ${4:text} )$0\r\n",
+        "description": "(Client) Function: CreateWaypoint(x,y,z,text)"
+    },
+    "Client.DestroyWaypoint": {
+        "prefix": "DestroyWaypoint",
+        "body": "DestroyWaypoint( ${1:waypointId} )$0\r\n",
+        "description": "(Client) Function: DestroyWaypoint(waypointId)"
     },
     "Client.CreateFireworks": {
         "prefix": "CreateFireworks",
@@ -334,10 +469,25 @@
         "body": "GetPackageName()$0\r\n",
         "description": "(Client) Function: GetPackageName()"
     },
+    "Client.ImportPackage": {
+        "prefix": "ImportPackage",
+        "body": "ImportPackage( ${1:PackageName} )$0\r\n",
+        "description": "(Client) Function: ImportPackage(PackageName)"
+    },
+    "Client.AddFunctionExport": {
+        "prefix": "AddFunctionExport",
+        "body": "AddFunctionExport( ${1:ExportName}, ${2:ExportFunction} )$0\r\n",
+        "description": "(Client) Function: AddFunctionExport(ExportName,ExportFunction)"
+    },
     "Client.AddPlayerChat": {
         "prefix": "AddPlayerChat",
         "body": "AddPlayerChat( ${2:message} )$0\r\n",
         "description": "(Client) Function: AddPlayerChat(player,message)"
+    },
+    "Client.IsChatFocus": {
+        "prefix": "IsChatFocus",
+        "body": "IsChatFocus()$0\r\n",
+        "description": "(Client) Function: IsChatFocus()"
     },
     "Client.ShowChat": {
         "prefix": "ShowChat",
@@ -431,8 +581,8 @@
     },
     "Client.DrawTexture": {
         "prefix": "DrawTexture",
-        "body": "DrawTexture()$0\r\n",
-        "description": "(Client) Function: DrawTexture()"
+        "body": "DrawTexture( ${1:TextureReference} )$0\r\n",
+        "description": "(Client) Function: DrawTexture(TextureReference)"
     },
     "Client.DrawTextureEx": {
         "prefix": "DrawTextureEx",
@@ -474,11 +624,6 @@
         "body": "SetTextBoxText( ${1:textid}, ${2:text} )$0\r\n",
         "description": "(Client) Function: SetTextBoxText(textid,text)"
     },
-    "Client.IsChatFocus": {
-        "prefix": "IsChatFocus",
-        "body": "IsChatFocus()$0\r\n",
-        "description": "(Client) Function: IsChatFocus()"
-    },
     "Client.SetOceanWaterLevel": {
         "prefix": "SetOceanWaterLevel",
         "body": "SetOceanWaterLevel( ${1:Level}, ${2:bIncludeSwimmingVolume (optional)} )$0\r\n",
@@ -498,6 +643,16 @@
         "prefix": "ShowMouseCursor",
         "body": "ShowMouseCursor( ${1:bShow} )$0\r\n",
         "description": "(Client) Function: ShowMouseCursor(bShow)"
+    },
+    "Client.GetMouseHitLocation": {
+        "prefix": "GetMouseHitLocation",
+        "body": "GetMouseHitLocation()$0\r\n",
+        "description": "(Client) Function: GetMouseHitLocation()"
+    },
+    "Client.GetMouseHitEntity": {
+        "prefix": "GetMouseHitEntity",
+        "body": "GetMouseHitEntity()$0\r\n",
+        "description": "(Client) Function: GetMouseHitEntity()"
     },
     "Client.SetInputMode": {
         "prefix": "SetInputMode",
@@ -609,6 +764,16 @@
         "body": "GetNetworkStats()$0\r\n",
         "description": "(Client) Function: GetNetworkStats()"
     },
+    "Client.SetNPCPropertyValue": {
+        "prefix": "SetNPCPropertyValue",
+        "body": "SetNPCPropertyValue( ${1:npc}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)} )$0\r\n",
+        "description": "(Client) Function: SetNPCPropertyValue(npc,PropertyName,Value,bSync (optional))"
+    },
+    "Client.GetNPCPropertyValue": {
+        "prefix": "GetNPCPropertyValue",
+        "body": "GetNPCPropertyValue( ${1:npc}, ${2:PropertyName} )$0\r\n",
+        "description": "(Client) Function: GetNPCPropertyValue(npc,PropertyName)"
+    },
     "Client.GetNPCCount": {
         "prefix": "GetNPCCount",
         "body": "GetNPCCount()$0\r\n",
@@ -624,10 +789,25 @@
         "body": "GetNPCLocation( ${1:npc} )$0\r\n",
         "description": "(Client) Function: GetNPCLocation(npc)"
     },
+    "Client.GetNPCSkeletalMeshComponent": {
+        "prefix": "GetNPCSkeletalMeshComponent",
+        "body": "GetNPCSkeletalMeshComponent( ${1:npc}, ${2:ComponentName} )$0\r\n",
+        "description": "(Client) Function: GetNPCSkeletalMeshComponent(npc,ComponentName)"
+    },
     "Client.SetNPCOutline": {
         "prefix": "SetNPCOutline",
         "body": "SetNPCOutline( ${1:npc }, ${2:bEnable (optional)} )$0\r\n",
         "description": "(Client) Function: SetNPCOutline(npc ,bEnable (optional))"
+    },
+    "Client.SetObjectPropertyValue": {
+        "prefix": "SetObjectPropertyValue",
+        "body": "SetObjectPropertyValue( ${1:object}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)} )$0\r\n",
+        "description": "(Client) Function: SetObjectPropertyValue(object,PropertyName,Value,bSync (optional))"
+    },
+    "Client.GetObjectPropertyValue": {
+        "prefix": "GetObjectPropertyValue",
+        "body": "GetObjectPropertyValue( ${1:object}, ${2:PropertyName} )$0\r\n",
+        "description": "(Client) Function: GetObjectPropertyValue(object,PropertyName)"
     },
     "Client.GetObjectCount": {
         "prefix": "GetObjectCount",
@@ -694,6 +874,11 @@
         "body": "GetObjectMass( ${1:object} )$0\r\n",
         "description": "(Client) Function: GetObjectMass(object)"
     },
+    "Client.GetObjectStaticMeshComponent": {
+        "prefix": "GetObjectStaticMeshComponent",
+        "body": "GetObjectStaticMeshComponent( ${1:object} )$0\r\n",
+        "description": "(Client) Function: GetObjectStaticMeshComponent(object)"
+    },
     "Client.SetObjectEditorSpeed": {
         "prefix": "SetObjectEditorSpeed",
         "body": "SetObjectEditorSpeed( ${1:speed} )$0\r\n",
@@ -734,16 +919,6 @@
         "body": "SetObjectAnimatedTexture( ${1:object}, ${2:TextureFile}, ${3:Rows}, ${4:Columns}, ${5:MaterialSlot (optional)} )$0\r\n",
         "description": "(Client) Function: SetObjectAnimatedTexture(object,TextureFile,Rows,Columns,MaterialSlot (optional))"
     },
-    "Client.ImportPackage": {
-        "prefix": "ImportPackage",
-        "body": "ImportPackage( ${1:PackageName} )$0\r\n",
-        "description": "(Client) Function: ImportPackage(PackageName)"
-    },
-    "Client.AddFunctionExport": {
-        "prefix": "AddFunctionExport",
-        "body": "AddFunctionExport( ${1:ExportName}, ${2:ExportFunction} )$0\r\n",
-        "description": "(Client) Function: AddFunctionExport(ExportName,ExportFunction)"
-    },
     "Client.AddEvent": {
         "prefix": "AddEvent",
         "body": "AddEvent( ${1:EventName}, ${2:LuaFunction } )$0\r\n",
@@ -764,6 +939,16 @@
         "body": "CallRemoteEvent( ${2:EventName}, ${3:UserArgs (optional)} )$0\r\n",
         "description": "(Client) Function: CallRemoteEvent(player,EventName,UserArgs (optional))"
     },
+    "Client.SetPickupPropertyValue": {
+        "prefix": "SetPickupPropertyValue",
+        "body": "SetPickupPropertyValue( ${1:pickup}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)} )$0\r\n",
+        "description": "(Client) Function: SetPickupPropertyValue(pickup,PropertyName,Value,bSync (optional))"
+    },
+    "Client.GetPickupPropertyValue": {
+        "prefix": "GetPickupPropertyValue",
+        "body": "GetPickupPropertyValue( ${1:pickup}, ${2:PropertyName} )$0\r\n",
+        "description": "(Client) Function: GetPickupPropertyValue(pickup,PropertyName)"
+    },
     "Client.GetPickupCount": {
         "prefix": "GetPickupCount",
         "body": "GetPickupCount()$0\r\n",
@@ -783,96 +968,6 @@
         "prefix": "GetPlayerCount",
         "body": "GetPlayerCount()$0\r\n",
         "description": "(Client) Function: GetPlayerCount()"
-    },
-    "Client.IsValidPlayer": {
-        "prefix": "IsValidPlayer",
-        "body": "IsValidPlayer()$0\r\n",
-        "description": "(Client) Function: IsValidPlayer(player)"
-    },
-    "Client.GetStreamedPlayers": {
-        "prefix": "GetStreamedPlayers",
-        "body": "GetStreamedPlayers()$0\r\n",
-        "description": "(Client) Function: GetStreamedPlayers()"
-    },
-    "Client.GetPlayerLocation": {
-        "prefix": "GetPlayerLocation",
-        "body": "GetPlayerLocation()$0\r\n",
-        "description": "(Client) Function: GetPlayerLocation(player)"
-    },
-    "Client.GetPlayerHeading": {
-        "prefix": "GetPlayerHeading",
-        "body": "GetPlayerHeading()$0\r\n",
-        "description": "(Client) Function: GetPlayerHeading(player)"
-    },
-    "Client.IsPlayerTalking": {
-        "prefix": "IsPlayerTalking",
-        "body": "IsPlayerTalking()$0\r\n",
-        "description": "(Client) Function: IsPlayerTalking(player)"
-    },
-    "Client.GetPlayerHealth": {
-        "prefix": "GetPlayerHealth",
-        "body": "GetPlayerHealth()$0\r\n",
-        "description": "(Client) Function: GetPlayerHealth(player)"
-    },
-    "Client.GetPlayerArmor": {
-        "prefix": "GetPlayerArmor",
-        "body": "GetPlayerArmor()$0\r\n",
-        "description": "(Client) Function: GetPlayerArmor(player)"
-    },
-    "Client.GetPlayerMovementMode": {
-        "prefix": "GetPlayerMovementMode",
-        "body": "GetPlayerMovementMode()$0\r\n",
-        "description": "(Client) Function: GetPlayerMovementMode(player)"
-    },
-    "Client.GetPlayerMovementSpeed": {
-        "prefix": "GetPlayerMovementSpeed",
-        "body": "GetPlayerMovementSpeed()$0\r\n",
-        "description": "(Client) Function: GetPlayerMovementSpeed(player)"
-    },
-    "Client.IsPlayerAiming": {
-        "prefix": "IsPlayerAiming",
-        "body": "IsPlayerAiming()$0\r\n",
-        "description": "(Client) Function: IsPlayerAiming(player)"
-    },
-    "Client.IsPlayerReloading": {
-        "prefix": "IsPlayerReloading",
-        "body": "IsPlayerReloading()$0\r\n",
-        "description": "(Client) Function: IsPlayerReloading(player)"
-    },
-    "Client.IsPlayerDead": {
-        "prefix": "IsPlayerDead",
-        "body": "IsPlayerDead()$0\r\n",
-        "description": "(Client) Function: IsPlayerDead(player)"
-    },
-    "Client.GetPlayerBoneLocation": {
-        "prefix": "GetPlayerBoneLocation",
-        "body": "GetPlayerBoneLocation( ${2:BoneName }, ${3:BoneSpace (optional)} )$0\r\n",
-        "description": "(Client) Function: GetPlayerBoneLocation(player,BoneName ,BoneSpace (optional))"
-    },
-    "Client.SetPlayerOutline": {
-        "prefix": "SetPlayerOutline",
-        "body": "SetPlayerOutline( ${1:player }, ${2:bEnable (optional)} )$0\r\n",
-        "description": "(Client) Function: SetPlayerOutline(player ,bEnable (optional))"
-    },
-    "Client.IsPlayerInVehicle": {
-        "prefix": "IsPlayerInVehicle",
-        "body": "IsPlayerInVehicle( ${1:player (optional)} )$0\r\n",
-        "description": "(Client) Function: IsPlayerInVehicle(player (optional))"
-    },
-    "Client.GetPlayerForwardVector": {
-        "prefix": "GetPlayerForwardVector",
-        "body": "GetPlayerForwardVector()$0\r\n",
-        "description": "(Client) Function: GetPlayerForwardVector(player)"
-    },
-    "Client.GetPlayerRightVector": {
-        "prefix": "GetPlayerRightVector",
-        "body": "GetPlayerRightVector()$0\r\n",
-        "description": "(Client) Function: GetPlayerRightVector(player)"
-    },
-    "Client.GetPlayerUpVector": {
-        "prefix": "GetPlayerUpVector",
-        "body": "GetPlayerUpVector()$0\r\n",
-        "description": "(Client) Function: GetPlayerUpVector(player)"
     },
     "Client.IsValidDoor": {
         "prefix": "IsValidDoor",
@@ -964,6 +1059,16 @@
         "body": "SetSoundFadeOut( ${1:sound}, ${2:Duration}, ${3:VolumeLevel} )$0\r\n",
         "description": "(Client) Function: SetSoundFadeOut(sound,Duration,VolumeLevel)"
     },
+    "Client.SetText3DPropertyValue": {
+        "prefix": "SetText3DPropertyValue",
+        "body": "SetText3DPropertyValue( ${1:text3d}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)} )$0\r\n",
+        "description": "(Client) Function: SetText3DPropertyValue(text3d,PropertyName,Value,bSync (optional))"
+    },
+    "Client.GetText3DPropertyValue": {
+        "prefix": "GetText3DPropertyValue",
+        "body": "GetText3DPropertyValue( ${1:text3d}, ${2:PropertyName} )$0\r\n",
+        "description": "(Client) Function: GetText3DPropertyValue(text3d,PropertyName)"
+    },
     "Client.GetText3DCount": {
         "prefix": "GetText3DCount",
         "body": "GetText3DCount()$0\r\n",
@@ -978,6 +1083,11 @@
         "prefix": "GetText3DLocation",
         "body": "GetText3DLocation( ${1:text3d} )$0\r\n",
         "description": "(Client) Function: GetText3DLocation(text3d)"
+    },
+    "Client.Delay": {
+        "prefix": "Delay",
+        "body": "Delay( ${1:Milliseconds}, ${2:LuaFunction}, ${3:UserArgs (optional) (optional)} )$0\r\n",
+        "description": "(Client) Function: Delay(Milliseconds,LuaFunction,UserArgs (optional) (optional))"
     },
     "Client.GetTimerCount": {
         "prefix": "GetTimerCount",
@@ -1023,6 +1133,16 @@
         "prefix": "GetTimerRemainingTime",
         "body": "GetTimerRemainingTime( ${1:timer} )$0\r\n",
         "description": "(Client) Function: GetTimerRemainingTime(timer)"
+    },
+    "Client.SetVehiclePropertyValue": {
+        "prefix": "SetVehiclePropertyValue",
+        "body": "SetVehiclePropertyValue( ${1:vehicle}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)} )$0\r\n",
+        "description": "(Client) Function: SetVehiclePropertyValue(vehicle,PropertyName,Value,bSync (optional))"
+    },
+    "Client.GetVehiclePropertyValue": {
+        "prefix": "GetVehiclePropertyValue",
+        "body": "GetVehiclePropertyValue( ${1:vehicle}, ${2:PropertyName} )$0\r\n",
+        "description": "(Client) Function: GetVehiclePropertyValue(vehicle,PropertyName)"
     },
     "Client.GetVehicleCount": {
         "prefix": "GetVehicleCount",
@@ -1289,119 +1409,9 @@
         "body": "SetIgnoreLookInput( ${1:bIgnore} )$0\r\n",
         "description": "(Client) Function: SetIgnoreLookInput(bIgnore)"
     },
-    "Client.SetPlayerPropertyValue": {
-        "prefix": "SetPlayerPropertyValue",
-        "body": "SetPlayerPropertyValue( ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)} )$0\r\n",
-        "description": "(Client) Function: SetPlayerPropertyValue(player,PropertyName,Value,bSync (optional))"
-    },
-    "Client.GetPlayerPropertyValue": {
-        "prefix": "GetPlayerPropertyValue",
-        "body": "GetPlayerPropertyValue( ${2:PropertyName} )$0\r\n",
-        "description": "(Client) Function: GetPlayerPropertyValue(player,PropertyName)"
-    },
-    "Client.SetVehiclePropertyValue": {
-        "prefix": "SetVehiclePropertyValue",
-        "body": "SetVehiclePropertyValue( ${1:vehicle}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)} )$0\r\n",
-        "description": "(Client) Function: SetVehiclePropertyValue(vehicle,PropertyName,Value,bSync (optional))"
-    },
-    "Client.GetVehiclePropertyValue": {
-        "prefix": "GetVehiclePropertyValue",
-        "body": "GetVehiclePropertyValue( ${1:vehicle}, ${2:PropertyName} )$0\r\n",
-        "description": "(Client) Function: GetVehiclePropertyValue(vehicle,PropertyName)"
-    },
-    "Client.SetObjectPropertyValue": {
-        "prefix": "SetObjectPropertyValue",
-        "body": "SetObjectPropertyValue( ${1:object}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)} )$0\r\n",
-        "description": "(Client) Function: SetObjectPropertyValue(object,PropertyName,Value,bSync (optional))"
-    },
-    "Client.GetObjectPropertyValue": {
-        "prefix": "GetObjectPropertyValue",
-        "body": "GetObjectPropertyValue( ${1:object}, ${2:PropertyName} )$0\r\n",
-        "description": "(Client) Function: GetObjectPropertyValue(object,PropertyName)"
-    },
-    "Client.SetNPCPropertyValue": {
-        "prefix": "SetNPCPropertyValue",
-        "body": "SetNPCPropertyValue( ${1:npc}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)} )$0\r\n",
-        "description": "(Client) Function: SetNPCPropertyValue(npc,PropertyName,Value,bSync (optional))"
-    },
-    "Client.GetNPCPropertyValue": {
-        "prefix": "GetNPCPropertyValue",
-        "body": "GetNPCPropertyValue( ${1:npc}, ${2:PropertyName} )$0\r\n",
-        "description": "(Client) Function: GetNPCPropertyValue(npc,PropertyName)"
-    },
-    "Client.SetText3DPropertyValue": {
-        "prefix": "SetText3DPropertyValue",
-        "body": "SetText3DPropertyValue( ${1:text3d}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)} )$0\r\n",
-        "description": "(Client) Function: SetText3DPropertyValue(text3d,PropertyName,Value,bSync (optional))"
-    },
-    "Client.GetText3DPropertyValue": {
-        "prefix": "GetText3DPropertyValue",
-        "body": "GetText3DPropertyValue( ${1:text3d}, ${2:PropertyName} )$0\r\n",
-        "description": "(Client) Function: GetText3DPropertyValue(text3d,PropertyName)"
-    },
-    "Client.SetPickupPropertyValue": {
-        "prefix": "SetPickupPropertyValue",
-        "body": "SetPickupPropertyValue( ${1:pickup}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)} )$0\r\n",
-        "description": "(Client) Function: SetPickupPropertyValue(pickup,PropertyName,Value,bSync (optional))"
-    },
-    "Client.GetPickupPropertyValue": {
-        "prefix": "GetPickupPropertyValue",
-        "body": "GetPickupPropertyValue( ${1:pickup}, ${2:PropertyName} )$0\r\n",
-        "description": "(Client) Function: GetPickupPropertyValue(pickup,PropertyName)"
-    },
     "Client.SetControlRotation": {
         "prefix": "SetControlRotation",
         "body": "SetControlRotation( ${1:pitch}, ${2:yaw}, ${3:roll} )$0\r\n",
         "description": "(Client) Function: SetControlRotation(pitch,yaw,roll)"
-    },
-    "Client.Delay": {
-        "prefix": "Delay",
-        "body": "Delay( ${1:Milliseconds}, ${2:LuaFunction}, ${3:UserArgs (optional) (optional)} )$0\r\n",
-        "description": "(Client) Function: Delay(Milliseconds,LuaFunction,UserArgs (optional) (optional))"
-    },
-    "Client.ConnectToServer": {
-        "prefix": "ConnectToServer",
-        "body": "ConnectToServer( ${1:Address}, ${2:Port}, ${3:Password (optional)} )$0\r\n",
-        "description": "(Client) Function: ConnectToServer(Address,Port,Password (optional))"
-    },
-    "Client.SetControllerOrientedMovement": {
-        "prefix": "SetControllerOrientedMovement",
-        "body": "SetControllerOrientedMovement( ${1:bStatus} )$0\r\n",
-        "description": "(Client) Function: SetControllerOrientedMovement(bStatus)"
-    },
-    "Client.HexToRGBAFloat": {
-        "prefix": "HexToRGBAFloat",
-        "body": "HexToRGBAFloat( ${1:HexColor} )$0\r\n",
-        "description": "(Client) Function: HexToRGBAFloat(HexColor)"
-    },
-    "Client.GetObjectStaticMeshComponent": {
-        "prefix": "GetObjectStaticMeshComponent",
-        "body": "GetObjectStaticMeshComponent( ${1:object} )$0\r\n",
-        "description": "(Client) Function: GetObjectStaticMeshComponent(object)"
-    },
-    "Client.GetNPCSkeletalMeshComponent": {
-        "prefix": "GetNPCSkeletalMeshComponent",
-        "body": "GetNPCSkeletalMeshComponent( ${1:npc} )$0\r\n",
-        "description": "(Client) Function: GetNPCSkeletalMeshComponent(npc)"
-    },
-    "Client.GetPickupStaticMeshComponent": {
-        "prefix": "GetPickupStaticMeshComponent",
-        "body": "GetPickupStaticMeshComponent( ${1:pickup} )$0\r\n",
-        "description": "(Client) Function: GetPickupStaticMeshComponent(pickup)"
-    },
-    "Client.SetPlayerClothingPreset": {
-        "prefix": "SetPlayerClothingPreset",
-        "body": "SetPlayerClothingPreset( ${1:} )$0\r\n",
-        "description": "(Client) Function: SetPlayerClothingPreset()"
-    },
-    "Client.SetNPCClothingPreset": {
-        "prefix": "SetNPCClothingPreset",
-        "body": "SetNPCClothingPreset( ${1:} )$0\r\n",
-        "description": "(Client) Function: SetNPCClothingPreset()"
-    },
-    "Client.DrawMaterial": {
-        "prefix": "DrawMaterial",
-        "body": "DrawMaterial( ${1:} )$0\r\n",
-        "description": "(Client) Function: DrawMaterial()"
     }
 }

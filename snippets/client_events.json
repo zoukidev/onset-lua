@@ -19,11 +19,6 @@
         "body": "AddEvent(\"OnSteamOverlayActivated\", function( ${1:bActive} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnSteamOverlayActivated(bActive)"
     },
-    "Client.OnPlayerSwitchCamera": {
-        "prefix": "OnPlayerSwitchCamera",
-        "body": "AddEvent(\"OnPlayerSwitchCamera\", function( ${1:bIsFirstPerson} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerSwitchCamera(bIsFirstPerson)"
-    },
     "Client.OnResolutionChange": {
         "prefix": "OnResolutionChange",
         "body": "AddEvent(\"OnResolutionChange\", function( ${1:width}, ${2:height} )\r\n\t\r\nend)$0\r\n",
@@ -38,6 +33,56 @@
         "prefix": "OnRenderHUD",
         "body": "AddEvent(\"OnRenderHUD\", function()\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnRenderHUD()"
+    },
+    "Client.OnPlayerStartEnterVehicle": {
+        "prefix": "OnPlayerStartEnterVehicle",
+        "body": "AddEvent(\"OnPlayerStartEnterVehicle\", function( ${1:vehicle}, ${2:seat} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerStartEnterVehicle(vehicle,seat)"
+    },
+    "Client.OnPlayerStartExitVehicle": {
+        "prefix": "OnPlayerStartExitVehicle",
+        "body": "AddEvent(\"OnPlayerStartExitVehicle\", function( ${1:vehicle} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerStartExitVehicle(vehicle)"
+    },
+    "Client.OnPlayerEnterVehicle": {
+        "prefix": "OnPlayerEnterVehicle",
+        "body": "AddEvent(\"OnPlayerEnterVehicle\", function( ${1:player}, ${2:vehicle}, ${3:seat} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerEnterVehicle(player,vehicle,seat)"
+    },
+    "Client.OnPlayerLeaveVehicle": {
+        "prefix": "OnPlayerLeaveVehicle",
+        "body": "AddEvent(\"OnPlayerLeaveVehicle\", function( ${1:player}, ${2:vehicle}, ${3:seat} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerLeaveVehicle(player,vehicle,seat)"
+    },
+    "Client.OnPlayerStreamIn": {
+        "prefix": "OnPlayerStreamIn",
+        "body": "AddEvent(\"OnPlayerStreamIn\", function( ${1:player}, ${2:otherplayer} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerStreamIn(player,otherplayer)"
+    },
+    "Client.OnPlayerStreamOut": {
+        "prefix": "OnPlayerStreamOut",
+        "body": "AddEvent(\"OnPlayerStreamOut\", function( ${1:player}, ${2:otherplayer} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerStreamOut(player,otherplayer)"
+    },
+    "Client.OnPlayerSwitchCamera": {
+        "prefix": "OnPlayerSwitchCamera",
+        "body": "AddEvent(\"OnPlayerSwitchCamera\", function( ${1:bIsFirstPerson} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerSwitchCamera(bIsFirstPerson)"
+    },
+    "Client.OnPlayerEnterWater": {
+        "prefix": "OnPlayerEnterWater",
+        "body": "AddEvent(\"OnPlayerEnterWater\", function()\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerEnterWater()"
+    },
+    "Client.OnPlayerLeaveWater": {
+        "prefix": "OnPlayerLeaveWater",
+        "body": "AddEvent(\"OnPlayerLeaveWater\", function()\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerLeaveWater()"
+    },
+    "Client.OnPlayerDeath": {
+        "prefix": "OnPlayerDeath",
+        "body": "AddEvent(\"OnPlayerDeath\", function( ${1:player}, ${2:instigator} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerDeath(player,instigator)"
     },
     "Client.OnPlayerChatCommand": {
         "prefix": "OnPlayerChatCommand",
@@ -73,41 +118,6 @@
         "prefix": "OnPlayerFall",
         "body": "AddEvent(\"OnPlayerFall\", function()\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnPlayerFall()"
-    },
-    "Client.OnPlayerStartEnterVehicle": {
-        "prefix": "OnPlayerStartEnterVehicle",
-        "body": "AddEvent(\"OnPlayerStartEnterVehicle\", function( ${1:vehicle}, ${2:seat} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerStartEnterVehicle(vehicle,seat)"
-    },
-    "Client.OnPlayerStartExitVehicle": {
-        "prefix": "OnPlayerStartExitVehicle",
-        "body": "AddEvent(\"OnPlayerStartExitVehicle\", function( ${1:vehicle} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerStartExitVehicle(vehicle)"
-    },
-    "Client.OnPlayerEnterVehicle": {
-        "prefix": "OnPlayerEnterVehicle",
-        "body": "AddEvent(\"OnPlayerEnterVehicle\", function( ${1:player}, ${2:vehicle}, ${3:seat} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerEnterVehicle(player,vehicle,seat)"
-    },
-    "Client.OnPlayerLeaveVehicle": {
-        "prefix": "OnPlayerLeaveVehicle",
-        "body": "AddEvent(\"OnPlayerLeaveVehicle\", function( ${1:player}, ${2:vehicle}, ${3:seat} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerLeaveVehicle(player,vehicle,seat)"
-    },
-    "Client.OnPlayerEnterWater": {
-        "prefix": "OnPlayerEnterWater",
-        "body": "AddEvent(\"OnPlayerEnterWater\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerEnterWater()"
-    },
-    "Client.OnPlayerLeaveWater": {
-        "prefix": "OnPlayerLeaveWater",
-        "body": "AddEvent(\"OnPlayerLeaveWater\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerLeaveWater()"
-    },
-    "Client.OnPlayerDeath": {
-        "prefix": "OnPlayerDeath",
-        "body": "AddEvent(\"OnPlayerDeath\", function( ${1:player}, ${2:instigator} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerDeath(player,instigator)"
     },
     "Client.OnPlayerWeaponShot": {
         "prefix": "OnPlayerWeaponShot",
@@ -149,21 +159,6 @@
         "body": "AddEvent(\"OnPlayerParachuteClose\", function()\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnPlayerParachuteClose()"
     },
-    "Client.OnObjectHit": {
-        "prefix": "OnObjectHit",
-        "body": "AddEvent(\"OnObjectHit\", function( ${1:object}, ${2:hittype}, ${3:hitid}, ${4:hitX}, ${5:hitY}, ${6:hitZ}, ${7:normalX}, ${8:normalY}, ${9:normalZ} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnObjectHit(object,hittype,hitid,hitX,hitY,hitZ,normalX,normalY,normalZ)"
-    },
-    "Client.OnPlayerEndEditObject": {
-        "prefix": "OnPlayerEndEditObject",
-        "body": "AddEvent(\"OnPlayerEndEditObject\", function( ${1:object} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerEndEditObject(object)"
-    },
-    "Client.OnPlayerBeginEditObject": {
-        "prefix": "OnPlayerBeginEditObject",
-        "body": "AddEvent(\"OnPlayerBeginEditObject\", function( ${1:object} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerBeginEditObject(object)"
-    },
     "Client.OnKeyPress": {
         "prefix": "OnKeyPress",
         "body": "AddEvent(\"OnKeyPress\", function( ${1:key} )\r\n\t\r\nend)$0\r\n",
@@ -189,6 +184,21 @@
         "body": "AddEvent(\"OnObjectStreamIn\", function( ${1:object} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnObjectStreamIn(object)"
     },
+    "Client.OnObjectHit": {
+        "prefix": "OnObjectHit",
+        "body": "AddEvent(\"OnObjectHit\", function( ${1:object}, ${2:hittype}, ${3:hitid}, ${4:hitX}, ${5:hitY}, ${6:hitZ}, ${7:normalX}, ${8:normalY}, ${9:normalZ} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnObjectHit(object,hittype,hitid,hitX,hitY,hitZ,normalX,normalY,normalZ)"
+    },
+    "Client.OnPlayerEndEditObject": {
+        "prefix": "OnPlayerEndEditObject",
+        "body": "AddEvent(\"OnPlayerEndEditObject\", function( ${1:object} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerEndEditObject(object)"
+    },
+    "Client.OnPlayerBeginEditObject": {
+        "prefix": "OnPlayerBeginEditObject",
+        "body": "AddEvent(\"OnPlayerBeginEditObject\", function( ${1:object} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerBeginEditObject(object)"
+    },
     "Client.OnPackageStart": {
         "prefix": "OnPackageStart",
         "body": "AddEvent(\"OnPackageStart\", function()\r\n\t\r\nend)$0\r\n",
@@ -204,20 +214,10 @@
         "body": "AddEvent(\"OnPickupStreamIn\", function( ${1:pickup} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnPickupStreamIn(pickup)"
     },
-    "Client.OnPlayerStreamIn": {
-        "prefix": "OnPlayerStreamIn",
-        "body": "AddEvent(\"OnPlayerStreamIn\", function( ${1:player}, ${2:otherplayer} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerStreamIn(player,otherplayer)"
-    },
-    "Client.OnPlayerStreamOut": {
-        "prefix": "OnPlayerStreamOut",
-        "body": "AddEvent(\"OnPlayerStreamOut\", function( ${1:player}, ${2:otherplayer} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerStreamOut(player,otherplayer)"
-    },
-    "Client.OnSoundFinished": {
-        "prefix": "OnSoundFinished",
-        "body": "AddEvent(\"OnSoundFinished\", function( ${1:sound} )\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnSoundFinished(sound)"
+    "Client.OnPickupStreamOut": {
+        "prefix": "OnPickupStreamOut",
+        "body": "AddEvent(\"OnPickupStreamOut\", function( ${1:pickup} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPickupStreamOut(pickup)"
     },
     "Client.OnText3DStreamIn": {
         "prefix": "OnText3DStreamIn",
@@ -243,5 +243,15 @@
         "prefix": "OnSoundUpdateMeta",
         "body": "AddEvent(\"OnSoundUpdateMeta\", function( ${1:sound}, ${2:meta} )\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnSoundUpdateMeta(sound,meta)"
+    },
+    "Client.OnSoundFinished": {
+        "prefix": "OnSoundFinished",
+        "body": "AddEvent(\"OnSoundFinished\", function( ${1:sound} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnSoundFinished(sound)"
+    },
+    "Client.OnPlayerNetworkUpdatePropertyValue": {
+        "prefix": "OnPlayerNetworkUpdatePropertyValue",
+        "body": "AddEvent(\"OnPlayerNetworkUpdatePropertyValue\", function( ${1:player}, ${2:PropertyName}, ${3:PropertyValue} )\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerNetworkUpdatePropertyValue(player,PropertyName,PropertyValue)"
     }
 }

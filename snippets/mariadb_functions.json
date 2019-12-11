@@ -1,0 +1,207 @@
+{
+    "MariaDB.mariadb_log": {
+        "prefix": "mariadb_log",
+        "body": "mariadb_log( ${1:level_str} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_log(level_str)"
+    },
+    "MariaDB.mariadb_connect": {
+        "prefix": "mariadb_connect",
+        "body": "mariadb_connect( ${1:host_str}, ${2:user_str}, ${3:passwd_str}, ${4:db_str }, ${5:ssl_key_file (optional)}, ${6:ssl_cert_file (optional)}, ${7:ssl_ca_file (optional)}, ${8:ssl_ca_path (optional)}, ${9:ssl_cipher (optional)} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_connect(host_str,user_str,passwd_str,db_str ,ssl_key_file (optional),ssl_cert_file (optional),ssl_ca_file (optional),ssl_ca_path (optional),ssl_cipher (optional))"
+    },
+    "MariaDB.mariadb_connect_file": {
+        "prefix": "mariadb_connect_file",
+        "body": "mariadb_connect_file( ${1:file_name} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_connect_file(file_name)"
+    },
+    "MariaDB.mariadb_close": {
+        "prefix": "mariadb_close",
+        "body": "mariadb_close( ${1:handle_id} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_close(handle_id)"
+    },
+    "MariaDB.mariadb_unprocessed_queries": {
+        "prefix": "mariadb_unprocessed_queries",
+        "body": "mariadb_unprocessed_queries( ${1:handle_id} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_unprocessed_queries(handle_id)"
+    },
+    "MariaDB.mariadb_async_query": {
+        "prefix": "mariadb_async_query",
+        "body": "mariadb_async_query( ${1:handle}, ${2:query_str }, ${3:callback_func (optional)}, ${4:callback_args (optional)} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_async_query(handle,query_str ,callback_func (optional),callback_args (optional))"
+    },
+    "MariaDB.mariadb_query": {
+        "prefix": "mariadb_query",
+        "body": "mariadb_query( ${1:handle}, ${2:query_str }, ${3:callback_func (optional)}, ${4:callback_args (optional)} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_query(handle,query_str ,callback_func (optional),callback_args (optional))"
+    },
+    "MariaDB.mariadb_await_query": {
+        "prefix": "mariadb_await_query",
+        "body": "mariadb_await_query( ${1:handle_id}, ${2:query_str}, ${3:use_result (optional)} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_await_query(handle_id,query_str,use_result (optional))"
+    },
+    "MariaDB.mariadb_query_file": {
+        "prefix": "mariadb_query_file",
+        "body": "mariadb_query_file( ${1:handle_id}, ${2:file_path }, ${3:callback_func (optional)}, ${4:callback_args (optional)} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_query_file(handle_id,file_path ,callback_func (optional),callback_args (optional))"
+    },
+    "MariaDB.mariadb_await_query_file": {
+        "prefix": "mariadb_await_query_file",
+        "body": "mariadb_await_query_file( ${1:handle_id}, ${2:file_path }, ${3:use_cache (optional)} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_await_query_file(handle_id,file_path ,use_cache (optional))"
+    },
+    "MariaDB.mariadb_errno": {
+        "prefix": "mariadb_errno",
+        "body": "mariadb_errno( ${1:handle_id} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_errno(handle_id)"
+    },
+    "MariaDB.mariadb_error": {
+        "prefix": "mariadb_error",
+        "body": "mariadb_error( ${1:handle_id} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_error(handle_id)"
+    },
+    "MariaDB.mariadb_escape_string": {
+        "prefix": "mariadb_escape_string",
+        "body": "mariadb_escape_string( ${1:handle_id}, ${2:source_str} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_escape_string(handle_id,source_str)"
+    },
+    "MariaDB.mariadb_prepare": {
+        "prefix": "mariadb_prepare",
+        "body": "mariadb_prepare( ${1:handle_id}, ${2:format_str} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_prepare(handle_id,format_str)"
+    },
+    "MariaDB.mariadb_set_charset": {
+        "prefix": "mariadb_set_charset",
+        "body": "mariadb_set_charset( ${1:handle_id}, ${2:charset_str} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_set_charset(handle_id,charset_str)"
+    },
+    "MariaDB.mariadb_get_charset": {
+        "prefix": "mariadb_get_charset",
+        "body": "mariadb_get_charset( ${1:handle_id} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_charset(handle_id)"
+    },
+    "MariaDB.mariadb_stat": {
+        "prefix": "mariadb_stat",
+        "body": "mariadb_stat( ${1:handle_id} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_stat(handle_id)"
+    },
+    "MariaDB.mariadb_get_row_count": {
+        "prefix": "mariadb_get_row_count",
+        "body": "mariadb_get_row_count()$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_row_count()"
+    },
+    "MariaDB.mariadb_get_field_count": {
+        "prefix": "mariadb_get_field_count",
+        "body": "mariadb_get_field_count()$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_field_count()"
+    },
+    "MariaDB.mariadb_get_result_count": {
+        "prefix": "mariadb_get_result_count",
+        "body": "mariadb_get_result_count()$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_result_count()"
+    },
+    "MariaDB.mariadb_get_field_name": {
+        "prefix": "mariadb_get_field_name",
+        "body": "mariadb_get_field_name( ${1:field_idx} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_field_name(field_idx)"
+    },
+    "MariaDB.mariadb_set_result": {
+        "prefix": "mariadb_set_result",
+        "body": "mariadb_set_result( ${1:result_idx} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_set_result(result_idx)"
+    },
+    "MariaDB.mariadb_get_value_index": {
+        "prefix": "mariadb_get_value_index",
+        "body": "mariadb_get_value_index( ${1:row_idx}, ${2:column_idx} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_value_index(row_idx,column_idx)"
+    },
+    "MariaDB.mariadb_get_value_index_int": {
+        "prefix": "mariadb_get_value_index_int",
+        "body": "mariadb_get_value_index_int( ${1:row_idx}, ${2:column_idx} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_value_index_int(row_idx,column_idx)"
+    },
+    "MariaDB.mariadb_get_value_index_float": {
+        "prefix": "mariadb_get_value_index_float",
+        "body": "mariadb_get_value_index_float( ${1:row_idx}, ${2:column_idx} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_value_index_float(row_idx,column_idx)"
+    },
+    "MariaDB.mariadb_get_value_name": {
+        "prefix": "mariadb_get_value_name",
+        "body": "mariadb_get_value_name( ${1:row_idx}, ${2:column_name} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_value_name(row_idx,column_name)"
+    },
+    "MariaDB.mariadb_get_value_name_int": {
+        "prefix": "mariadb_get_value_name_int",
+        "body": "mariadb_get_value_name_int( ${1:row_idx}, ${2:column_name} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_value_name_int(row_idx,column_name)"
+    },
+    "MariaDB.mariadb_get_value_name_float": {
+        "prefix": "mariadb_get_value_name_float",
+        "body": "mariadb_get_value_name_float( ${1:row_idx}, ${2:column_name} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_value_name_float(row_idx,column_name)"
+    },
+    "MariaDB.mariadb_save_result": {
+        "prefix": "mariadb_save_result",
+        "body": "mariadb_save_result()$0\r\n",
+        "description": "(MariaDB) Function: mariadb_save_result()"
+    },
+    "MariaDB.mariadb_delete_result": {
+        "prefix": "mariadb_delete_result",
+        "body": "mariadb_delete_result( ${1:id} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_delete_result(id)"
+    },
+    "MariaDB.mariadb_set_active_result": {
+        "prefix": "mariadb_set_active_result",
+        "body": "mariadb_set_active_result( ${1:id} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_set_active_result(id)"
+    },
+    "MariaDB.mariadb_unset_active_result": {
+        "prefix": "mariadb_unset_active_result",
+        "body": "mariadb_unset_active_result()$0\r\n",
+        "description": "(MariaDB) Function: mariadb_unset_active_result()"
+    },
+    "MariaDB.mariadb_is_any_result_active": {
+        "prefix": "mariadb_is_any_result_active",
+        "body": "mariadb_is_any_result_active()$0\r\n",
+        "description": "(MariaDB) Function: mariadb_is_any_result_active()"
+    },
+    "MariaDB.mariadb_is_valid_result": {
+        "prefix": "mariadb_is_valid_result",
+        "body": "mariadb_is_valid_result( ${1:id} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_is_valid_result(id)"
+    },
+    "MariaDB.mariadb_get_affected_rows": {
+        "prefix": "mariadb_get_affected_rows",
+        "body": "mariadb_get_affected_rows()$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_affected_rows()"
+    },
+    "MariaDB.mariadb_get_warning_count": {
+        "prefix": "mariadb_get_warning_count",
+        "body": "mariadb_get_warning_count()$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_warning_count()"
+    },
+    "MariaDB.mariadb_get_insert_id": {
+        "prefix": "mariadb_get_insert_id",
+        "body": "mariadb_get_insert_id()$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_insert_id()"
+    },
+    "MariaDB.mariadb_get_query_exec_time": {
+        "prefix": "mariadb_get_query_exec_time",
+        "body": "mariadb_get_query_exec_time()$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_query_exec_time()"
+    },
+    "MariaDB.mariadb_get_query_string": {
+        "prefix": "mariadb_get_query_string",
+        "body": "mariadb_get_query_string()$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_query_string()"
+    },
+    "MariaDB.mariadb_get_row": {
+        "prefix": "mariadb_get_row",
+        "body": "mariadb_get_row( ${1:row_idx} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_row(row_idx)"
+    },
+    "MariaDB.mariadb_get_assoc": {
+        "prefix": "mariadb_get_assoc",
+        "body": "mariadb_get_assoc( ${1:row_idx} )$0\r\n",
+        "description": "(MariaDB) Function: mariadb_get_assoc(row_idx)"
+    }
+}
