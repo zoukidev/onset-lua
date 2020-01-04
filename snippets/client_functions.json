@@ -1412,6 +1412,36 @@
     "Client.SetControlRotation": {
         "prefix": "SetControlRotation",
         "body": "SetControlRotation(${1:pitch}, ${2:yaw}, ${3:roll})$0\r\n",
-        "description": "(Client) Function: SetControlRotation(pitch,yaw,roll)"
+        "description": "(Client) Function: SetControlRotation(pitch, yaw, roll)"
+    },
+    "Client.GetDoorActor": {
+        "prefix": "GetDoorActor",
+        "body": "GetDoorActor(${1:door})$0\r\n",
+        "description": "(Client) Function: GetDoorActor(door)"
+    },
+    "Client.GetPickupActor": {
+        "prefix": "GetPickupActor",
+        "body": "GetPickupActor(${1:pickup})$0\r\n",
+        "description": "(Client) Function: GetPickupActor(pickup)"
+    },
+    "Client.GetNPCActor": {
+        "prefix": "GetNPCActor",
+        "body": "GetNPCActor(${1:npc})$0\r\n",
+        "description": "(Client) Function: GetNPCActor(npc)"
+    },
+    "Client.GetVehicleActor": {
+        "prefix": "GetVehicleActor",
+        "body": "GetVehicleActor(${1:vehicle})$0\r\n",
+        "description": "(Client) Function: GetVehicleActor(vehicle)"
+    },
+    "Client.GetPlayerActor": {
+        "prefix": "GetPlayerActor",
+        "body": "GetPlayerActor(${1:player})$0\r\n",
+        "description": "(Client) Function: GetPlayerActor(player)"
+    },
+    "Client.GetObjectActor": {
+        "prefix": "GetObjectActor",
+        "body": "GetObjectActor(${1:object})$0\r\n",
+        "description": "(Client) Function: GetObjectActor(object)"
     }
 }
