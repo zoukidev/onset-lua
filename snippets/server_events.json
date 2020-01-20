@@ -1,9 +1,4 @@
 {
-    "Server.OnPlayerPickupHit": {
-        "prefix": "OnPlayerPickupHit",
-        "body": "AddEvent(\"OnPlayerPickupHit\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerPickupHit()"
-    },
     "Server.OnPlayerServerAuth": {
         "prefix": "OnPlayerServerAuth",
         "body": "AddEvent(\"OnPlayerServerAuth\", function(${1:player})\r\n\t\r\nend)$0\r\n",
@@ -14,6 +9,11 @@
         "body": "AddEvent(\"OnPlayerSteamAuth\", function(${1:player})\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerSteamAuth(player)"
     },
+    "Server.OnPlayerDownloadFile": {
+        "prefix": "OnPlayerDownloadFile",
+        "body": "AddEvent(\"OnPlayerDownloadFile\", function(${1:player}, ${2:FileName}, ${3:Checksum})\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerDownloadFile(player,FileName,Checksum)"
+    },
     "Server.OnPlayerStreamIn": {
         "prefix": "OnPlayerStreamIn",
         "body": "AddEvent(\"OnPlayerStreamIn\", function(${1:player}, ${2:otherplayer})\r\n\t\r\nend)$0\r\n",
@@ -23,6 +23,11 @@
         "prefix": "OnPlayerStreamOut",
         "body": "AddEvent(\"OnPlayerStreamOut\", function(${1:player}, ${2:otherplayer})\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPlayerStreamOut(player,otherplayer)"
+    },
+    "Server.OnPlayerPickupHit": {
+        "prefix": "OnPlayerPickupHit",
+        "body": "AddEvent(\"OnPlayerPickupHit\", function()\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnPlayerPickupHit()"
     },
     "Server.OnPlayerJoin": {
         "prefix": "OnPlayerJoin",
@@ -119,6 +124,11 @@
         "body": "AddEvent(\"OnPackageStop\", function()\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnPackageStop()"
     },
+    "Server.OnScriptError": {
+        "prefix": "OnScriptError",
+        "body": "AddEvent(\"OnScriptError\", function(${1:message})\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnScriptError(message)"
+    },
     "Server.OnNPCReachTarget": {
         "prefix": "OnNPCReachTarget",
         "body": "AddEvent(\"OnNPCReachTarget\", function()\r\n\t\r\nend)$0\r\n",
@@ -126,8 +136,8 @@
     },
     "Server.OnNPCDamage": {
         "prefix": "OnNPCDamage",
-        "body": "AddEvent(\"OnNPCDamage\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnNPCDamage()"
+        "body": "AddEvent(\"OnNPCDamage\", function(${1:npc}, ${2:damagetype}, ${3:amount})\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnNPCDamage(npc,damagetype,amount)"
     },
     "Server.OnNPCSpawn": {
         "prefix": "OnNPCSpawn",
@@ -148,10 +158,5 @@
         "prefix": "OnNPCStreamOut",
         "body": "AddEvent(\"OnNPCStreamOut\", function(${1:npc}, ${2:player})\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnNPCStreamOut(npc,player)"
-    },
-    "Server.OnPlayerDownloadFile": {
-        "prefix": "OnPlayerDownloadFile",
-        "body": "AddEvent(\"OnPlayerDownloadFile\", function(${1:player}, ${2:FileName}, ${3:Checksum})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerDownloadFile(player,FileName,Checksum)"
     }
 }

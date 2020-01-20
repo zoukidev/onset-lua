@@ -1,4 +1,4 @@
-# vscode-olua for Onset V1.0.0
+# vscode-olua for Onset V1.0.3
 ### Snippets for [Onset](https://playonset.com/) Game
 **require**: [Lua](https://marketplace.visualstudio.com/items?itemName=keyring.Lua) or some other extension.
 

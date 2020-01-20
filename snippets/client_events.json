@@ -24,15 +24,20 @@
         "body": "AddEvent(\"OnResolutionChange\", function(${1:width}, ${2:height})\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnResolutionChange(width,height)"
     },
-    "Client.OnScriptError": {
-        "prefix": "OnScriptError",
-        "body": "AddEvent(\"OnScriptError\", function(${1:message})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnScriptError(message)"
-    },
     "Client.OnRenderHUD": {
         "prefix": "OnRenderHUD",
         "body": "AddEvent(\"OnRenderHUD\", function()\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnRenderHUD()"
+    },
+    "Client.OnShowMainMenu": {
+        "prefix": "OnShowMainMenu",
+        "body": "AddEvent(\"OnShowMainMenu\", function()\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnShowMainMenu()"
+    },
+    "Client.OnHideMainMenu": {
+        "prefix": "OnHideMainMenu",
+        "body": "AddEvent(\"OnHideMainMenu\", function()\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnHideMainMenu()"
     },
     "Client.OnPlayerStartEnterVehicle": {
         "prefix": "OnPlayerStartEnterVehicle",
@@ -53,6 +58,11 @@
         "prefix": "OnPlayerLeaveVehicle",
         "body": "AddEvent(\"OnPlayerLeaveVehicle\", function(${1:player}, ${2:vehicle}, ${3:seat})\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnPlayerLeaveVehicle(player,vehicle,seat)"
+    },
+    "Client.OnPlayWeaponHitEffects": {
+        "prefix": "OnPlayWeaponHitEffects",
+        "body": "AddEvent(\"OnPlayWeaponHitEffects\", function(${1:PlayerId}, ${2:Weapon}, ${3:HitType}, ${4:HitId}, ${5:StartLocation}, ${6:HitLocation}, ${7:HitLocationRelative}, ${8:HitNormal}, ${9:HitResult})\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayWeaponHitEffects(PlayerId,Weapon,HitType,HitId,StartLocation,HitLocation,HitLocationRelative,HitNormal,HitResult)"
     },
     "Client.OnPlayerStreamIn": {
         "prefix": "OnPlayerStreamIn",
@@ -184,6 +194,11 @@
         "body": "AddEvent(\"OnObjectStreamIn\", function(${1:object})\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnObjectStreamIn(object)"
     },
+    "Client.OnObjectStreamOut": {
+        "prefix": "OnObjectStreamOut",
+        "body": "AddEvent(\"OnObjectStreamOut\", function(${1:object})\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnObjectStreamOut(object)"
+    },
     "Client.OnObjectHit": {
         "prefix": "OnObjectHit",
         "body": "AddEvent(\"OnObjectHit\", function(${1:object}, ${2:hittype}, ${3:hitid}, ${4:hitX}, ${5:hitY}, ${6:hitZ}, ${7:normalX}, ${8:normalY}, ${9:normalZ})\r\n\t\r\nend)$0\r\n",
@@ -209,6 +224,11 @@
         "body": "AddEvent(\"OnPackageStop\", function()\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnPackageStop()"
     },
+    "Client.OnScriptError": {
+        "prefix": "OnScriptError",
+        "body": "AddEvent(\"OnScriptError\", function(${1:message})\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnScriptError(message)"
+    },
     "Client.OnPickupStreamIn": {
         "prefix": "OnPickupStreamIn",
         "body": "AddEvent(\"OnPickupStreamIn\", function(${1:pickup})\r\n\t\r\nend)$0\r\n",
@@ -223,16 +243,6 @@
         "prefix": "OnText3DStreamIn",
         "body": "AddEvent(\"OnText3DStreamIn\", function(${1:text3d})\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnText3DStreamIn(text3d)"
-    },
-    "Client.OnVehicleStreamOut": {
-        "prefix": "OnVehicleStreamOut",
-        "body": "AddEvent(\"OnVehicleStreamOut\", function(${1:vehicle}, ${2:player})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnVehicleStreamOut(vehicle,player)"
-    },
-    "Client.OnVehicleStreamIn": {
-        "prefix": "OnVehicleStreamIn",
-        "body": "AddEvent(\"OnVehicleStreamIn\", function(${1:vehicle}, ${2:player})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnVehicleStreamIn(vehicle,player)"
     },
     "Client.OnWebLoadComplete": {
         "prefix": "OnWebLoadComplete",
@@ -253,5 +263,25 @@
         "prefix": "OnPlayerNetworkUpdatePropertyValue",
         "body": "AddEvent(\"OnPlayerNetworkUpdatePropertyValue\", function(${1:player}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnPlayerNetworkUpdatePropertyValue(player,PropertyName,PropertyValue)"
+    },
+    "Client.OnVehicleNetworkUpdatePropertyValue": {
+        "prefix": "OnVehicleNetworkUpdatePropertyValue",
+        "body": "AddEvent(\"OnVehicleNetworkUpdatePropertyValue\", function(${1:vehicle}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnVehicleNetworkUpdatePropertyValue(vehicle,PropertyName,PropertyValue)"
+    },
+    "Client.OnNPCNetworkUpdatePropertyValue": {
+        "prefix": "OnNPCNetworkUpdatePropertyValue",
+        "body": "AddEvent(\"OnNPCNetworkUpdatePropertyValue\", function(${1:npc}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnNPCNetworkUpdatePropertyValue(npc,PropertyName,PropertyValue)"
+    },
+    "Client.OnText3DNetworkUpdatePropertyValue": {
+        "prefix": "OnText3DNetworkUpdatePropertyValue",
+        "body": "AddEvent(\"OnText3DNetworkUpdatePropertyValue\", function(${1:textId}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnText3DNetworkUpdatePropertyValue(textId,PropertyName,PropertyValue)"
+    },
+    "Client.OnPickupNetworkUpdatePropertyValue": {
+        "prefix": "OnPickupNetworkUpdatePropertyValue",
+        "body": "AddEvent(\"OnPickupNetworkUpdatePropertyValue\", function(${1:pickupId}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPickupNetworkUpdatePropertyValue(pickupId,PropertyName,PropertyValue)"
     }
 }

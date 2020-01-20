@@ -24,6 +24,11 @@
         "body": "HexToRGBA(${1:HexColor})$0\r\n",
         "description": "(Server) Function: HexToRGBA(HexColor)"
     },
+    "Server.HexToRGBAFloat": {
+        "prefix": "HexToRGBAFloat",
+        "body": "HexToRGBAFloat(${1:HexColor})$0\r\n",
+        "description": "(Server) Function: HexToRGBAFloat(HexColor)"
+    },
     "Server.Random": {
         "prefix": "Random",
         "body": "Random(${1:Min (optional)}, ${2:Max (optional)})$0\r\n",
@@ -53,6 +58,11 @@
         "prefix": "GetDistance3D",
         "body": "GetDistance3D(${1:x}, ${2:y}, ${3:z}, ${4:x2}, ${5:y2}, ${6:z2})$0\r\n",
         "description": "(Server) Function: GetDistance3D(x,y,z,x2,y2,z2)"
+    },
+    "Server.Lerp": {
+        "prefix": "Lerp",
+        "body": "Lerp(${1:t}, ${2:a}, ${3:b})$0\r\n",
+        "description": "(Server) Function: Lerp(t,a,b)"
     },
     "Server.AddCommand": {
         "prefix": "AddCommand",
@@ -178,6 +188,11 @@
         "prefix": "DumpNetworkStats",
         "body": "DumpNetworkStats(${1:verbosity})$0\r\n",
         "description": "(Server) Function: DumpNetworkStats(verbosity)"
+    },
+    "Server.SetNPCRagdoll": {
+        "prefix": "SetNPCRagdoll",
+        "body": "SetNPCRagdoll(${1:npcid}, ${2:bEnable})$0\r\n",
+        "description": "(Server) Function: SetNPCRagdoll(npcid,bEnable)"
     },
     "Server.SetNPCDimension": {
         "prefix": "SetNPCDimension",
@@ -519,6 +534,16 @@
         "body": "SetPickupVisibility(${1:pickup}, ${2:player}, ${3:bVisible})$0\r\n",
         "description": "(Server) Function: SetPickupVisibility(pickup,player,bVisible)"
     },
+    "Server.GetPlayerBySteamId": {
+        "prefix": "GetPlayerBySteamId",
+        "body": "GetPlayerBySteamId(${1:steamid})$0\r\n",
+        "description": "(Server) Function: GetPlayerBySteamId(steamid)"
+    },
+    "Server.SetPlayerRagdoll": {
+        "prefix": "SetPlayerRagdoll",
+        "body": "SetPlayerRagdoll(${1:playerid}, ${2:bEnable})$0\r\n",
+        "description": "(Server) Function: SetPlayerRagdoll(playerid,bEnable)"
+    },
     "Server.SetPlayerDimension": {
         "prefix": "SetPlayerDimension",
         "body": "SetPlayerDimension(${1:player}, ${2:dimension})$0\r\n",
@@ -663,11 +688,6 @@
         "prefix": "IsPlayerReloading",
         "body": "IsPlayerReloading(${1:player})$0\r\n",
         "description": "(Server) Function: IsPlayerReloading(player)"
-    },
-    "Server.GetVehicleLicensePlate": {
-        "prefix": "GetVehicleLicensePlate",
-        "body": "GetVehicleLicensePlate(${1:vehicle})$0\r\n",
-        "description": "(Server) Function: GetVehicleLicensePlate(vehicle)"
     },
     "Server.GetPlayerVehicle": {
         "prefix": "GetPlayerVehicle",
@@ -884,6 +904,11 @@
         "body": "SetText3DVisibility(${1:text3d}, ${2:player}, ${3:bVisible})$0\r\n",
         "description": "(Server) Function: SetText3DVisibility(text3d,player,bVisible)"
     },
+    "Server.SetText3DText": {
+        "prefix": "SetText3DText",
+        "body": "SetText3DText(${1:text3d}, ${2:text})$0\r\n",
+        "description": "(Server) Function: SetText3DText(text3d,text)"
+    },
     "Server.Delay": {
         "prefix": "Delay",
         "body": "Delay(${1:Milliseconds}, ${2:LuaFunction}, ${3:UserArgs (optional) (optional)})$0\r\n",
@@ -933,6 +958,11 @@
         "prefix": "GetTimerRemainingTime",
         "body": "GetTimerRemainingTime(${1:timer})$0\r\n",
         "description": "(Server) Function: GetTimerRemainingTime(timer)"
+    },
+    "Server.GetVehicleLicensePlate": {
+        "prefix": "GetVehicleLicensePlate",
+        "body": "GetVehicleLicensePlate(${1:vehicle})$0\r\n",
+        "description": "(Server) Function: GetVehicleLicensePlate(vehicle)"
     },
     "Server.SetVehicleDimension": {
         "prefix": "SetVehicleDimension",

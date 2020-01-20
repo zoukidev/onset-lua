@@ -14,6 +14,11 @@
         "body": "ReplaceObjectModelMesh(${1:ModelId}, ${2:PathToMesh})$0\r\n",
         "description": "(Client) Function: ReplaceObjectModelMesh(ModelId,PathToMesh)"
     },
+    "Client.GetAllFilesInPak": {
+        "prefix": "GetAllFilesInPak",
+        "body": "GetAllFilesInPak(${1:PakName})$0\r\n",
+        "description": "(Client) Function: GetAllFilesInPak(PakName)"
+    },
     "Client.GetAllCollisions": {
         "prefix": "GetAllCollisions",
         "body": "GetAllCollisions()$0\r\n",
@@ -69,6 +74,26 @@
         "body": "HexToRGBA(${1:HexColor})$0\r\n",
         "description": "(Client) Function: HexToRGBA(HexColor)"
     },
+    "Client.LineTrace": {
+        "prefix": "LineTrace",
+        "body": "LineTrace(${1:sX}, ${2:sY}, ${3:sZ}, ${4:eX}, ${5:eY}, ${6:eZ }, ${7:complex (optional)})$0\r\n",
+        "description": "(Client) Function: LineTrace(sX,sY,sZ,eX,eY,eZ ,complex (optional))"
+    },
+    "Client.createtable_ex": {
+        "prefix": "createtable_ex",
+        "body": "createtable_ex(${1:metatable})$0\r\n",
+        "description": "(Client) Function: createtable_ex(metatable)"
+    },
+    "Client.GetCameraFoV": {
+        "prefix": "GetCameraFoV",
+        "body": "GetCameraFoV()$0\r\n",
+        "description": "(Client) Function: GetCameraFoV()"
+    },
+    "Client.SetCameraFoV": {
+        "prefix": "SetCameraFoV",
+        "body": "SetCameraFoV(${1:fov})$0\r\n",
+        "description": "(Client) Function: SetCameraFoV(fov)"
+    },
     "Client.Random": {
         "prefix": "Random",
         "body": "Random(${1:Min (optional)}, ${2:Max (optional)})$0\r\n",
@@ -104,6 +129,11 @@
         "body": "GetDistanceSquared3D(${1:x}, ${2:y}, ${3:z}, ${4:x2}, ${5:y2}, ${6:z2})$0\r\n",
         "description": "(Client) Function: GetDistanceSquared3D(x,y,z,x2,y2,z2)"
     },
+    "Client.Lerp": {
+        "prefix": "Lerp",
+        "body": "Lerp(${1:t}, ${2:a}, ${3:b})$0\r\n",
+        "description": "(Client) Function: Lerp(t,a,b)"
+    },
     "Client.VectorToRotation": {
         "prefix": "VectorToRotation",
         "body": "VectorToRotation(${1:x}, ${2:y}, ${3:z})$0\r\n",
@@ -134,6 +164,11 @@
         "body": "RandomUnitVectorInEllipticalCone(${1:x}, ${2:y}, ${3:z}, ${4:MaxYaw}, ${5:MaxPitch})$0\r\n",
         "description": "(Client) Function: RandomUnitVectorInEllipticalCone(x,y,z,MaxYaw,MaxPitch)"
     },
+    "Client.UpdateStreamingLevels": {
+        "prefix": "UpdateStreamingLevels",
+        "body": "UpdateStreamingLevels()$0\r\n",
+        "description": "(Client) Function: UpdateStreamingLevels()"
+    },
     "Client.GetTickCount": {
         "prefix": "GetTickCount",
         "body": "GetTickCount()$0\r\n",
@@ -148,6 +183,11 @@
         "prefix": "GetDeltaSeconds",
         "body": "GetDeltaSeconds()$0\r\n",
         "description": "(Client) Function: GetDeltaSeconds()"
+    },
+    "Client.GetPlayerActor": {
+        "prefix": "GetPlayerActor",
+        "body": "GetPlayerActor(${1:playerid})$0\r\n",
+        "description": "(Client) Function: GetPlayerActor(playerid)"
     },
     "Client.GetPlayerId": {
         "prefix": "GetPlayerId",
@@ -199,11 +239,6 @@
         "body": "GetPlayerSkeletalMeshComponent(${2:ComponentName})$0\r\n",
         "description": "(Client) Function: GetPlayerSkeletalMeshComponent(player,ComponentName)"
     },
-    "Client.LineTrace": {
-        "prefix": "LineTrace",
-        "body": "LineTrace(${1:sX}, ${2:sY}, ${3:sZ}, ${4:eX}, ${5:eY}, ${6:eZ }, ${7:complex (optional)})$0\r\n",
-        "description": "(Client) Function: LineTrace(sX,sY,sZ,eX,eY,eZ ,complex (optional))"
-    },
     "Client.GetAllPlayersInSphere": {
         "prefix": "GetAllPlayersInSphere",
         "body": "GetAllPlayersInSphere(${1:x}, ${2:y}, ${3:z}, ${4:radius }, ${5:bIncludeSelf (optional)})$0\r\n",
@@ -229,6 +264,11 @@
         "body": "IsFirstPersonCamera()$0\r\n",
         "description": "(Client) Function: IsFirstPersonCamera()"
     },
+    "Client.SetNearClipPlane": {
+        "prefix": "SetNearClipPlane",
+        "body": "SetNearClipPlane(${1:distance})$0\r\n",
+        "description": "(Client) Function: SetNearClipPlane(distance)"
+    },
     "Client.ConnectToServer": {
         "prefix": "ConnectToServer",
         "body": "ConnectToServer(${1:Address}, ${2:Port}, ${3:Password (optional)})$0\r\n",
@@ -236,8 +276,8 @@
     },
     "Client.SetControllerOrientedMovement": {
         "prefix": "SetControllerOrientedMovement",
-        "body": "SetControllerOrientedMovement(${1:bStatus})$0\r\n",
-        "description": "(Client) Function: SetControllerOrientedMovement(bStatus)"
+        "body": "SetControllerOrientedMovement(${1:bEnable})$0\r\n",
+        "description": "(Client) Function: SetControllerOrientedMovement(bEnable)"
     },
     "Client.IsValidPlayer": {
         "prefix": "IsValidPlayer",
@@ -306,8 +346,8 @@
     },
     "Client.GetPlayerBoneLocation": {
         "prefix": "GetPlayerBoneLocation",
-        "body": "GetPlayerBoneLocation(${2:BoneName }, ${3:BoneSpace (optional)})$0\r\n",
-        "description": "(Client) Function: GetPlayerBoneLocation(player,BoneName ,BoneSpace (optional))"
+        "body": "GetPlayerBoneLocation(${2:BoneName }, ${3:World Space, 2 = Local Space (optional)})$0\r\n",
+        "description": "(Client) Function: GetPlayerBoneLocation(player,BoneName ,World Space, 2 = Local Space (optional))"
     },
     "Client.SetPlayerOutline": {
         "prefix": "SetPlayerOutline",
@@ -348,6 +388,21 @@
         "prefix": "GetPlayerUpVector",
         "body": "GetPlayerUpVector()$0\r\n",
         "description": "(Client) Function: GetPlayerUpVector(player)"
+    },
+    "Client.GetVehicleActor": {
+        "prefix": "GetVehicleActor",
+        "body": "GetVehicleActor(${1:vehicleid})$0\r\n",
+        "description": "(Client) Function: GetVehicleActor(vehicleid)"
+    },
+    "Client.SetPlayerLipMovement": {
+        "prefix": "SetPlayerLipMovement",
+        "body": "SetPlayerLipMovement()$0\r\n",
+        "description": "(Client) Function: SetPlayerLipMovement(player)"
+    },
+    "Client.IsPlayerPlayingAnimation": {
+        "prefix": "IsPlayerPlayingAnimation",
+        "body": "IsPlayerPlayingAnimation()$0\r\n",
+        "description": "(Client) Function: IsPlayerPlayingAnimation(player)"
     },
     "Client.StartCameraFade": {
         "prefix": "StartCameraFade",
@@ -406,8 +461,8 @@
     },
     "Client.GetCameraRotation": {
         "prefix": "GetCameraRotation",
-        "body": "GetCameraRotation()$0\r\n",
-        "description": "(Client) Function: GetCameraRotation()"
+        "body": "GetCameraRotation(${1:bSpectateCamera (optional)})$0\r\n",
+        "description": "(Client) Function: GetCameraRotation(bSpectateCamera (optional))"
     },
     "Client.GetCameraForwardVector": {
         "prefix": "GetCameraForwardVector",
@@ -429,16 +484,6 @@
         "body": "GetInputAxisValue(${1:AxisName})$0\r\n",
         "description": "(Client) Function: GetInputAxisValue(AxisName)"
     },
-    "Client.GetPlayerFOV": {
-        "prefix": "GetPlayerFOV",
-        "body": "GetPlayerFOV()$0\r\n",
-        "description": "(Client) Function: GetPlayerFOV()"
-    },
-    "Client.SetPlayerFOV": {
-        "prefix": "SetPlayerFOV",
-        "body": "SetPlayerFOV(${1:fov})$0\r\n",
-        "description": "(Client) Function: SetPlayerFOV(fov)"
-    },
     "Client.SetCameraViewDistance": {
         "prefix": "SetCameraViewDistance",
         "body": "SetCameraViewDistance(${1:distance})$0\r\n",
@@ -458,6 +503,26 @@
         "prefix": "DestroyWaypoint",
         "body": "DestroyWaypoint(${1:waypointId})$0\r\n",
         "description": "(Client) Function: DestroyWaypoint(waypointId)"
+    },
+    "Client.SetWaypointText": {
+        "prefix": "SetWaypointText",
+        "body": "SetWaypointText(${1:waypointId}, ${2:text})$0\r\n",
+        "description": "(Client) Function: SetWaypointText(waypointId,text)"
+    },
+    "Client.SetWaypointLocation": {
+        "prefix": "SetWaypointLocation",
+        "body": "SetWaypointLocation(${1:waypointId}, ${2:x}, ${3:y}, ${4:z})$0\r\n",
+        "description": "(Client) Function: SetWaypointLocation(waypointId,x,y,z)"
+    },
+    "Client.GetWaypointLocation": {
+        "prefix": "GetWaypointLocation",
+        "body": "GetWaypointLocation()$0\r\n",
+        "description": "(Client) Function: GetWaypointLocation()"
+    },
+    "Client.GetAllWaypoints": {
+        "prefix": "GetAllWaypoints",
+        "body": "GetAllWaypoints()$0\r\n",
+        "description": "(Client) Function: GetAllWaypoints()"
     },
     "Client.CreateFireworks": {
         "prefix": "CreateFireworks",
@@ -506,8 +571,8 @@
     },
     "Client.ShowWeaponHUD": {
         "prefix": "ShowWeaponHUD",
-        "body": "ShowWeaponHUD(${1:show})$0\r\n",
-        "description": "(Client) Function: ShowWeaponHUD(show)"
+        "body": "ShowWeaponHUD(${1:bShow})$0\r\n",
+        "description": "(Client) Function: ShowWeaponHUD(bShow)"
     },
     "Client.ShowHealthHUD": {
         "prefix": "ShowHealthHUD",
@@ -566,8 +631,8 @@
     },
     "Client.DrawCircle3D": {
         "prefix": "DrawCircle3D",
-        "body": "DrawCircle3D(${1:x}, ${2:y}, ${3:z }, ${4:XAxisX}, ${5:XAxisY}, ${6:XAxisZ}, ${7:YAxisX}, ${8:YAxisY}, ${9:YAxisZ}, ${10:Radius (optional)})$0\r\n",
-        "description": "(Client) Function: DrawCircle3D(x,y,z ,XAxisX,XAxisY,XAxisZ,YAxisX,YAxisY,YAxisZ,Radius (optional))"
+        "body": "DrawCircle3D(${1:x}, ${2:y}, ${3:z}, ${4:XAxisX}, ${5:XAxisY}, ${6:XAxisZ}, ${7:YAxisX}, ${8:YAxisY}, ${9:YAxisZ}, ${10:Radius (optional)})$0\r\n",
+        "description": "(Client) Function: DrawCircle3D(x,y,z,XAxisX,XAxisY,XAxisZ,YAxisX,YAxisY,YAxisZ,Radius (optional))"
     },
     "Client.DrawBox": {
         "prefix": "DrawBox",
@@ -663,6 +728,11 @@
         "prefix": "IsMouseCursorEnabled",
         "body": "IsMouseCursorEnabled()$0\r\n",
         "description": "(Client) Function: IsMouseCursorEnabled()"
+    },
+    "Client.SetMouseLocation": {
+        "prefix": "SetMouseLocation",
+        "body": "SetMouseLocation(${1:mouseX}, ${2:mouseY})$0\r\n",
+        "description": "(Client) Function: SetMouseLocation(mouseX,mouseY)"
     },
     "Client.GetMouseLocation": {
         "prefix": "GetMouseLocation",
@@ -764,6 +834,11 @@
         "body": "GetNetworkStats()$0\r\n",
         "description": "(Client) Function: GetNetworkStats()"
     },
+    "Client.GetNPCActor": {
+        "prefix": "GetNPCActor",
+        "body": "GetNPCActor(${1:npcid})$0\r\n",
+        "description": "(Client) Function: GetNPCActor(npcid)"
+    },
     "Client.SetNPCPropertyValue": {
         "prefix": "SetNPCPropertyValue",
         "body": "SetNPCPropertyValue(${1:npc}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)})$0\r\n",
@@ -773,6 +848,16 @@
         "prefix": "GetNPCPropertyValue",
         "body": "GetNPCPropertyValue(${1:npc}, ${2:PropertyName})$0\r\n",
         "description": "(Client) Function: GetNPCPropertyValue(npc,PropertyName)"
+    },
+    "Client.GetNPCBoneNames": {
+        "prefix": "GetNPCBoneNames",
+        "body": "GetNPCBoneNames()$0\r\n",
+        "description": "(Client) Function: GetNPCBoneNames()"
+    },
+    "Client.GetNPCBoneLocation": {
+        "prefix": "GetNPCBoneLocation",
+        "body": "GetNPCBoneLocation(${1:npc}, ${2:BoneName }, ${3:BoneSpace (optional)})$0\r\n",
+        "description": "(Client) Function: GetNPCBoneLocation(npc,BoneName ,BoneSpace (optional))"
     },
     "Client.GetNPCCount": {
         "prefix": "GetNPCCount",
@@ -798,6 +883,11 @@
         "prefix": "SetNPCOutline",
         "body": "SetNPCOutline(${1:npc }, ${2:bEnable (optional)})$0\r\n",
         "description": "(Client) Function: SetNPCOutline(npc ,bEnable (optional))"
+    },
+    "Client.GetObjectActor": {
+        "prefix": "GetObjectActor",
+        "body": "GetObjectActor(${1:object})$0\r\n",
+        "description": "(Client) Function: GetObjectActor(object)"
     },
     "Client.SetObjectPropertyValue": {
         "prefix": "SetObjectPropertyValue",
@@ -891,8 +981,8 @@
     },
     "Client.SetObjectOutline": {
         "prefix": "SetObjectOutline",
-        "body": "SetObjectOutline(${1:object }, ${2:bEnable (optional)})$0\r\n",
-        "description": "(Client) Function: SetObjectOutline(object ,bEnable (optional))"
+        "body": "SetObjectOutline(${1:object}, ${2:bEnable (optional)})$0\r\n",
+        "description": "(Client) Function: SetObjectOutline(object,bEnable (optional))"
     },
     "Client.SetObjectCastShadow": {
         "prefix": "SetObjectCastShadow",
@@ -939,6 +1029,16 @@
         "body": "CallRemoteEvent(${2:EventName}, ${3:UserArgs (optional)})$0\r\n",
         "description": "(Client) Function: CallRemoteEvent(player,EventName,UserArgs (optional))"
     },
+    "Client.GetPickupActor": {
+        "prefix": "GetPickupActor",
+        "body": "GetPickupActor(${1:pickupid})$0\r\n",
+        "description": "(Client) Function: GetPickupActor(pickupid)"
+    },
+    "Client.GetPickupStaticMeshComponent": {
+        "prefix": "GetPickupStaticMeshComponent",
+        "body": "GetPickupStaticMeshComponent(${1:pickupId})$0\r\n",
+        "description": "(Client) Function: GetPickupStaticMeshComponent(pickupId)"
+    },
     "Client.SetPickupPropertyValue": {
         "prefix": "SetPickupPropertyValue",
         "body": "SetPickupPropertyValue(${1:pickup}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)})$0\r\n",
@@ -969,6 +1069,11 @@
         "body": "GetPlayerCount()$0\r\n",
         "description": "(Client) Function: GetPlayerCount()"
     },
+    "Client.GetDoorActor": {
+        "prefix": "GetDoorActor",
+        "body": "GetDoorActor(${1:doorid})$0\r\n",
+        "description": "(Client) Function: GetDoorActor(doorid)"
+    },
     "Client.IsValidDoor": {
         "prefix": "IsValidDoor",
         "body": "IsValidDoor(${1:door})$0\r\n",
@@ -978,6 +1083,11 @@
         "prefix": "GetDoorCount",
         "body": "GetDoorCount()$0\r\n",
         "description": "(Client) Function: GetDoorCount()"
+    },
+    "Client.GetNearestDoor": {
+        "prefix": "GetNearestDoor",
+        "body": "GetNearestDoor(${1:x}, ${2:y}, ${3:z})$0\r\n",
+        "description": "(Client) Function: GetNearestDoor(x,y,z)"
     },
     "Client.GetDoorLocation": {
         "prefix": "GetDoorLocation",
