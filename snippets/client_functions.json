@@ -1533,5 +1533,10 @@
         "prefix": "GetDoorPropertyValue",
         "body": "GetDoorPropertyValue(${1:door}, ${2:PropertyName})$0\r\n",
         "description": "(Client) Function: GetDoorPropertyValue(door, PropertyName)"
+    },
+    "Client.TogglePlayerTag": {
+        "prefix": "TogglePlayerTag",
+        "body": "TogglePlayerTag(${1:player}, ${2:tagname}, ${3:enable})$0\r\n",
+        "description": "(Client) Function: TogglePlayerTag(player, tagname, enable)"
     }
 }
