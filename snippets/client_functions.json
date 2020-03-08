@@ -19,26 +19,6 @@
         "body": "GetAllFilesInPak(${1:PakName})$0\r\n",
         "description": "(Client) Function: GetAllFilesInPak(PakName)"
     },
-    "Client.GetAllCollisions": {
-        "prefix": "GetAllCollisions",
-        "body": "GetAllCollisions()$0\r\n",
-        "description": "(Client) Function: GetAllCollisions()"
-    },
-    "Client.CreateCollisionBox": {
-        "prefix": "CreateCollisionBox",
-        "body": "CreateCollisionBox(${1:x}, ${2:y}, ${3:z}, ${4:bx}, ${5:by}, ${6:bz }, ${7:bVisible (optional)})$0\r\n",
-        "description": "(Client) Function: CreateCollisionBox(x,y,z,bx,by,bz ,bVisible (optional))"
-    },
-    "Client.CreateCollisionSphere": {
-        "prefix": "CreateCollisionSphere",
-        "body": "CreateCollisionSphere(${1:x}, ${2:y}, ${3:z}, ${4:radius }, ${5:bVisible (optional)})$0\r\n",
-        "description": "(Client) Function: CreateCollisionSphere(x,y,z,radius ,bVisible (optional))"
-    },
-    "Client.DestroyCollision": {
-        "prefix": "DestroyCollision",
-        "body": "DestroyCollision(${1:collision})$0\r\n",
-        "description": "(Client) Function: DestroyCollision(collision)"
-    },
     "Client.GetGameVersion": {
         "prefix": "GetGameVersion",
         "body": "GetGameVersion()$0\r\n",
