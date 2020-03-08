@@ -1,14 +1,4 @@
 {
-    "Client.OnCollisionEnter": {
-        "prefix": "OnCollisionEnter",
-        "body": "AddEvent(\"OnCollisionEnter\", function(${1:collision}, ${2:hittype}, ${3:hitid})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnCollisionEnter(collision,hittype,hitid)"
-    },
-    "Client.OnCollisionLeave": {
-        "prefix": "OnCollisionLeave",
-        "body": "AddEvent(\"OnCollisionLeave\", function(${1:collision}, ${2:hittype}, ${3:hitid})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnCollisionLeave(collision,hittype,hitid)"
-    },
     "Client.OnGameTick": {
         "prefix": "OnGameTick",
         "body": "AddEvent(\"OnGameTick\", function(${1:DeltaSeconds})\r\n\t\r\nend)$0\r\n",
