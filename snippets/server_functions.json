@@ -1187,6 +1187,11 @@
     "Server.AttachVehicleNitro": {
         "prefix": "AttachVehicleNitro",
         "body": "AttachVehicleNitro(${1:vehicle }, ${2:attach (optional)})$0\r\n",
-        "description": "(Server) Function: AttachVehicleNitro(vehicle ,attach (optional))"
+        "description": "(Server) Function: AttachVehicleNitro(vehicle, attach (optional))"
+    },
+    "Server.SetObjectModel": {
+        "prefix": "SetObjectModel",
+        "body": "SetObjectModel(${1:object}, ${2:model})$0\r\n",
+        "description": "(Server) Function: SetObjectModel(object, model)"
     }
 }
