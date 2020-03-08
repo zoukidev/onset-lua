@@ -278,5 +278,10 @@
         "prefix": "OnObjectModelChange",
         "body": "AddEvent(\"OnObjectModelChange\", function (${1:object}, ${2:model})\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnObjectModelChange(object, model)"
-    }
+    },
+    "Client.OnDoorNetworkUpdatePropertyValue": {
+        "prefix": "OnDoorNetworkUpdatePropertyValue",
+        "body": "AddEvent(\"OnDoorNetworkUpdatePropertyValue\", function(${1:door}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnDoorNetworkUpdatePropertyValue(door,PropertyName,PropertyValue)"
+    },
 }
