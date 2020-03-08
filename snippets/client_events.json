@@ -273,5 +273,10 @@
         "prefix": "OnPickupNetworkUpdatePropertyValue",
         "body": "AddEvent(\"OnPickupNetworkUpdatePropertyValue\", function(${1:pickupId}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnPickupNetworkUpdatePropertyValue(pickupId,PropertyName,PropertyValue)"
+    },
+    "Client.OnObjectModelChange": {
+        "prefix": "OnObjectModelChange",
+        "body": "AddEvent(\"OnObjectModelChange\", function (${1:object}, ${2:model})\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnObjectModelChange(object, model)"
     }
 }
