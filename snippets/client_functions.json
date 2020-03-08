@@ -1508,5 +1508,20 @@
         "prefix": "SetPlayerVoiceTone",
         "body": "SetPlayerVoiceTone(${1:player}, ${2:gender})$0\r\n",
         "description": "(Client) Function: SetPlayerVoiceTone(player, gender)"
+    },
+    "Client.GetVehiclePassenger": {
+        "prefix": "GetVehiclePassenger",
+        "body": "GetVehiclePassenger(${1:vehicle})\r\n",
+        "description": "(Client) Function: GetVehiclePassenger(vehicle)"
+    },
+    "Client.GetVehicleDriver": {
+        "prefix": "GetVehicleDriver",
+        "body": "GetVehicleDriver(${1:vehicle})\r\n",
+        "description": "(Client) Function: GetVehicleDriver(vehicle)"
+    },
+    "Client.GetVehicleNumberOfSeats": {
+        "prefix": "GetVehicleNumberOfSeats",
+        "body": "GetVehicleNumberOfSeats(${1:vehicle})\r\n",
+        "description": "(Client) Function: GetVehicleNumberOfSeats(vehicle)"
     }
 }
