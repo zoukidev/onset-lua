@@ -644,11 +644,6 @@
         "body": "IsPlayerTalking(${1:player})$0\r\n",
         "description": "(Server) Function: IsPlayerTalking(player)"
     },
-    "Server.SetPlayerVoiceDimension": {
-        "prefix": "SetPlayerVoiceDimension",
-        "body": "SetPlayerVoiceDimension(${1:playerid}, ${2:dimensionid})$0\r\n",
-        "description": "(Server) Function: SetPlayerVoiceDimension(playerid,dimensionid)"
-    },
     "Server.AddPlayerChat": {
         "prefix": "AddPlayerChat",
         "body": "AddPlayerChat(${1:player}, ${2:message})$0\r\n",
@@ -1233,5 +1228,15 @@
         "prefix": "SetText3DLocation",
         "body": "(${1:text3d}, ${2:x}, ${3:y}, ${4:z})$0\r\n",
         "description": "(Server) Function: SetText3DLocation(text3d, x, y, z)"
-    }
+    },
+    "Server.SetPlayerVoiceChannel": {
+        "prefix": "SetPlayerVoiceChannel",
+        "body": "SetPlayerVoiceChannel(${1:playerid}, ${2:channel}, ${3:bEnable})$0\r\n",
+        "description": "(Server) Function: SetPlayerVoiceChannel(playerid, channel, bEnable)"
+    },
+    "Server.IsPlayerVoiceChannel": {
+        "prefix": "IsPlayerVoiceChannel",
+        "body": "IsPlayerVoiceChannel(${1:playerid}, ${2:channel})$0\r\n",
+        "description": "(Server) Function: IsPlayerVoiceChannel(playerid, channel)"
+    },
 }
