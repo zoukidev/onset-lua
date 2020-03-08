@@ -1193,5 +1193,15 @@
         "prefix": "SetObjectModel",
         "body": "SetObjectModel(${1:object}, ${2:model})$0\r\n",
         "description": "(Server) Function: SetObjectModel(object, model)"
-    }
+    },
+    "Server.SetDoorPropertyValue": {
+        "prefix": "SetDoorPropertyValue",
+        "body": "SetDoorPropertyValue(${1:door}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)})$0\r\n",
+        "description": "(Server) Function: SetDoorPropertyValue(door, PropertyName,Value,bSync (optional))"
+    },
+    "Server.GetDoorPropertyValue": {
+        "prefix": "GetDoorPropertyValue",
+        "body": "GetDoorPropertyValue(${1:door}, ${2:PropertyName})$0\r\n",
+        "description": "(Server) Function: GetDoorPropertyValue(door, PropertyName)"
+    },
 }
