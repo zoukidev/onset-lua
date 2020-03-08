@@ -1238,5 +1238,5 @@
         "prefix": "IsPlayerVoiceChannel",
         "body": "IsPlayerVoiceChannel(${1:playerid}, ${2:channel})$0\r\n",
         "description": "(Server) Function: IsPlayerVoiceChannel(playerid, channel)"
-    },
+    }
 }
