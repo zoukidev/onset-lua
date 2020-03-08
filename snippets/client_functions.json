@@ -1503,5 +1503,10 @@
         "prefix": "SetControlRotation",
         "body": "SetControlRotation(${1:pitch}, ${2:yaw}, ${3:roll})$0\r\n",
         "description": "(Client) Function: SetControlRotation(pitch,yaw,roll)"
+    },
+    "Client.SetPlayerVoiceTone": {
+        "prefix": "SetPlayerVoiceTone",
+        "body": "SetPlayerVoiceTone(${1:player}, ${2:gender})$0\r\n",
+        "description": "(Client) Function: SetPlayerVoiceTone(player, gender)"
     }
 }
