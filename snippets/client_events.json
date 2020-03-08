@@ -284,4 +284,9 @@
         "body": "AddEvent(\"OnDoorNetworkUpdatePropertyValue\", function(${1:door}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnDoorNetworkUpdatePropertyValue(door,PropertyName,PropertyValue)"
     },
+    "Client.OnPlayerToggleVehicleLight": {
+        "prefix": "OnPlayerToggleVehicleLight",
+        "body": "AddEvent(\"OnPlayerToggleVehicleLight\", function(${1:player}, ${2:bEnable}\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerToggleVehicleLight(player, bEnable)"
+    }
 }
