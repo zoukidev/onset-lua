@@ -1223,5 +1223,15 @@
         "prefix": "IsText3DStreamedIn",
         "body": "(${1:player}, ${2:text3d})$0\r\n",
         "description": "(Server) Function: IsText3DStreamedIn(player, text3d)"
+    },
+    "Server.SetPickupLocation": {
+        "prefix": "SetPickupLocation",
+        "body": "(${1:pickup}, ${2:x}, ${3:y}, ${4:z})$0\r\n",
+        "description": "(Server) Function: SetPickupLocation(pickup, x, y, z)"
+    },
+    "Server.SetText3DLocation": {
+        "prefix": "SetText3DLocation",
+        "body": "(${1:text3d}, ${2:x}, ${3:y}, ${4:z})$0\r\n",
+        "description": "(Server) Function: SetText3DLocation(text3d, x, y, z)"
     }
 }
