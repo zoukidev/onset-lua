@@ -1523,5 +1523,15 @@
         "prefix": "GetVehicleNumberOfSeats",
         "body": "GetVehicleNumberOfSeats(${1:vehicle})\r\n",
         "description": "(Client) Function: GetVehicleNumberOfSeats(vehicle)"
+    },
+    "Client.SetDoorPropertyValue": {
+        "prefix": "SetDoorPropertyValue",
+        "body": "SetDoorPropertyValue(${1:door}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)})$0\r\n",
+        "description": "(Client) Function: SetDoorPropertyValue(door, PropertyName,Value,bSync (optional))"
+    },
+    "Client.GetDoorPropertyValue": {
+        "prefix": "GetDoorPropertyValue",
+        "body": "GetDoorPropertyValue(${1:door}, ${2:PropertyName})$0\r\n",
+        "description": "(Client) Function: GetDoorPropertyValue(door, PropertyName)"
     }
 }
