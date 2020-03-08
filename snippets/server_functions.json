@@ -1203,5 +1203,5 @@
         "prefix": "GetDoorPropertyValue",
         "body": "GetDoorPropertyValue(${1:door}, ${2:PropertyName})$0\r\n",
         "description": "(Server) Function: GetDoorPropertyValue(door, PropertyName)"
-    },
+    }
 }
