@@ -332,12 +332,12 @@
     "Client.SetPlayerOutline": {
         "prefix": "SetPlayerOutline",
         "body": "SetPlayerOutline(${1:player }, ${2:bEnable (optional)})$0\r\n",
-        "description": "(Client) Function: SetPlayerOutline(player ,bEnable (optional))"
+        "description": "(Client) Function: SetPlayerOutline(player, bEnable (optional))"
     },
     "Client.SetPlayerClothingPreset": {
         "prefix": "SetPlayerClothingPreset",
-        "body": "SetPlayerClothingPreset(${2:clothing_preset})$0\r\n",
-        "description": "(Client) Function: SetPlayerClothingPreset(player,clothing_preset)"
+        "body": "SetPlayerClothingPreset(${1:player}, {2:clothing_preset})$0\r\n",
+        "description": "(Client) Function: SetPlayerClothingPreset(player, clothing_preset)"
     },
     "Client.GetPlayerVehicle": {
         "prefix": "GetPlayerVehicle",
