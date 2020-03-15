@@ -19,26 +19,6 @@
         "body": "GetAllFilesInPak(${1:PakName})$0\r\n",
         "description": "(Client) Function: GetAllFilesInPak(PakName)"
     },
-    "Client.GetAllCollisions": {
-        "prefix": "GetAllCollisions",
-        "body": "GetAllCollisions()$0\r\n",
-        "description": "(Client) Function: GetAllCollisions()"
-    },
-    "Client.CreateCollisionBox": {
-        "prefix": "CreateCollisionBox",
-        "body": "CreateCollisionBox(${1:x}, ${2:y}, ${3:z}, ${4:bx}, ${5:by}, ${6:bz }, ${7:bVisible (optional)})$0\r\n",
-        "description": "(Client) Function: CreateCollisionBox(x,y,z,bx,by,bz ,bVisible (optional))"
-    },
-    "Client.CreateCollisionSphere": {
-        "prefix": "CreateCollisionSphere",
-        "body": "CreateCollisionSphere(${1:x}, ${2:y}, ${3:z}, ${4:radius }, ${5:bVisible (optional)})$0\r\n",
-        "description": "(Client) Function: CreateCollisionSphere(x,y,z,radius ,bVisible (optional))"
-    },
-    "Client.DestroyCollision": {
-        "prefix": "DestroyCollision",
-        "body": "DestroyCollision(${1:collision})$0\r\n",
-        "description": "(Client) Function: DestroyCollision(collision)"
-    },
     "Client.GetGameVersion": {
         "prefix": "GetGameVersion",
         "body": "GetGameVersion()$0\r\n",
@@ -352,12 +332,12 @@
     "Client.SetPlayerOutline": {
         "prefix": "SetPlayerOutline",
         "body": "SetPlayerOutline(${1:player }, ${2:bEnable (optional)})$0\r\n",
-        "description": "(Client) Function: SetPlayerOutline(player ,bEnable (optional))"
+        "description": "(Client) Function: SetPlayerOutline(player, bEnable (optional))"
     },
     "Client.SetPlayerClothingPreset": {
         "prefix": "SetPlayerClothingPreset",
-        "body": "SetPlayerClothingPreset(${2:clothing_preset})$0\r\n",
-        "description": "(Client) Function: SetPlayerClothingPreset(player,clothing_preset)"
+        "body": "SetPlayerClothingPreset(${1:player}, {2:clothing_preset})$0\r\n",
+        "description": "(Client) Function: SetPlayerClothingPreset(player, clothing_preset)"
     },
     "Client.GetPlayerVehicle": {
         "prefix": "GetPlayerVehicle",
@@ -1523,5 +1503,40 @@
         "prefix": "SetControlRotation",
         "body": "SetControlRotation(${1:pitch}, ${2:yaw}, ${3:roll})$0\r\n",
         "description": "(Client) Function: SetControlRotation(pitch,yaw,roll)"
+    },
+    "Client.SetPlayerVoiceTone": {
+        "prefix": "SetPlayerVoiceTone",
+        "body": "SetPlayerVoiceTone(${1:player}, ${2:gender})$0\r\n",
+        "description": "(Client) Function: SetPlayerVoiceTone(player, gender)"
+    },
+    "Client.GetVehiclePassenger": {
+        "prefix": "GetVehiclePassenger",
+        "body": "GetVehiclePassenger(${1:vehicle})\r\n",
+        "description": "(Client) Function: GetVehiclePassenger(vehicle)"
+    },
+    "Client.GetVehicleDriver": {
+        "prefix": "GetVehicleDriver",
+        "body": "GetVehicleDriver(${1:vehicle})\r\n",
+        "description": "(Client) Function: GetVehicleDriver(vehicle)"
+    },
+    "Client.GetVehicleNumberOfSeats": {
+        "prefix": "GetVehicleNumberOfSeats",
+        "body": "GetVehicleNumberOfSeats(${1:vehicle})\r\n",
+        "description": "(Client) Function: GetVehicleNumberOfSeats(vehicle)"
+    },
+    "Client.SetDoorPropertyValue": {
+        "prefix": "SetDoorPropertyValue",
+        "body": "SetDoorPropertyValue(${1:door}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)})$0\r\n",
+        "description": "(Client) Function: SetDoorPropertyValue(door, PropertyName,Value,bSync (optional))"
+    },
+    "Client.GetDoorPropertyValue": {
+        "prefix": "GetDoorPropertyValue",
+        "body": "GetDoorPropertyValue(${1:door}, ${2:PropertyName})$0\r\n",
+        "description": "(Client) Function: GetDoorPropertyValue(door, PropertyName)"
+    },
+    "Client.TogglePlayerTag": {
+        "prefix": "TogglePlayerTag",
+        "body": "TogglePlayerTag(${1:player}, ${2:tagname}, ${3:enable})$0\r\n",
+        "description": "(Client) Function: TogglePlayerTag(player, tagname, enable)"
     }
 }

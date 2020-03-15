@@ -644,11 +644,6 @@
         "body": "IsPlayerTalking(${1:player})$0\r\n",
         "description": "(Server) Function: IsPlayerTalking(player)"
     },
-    "Server.SetPlayerVoiceDimension": {
-        "prefix": "SetPlayerVoiceDimension",
-        "body": "SetPlayerVoiceDimension(${1:playerid}, ${2:dimensionid})$0\r\n",
-        "description": "(Server) Function: SetPlayerVoiceDimension(playerid,dimensionid)"
-    },
     "Server.AddPlayerChat": {
         "prefix": "AddPlayerChat",
         "body": "AddPlayerChat(${1:player}, ${2:message})$0\r\n",
@@ -1187,6 +1182,61 @@
     "Server.AttachVehicleNitro": {
         "prefix": "AttachVehicleNitro",
         "body": "AttachVehicleNitro(${1:vehicle }, ${2:attach (optional)})$0\r\n",
-        "description": "(Server) Function: AttachVehicleNitro(vehicle ,attach (optional))"
+        "description": "(Server) Function: AttachVehicleNitro(vehicle, attach (optional))"
+    },
+    "Server.SetObjectModel": {
+        "prefix": "SetObjectModel",
+        "body": "SetObjectModel(${1:object}, ${2:model})$0\r\n",
+        "description": "(Server) Function: SetObjectModel(object, model)"
+    },
+    "Server.SetDoorPropertyValue": {
+        "prefix": "SetDoorPropertyValue",
+        "body": "SetDoorPropertyValue(${1:door}, ${2:PropertyName}, ${3:Value}, ${4:bSync (optional)})$0\r\n",
+        "description": "(Server) Function: SetDoorPropertyValue(door, PropertyName,Value,bSync (optional))"
+    },
+    "Server.GetDoorPropertyValue": {
+        "prefix": "GetDoorPropertyValue",
+        "body": "GetDoorPropertyValue(${1:door}, ${2:PropertyName})$0\r\n",
+        "description": "(Server) Function: GetDoorPropertyValue(door, PropertyName)"
+    },
+    "Server.SetObjectModel": {
+        "prefix": "SetObjectModel",
+        "body": "SetObjectModel(${1:object}, ${2:model})$0\r\n",
+        "description": "(Server) Function: SetObjectModel(object, model)"
+    },
+    "Server.IsDoorStreamedIn": {
+        "prefix": "IsDoorStreamedIn",
+        "body": "(${1:player}, ${2:door})$0\r\n",
+        "description": "(Server) Function: IsDoorStreamedIn(player, door)"
+    },
+    "Server.IsPickupStreamedIn": {
+        "prefix": "IsPickupStreamedIn",
+        "body": "(${1:player}, ${2:pickup})$0\r\n",
+        "description": "(Server) Function: IsPickupStreamedIn(player, pickup)"
+    },
+    "Server.IsText3DStreamedIn": {
+        "prefix": "IsText3DStreamedIn",
+        "body": "(${1:player}, ${2:text3d})$0\r\n",
+        "description": "(Server) Function: IsText3DStreamedIn(player, text3d)"
+    },
+    "Server.SetPickupLocation": {
+        "prefix": "SetPickupLocation",
+        "body": "(${1:pickup}, ${2:x}, ${3:y}, ${4:z})$0\r\n",
+        "description": "(Server) Function: SetPickupLocation(pickup, x, y, z)"
+    },
+    "Server.SetText3DLocation": {
+        "prefix": "SetText3DLocation",
+        "body": "(${1:text3d}, ${2:x}, ${3:y}, ${4:z})$0\r\n",
+        "description": "(Server) Function: SetText3DLocation(text3d, x, y, z)"
+    },
+    "Server.SetPlayerVoiceChannel": {
+        "prefix": "SetPlayerVoiceChannel",
+        "body": "SetPlayerVoiceChannel(${1:playerid}, ${2:channel}, ${3:bEnable})$0\r\n",
+        "description": "(Server) Function: SetPlayerVoiceChannel(playerid, channel, bEnable)"
+    },
+    "Server.IsPlayerVoiceChannel": {
+        "prefix": "IsPlayerVoiceChannel",
+        "body": "IsPlayerVoiceChannel(${1:playerid}, ${2:channel})$0\r\n",
+        "description": "(Server) Function: IsPlayerVoiceChannel(playerid, channel)"
     }
 }

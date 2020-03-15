@@ -48,6 +48,13 @@
 		"prefix": "HIT_WATER",
 		"description": "(Shared) Enum: HIT_WATER = 7"
 	},
+	"HitTypes.HIT_DOOR":
+	{
+		"scope": "source.lua",
+		"body": "HIT_DOOR",
+		"prefix": "HIT_DOOR",
+		"description": "(Shared) Enum: HIT_DOOR = 8"
+	},
 	"PlayerStateTypes.PS_NONE":
 	{
 		"scope": "source.lua",

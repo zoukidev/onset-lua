@@ -1,14 +1,4 @@
 {
-    "Client.OnCollisionEnter": {
-        "prefix": "OnCollisionEnter",
-        "body": "AddEvent(\"OnCollisionEnter\", function(${1:collision}, ${2:hittype}, ${3:hitid})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnCollisionEnter(collision,hittype,hitid)"
-    },
-    "Client.OnCollisionLeave": {
-        "prefix": "OnCollisionLeave",
-        "body": "AddEvent(\"OnCollisionLeave\", function(${1:collision}, ${2:hittype}, ${3:hitid})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnCollisionLeave(collision,hittype,hitid)"
-    },
     "Client.OnGameTick": {
         "prefix": "OnGameTick",
         "body": "AddEvent(\"OnGameTick\", function(${1:DeltaSeconds})\r\n\t\r\nend)$0\r\n",
@@ -283,5 +273,20 @@
         "prefix": "OnPickupNetworkUpdatePropertyValue",
         "body": "AddEvent(\"OnPickupNetworkUpdatePropertyValue\", function(${1:pickupId}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
         "description": "(Client) Event: OnPickupNetworkUpdatePropertyValue(pickupId,PropertyName,PropertyValue)"
+    },
+    "Client.OnObjectModelChange": {
+        "prefix": "OnObjectModelChange",
+        "body": "AddEvent(\"OnObjectModelChange\", function (${1:object}, ${2:model})\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnObjectModelChange(object, model)"
+    },
+    "Client.OnDoorNetworkUpdatePropertyValue": {
+        "prefix": "OnDoorNetworkUpdatePropertyValue",
+        "body": "AddEvent(\"OnDoorNetworkUpdatePropertyValue\", function(${1:door}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnDoorNetworkUpdatePropertyValue(door,PropertyName,PropertyValue)"
+    },
+    "Client.OnPlayerToggleVehicleLight": {
+        "prefix": "OnPlayerToggleVehicleLight",
+        "body": "AddEvent(\"OnPlayerToggleVehicleLight\", function(${1:player}, ${2:bEnable}\r\n\t\r\nend)$0\r\n",
+        "description": "(Client) Event: OnPlayerToggleVehicleLight(player, bEnable)"
     }
 }

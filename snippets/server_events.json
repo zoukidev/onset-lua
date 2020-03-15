@@ -158,5 +158,10 @@
         "prefix": "OnNPCStreamOut",
         "body": "AddEvent(\"OnNPCStreamOut\", function(${1:npc}, ${2:player})\r\n\t\r\nend)$0\r\n",
         "description": "(Server) Event: OnNPCStreamOut(npc,player)"
+    },
+    "Server.OnVehicleDamage": {
+        "prefix": "OnVehicleDamage",
+        "body": "AddEvent(\"OnVehicleDamage\", function(${1:vehicle}, ${2:healthdamage}, ${3:damageindex}, ${4:morphdamage})\r\n\t\r\nend)$0\r\n",
+        "description": "(Server) Event: OnVehicleDamage(vehicle, healthdamage, damageindex, morphdamage)"
     }
 }
