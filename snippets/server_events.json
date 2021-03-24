@@ -1,167 +1,366 @@
 {
-    "Server.OnPlayerServerAuth": {
+    "server.OnPlayerServerAuth": {
         "prefix": "OnPlayerServerAuth",
-        "body": "AddEvent(\"OnPlayerServerAuth\", function(${1:player})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerServerAuth(player)"
+        "body": [
+            "AddEvent(\"OnPlayerServerAuth\", function(player)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Server has authorized a client and allocated a player identifier to them. The player is now downloading packages from the server. Called after OnClientConnectionRequest but before OnPlayerJoin.\n"
     },
-    "Server.OnPlayerSteamAuth": {
+    "server.OnPlayerSteamAuth": {
         "prefix": "OnPlayerSteamAuth",
-        "body": "AddEvent(\"OnPlayerSteamAuth\", function(${1:player})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerSteamAuth(player)"
+        "body": [
+            "AddEvent(\"OnPlayerSteamAuth\", function(player)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player was authenticated by Steam. Once this event was called you can use GetPlayerSteamId to get the players SteamId.\nSteam identity authentication is mandatory. If it fails the player will be kicked.\n"
     },
-    "Server.OnPlayerDownloadFile": {
+    "server.OnPlayerDownloadFile": {
         "prefix": "OnPlayerDownloadFile",
-        "body": "AddEvent(\"OnPlayerDownloadFile\", function(${1:player}, ${2:FileName}, ${3:Checksum})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerDownloadFile(player,FileName,Checksum)"
+        "body": [
+            "AddEvent(\"OnPlayerDownloadFile\", function(player, FileName, Checksum)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a client finished downloading a package file from the server.\n"
     },
-    "Server.OnPlayerStreamIn": {
+    "server.OnPlayerStreamIn": {
         "prefix": "OnPlayerStreamIn",
-        "body": "AddEvent(\"OnPlayerStreamIn\", function(${1:player}, ${2:otherplayer})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerStreamIn(player,otherplayer)"
+        "body": [
+            "AddEvent(\"OnPlayerStreamIn\", function(player, otherplayer)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when another user is streamed in (rendered) for the player.\n"
     },
-    "Server.OnPlayerStreamOut": {
+    "server.OnPlayerStreamOut": {
         "prefix": "OnPlayerStreamOut",
-        "body": "AddEvent(\"OnPlayerStreamOut\", function(${1:player}, ${2:otherplayer})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerStreamOut(player,otherplayer)"
+        "body": [
+            "AddEvent(\"OnPlayerStreamOut\", function(player, otherplayer)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player streams out of the streaming distance set by server_config for another player.\n"
     },
-    "Server.OnPlayerPickupHit": {
+    "server.OnPlayerPickupHit": {
         "prefix": "OnPlayerPickupHit",
-        "body": "AddEvent(\"OnPlayerPickupHit\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerPickupHit()"
+        "body": [
+            "AddEvent(\"OnPlayerPickupHit\", function()\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event thats called when a player pickups a pickup.\n"
     },
-    "Server.OnPlayerJoin": {
+    "server.OnPlayerJoin": {
         "prefix": "OnPlayerJoin",
-        "body": "AddEvent(\"OnPlayerJoin\", function(${1:player})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerJoin(player)"
+        "body": [
+            "AddEvent(\"OnPlayerJoin\", function(player)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player is fully connected to the server. The game has started on the client and the player is going to spawn after this event was executed.\n"
     },
-    "Server.OnPlayerQuit": {
+    "server.OnPlayerQuit": {
         "prefix": "OnPlayerQuit",
-        "body": "AddEvent(\"OnPlayerQuit\", function(${1:player})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerQuit(player)"
+        "body": [
+            "AddEvent(\"OnPlayerQuit\", function(player)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when a player leaves the server.\n"
     },
-    "Server.OnPlayerSpawn": {
+    "server.OnPlayerSpawn": {
         "prefix": "OnPlayerSpawn",
-        "body": "AddEvent(\"OnPlayerSpawn\", function(${1:playerid})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerSpawn(playerid)"
+        "body": [
+            "AddEvent(\"OnPlayerSpawn\", function(playerid)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player spawns. This usually happens after they died. Use SetPlayerRespawnTime to control how long it takes before they respawn.\n"
     },
-    "Server.OnPlayerDeath": {
+    "server.OnPlayerDeath": {
         "prefix": "OnPlayerDeath",
-        "body": "AddEvent(\"OnPlayerDeath\", function(${1:player}, ${2:instigator})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerDeath(player,instigator)"
+        "body": [
+            "AddEvent(\"OnPlayerDeath\", function(player, instigator)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Calls when a player dies by any means possible. If the player wasn't killed by another player, instigator will be the same as the player.\n"
     },
-    "Server.OnPlayerWeaponShot": {
+    "server.OnPlayerWeaponShot": {
         "prefix": "OnPlayerWeaponShot",
-        "body": "AddEvent(\"OnPlayerWeaponShot\", function(${1:player}, ${2:player}, ${3:hittype}, ${4:hitid}, ${5:hitX}, ${6:hitY}, ${7:hitZ}, ${8:startX}, ${9:startY}, ${10:startY}, ${11:normalX}, ${12:normalY}, ${13:normalZ})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerWeaponShot(player,player,hittype,hitid,hitX,hitY,hitZ,startX,startY,startY,normalX,normalY,normalZ)"
+        "body": [
+            "AddEvent(\"OnPlayerWeaponShot\", function(player, weapon, hittype, hitid, hitX, hitY, hitZ, startX, startY, startZ, normalX, normalY, normalZ, BoneName)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player has shot their weapon and the hit was authorized by the server but not yet processed its impact. You can call return false in this event to prevent this hit from further processing. (Server only)\n"
     },
-    "Server.OnPlayerDamage": {
+    "server.OnPlayerDamage": {
         "prefix": "OnPlayerDamage",
-        "body": "AddEvent(\"OnPlayerDamage\", function(${1:player}, ${2:damagetype}, ${3:amount})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerDamage(player,damagetype,amount)"
+        "body": [
+            "AddEvent(\"OnPlayerDamage\", function(player, damagetype, amount)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event thats called when player receives damage.\n"
     },
-    "Server.OnPlayerChat": {
+    "server.OnPlayerChat": {
         "prefix": "OnPlayerChat",
-        "body": "AddEvent(\"OnPlayerChat\", function(${1:player}, ${2:text})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerChat(player,text)"
+        "body": [
+            "AddEvent(\"OnPlayerChat\", function(player, text)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "The event that gets called when you type a message in the chat.\n"
     },
-    "Server.OnPlayerChatCommand": {
+    "server.OnPlayerChatCommand": {
         "prefix": "OnPlayerChatCommand",
-        "body": "AddEvent(\"OnPlayerChatCommand\", function(${1:player}, ${2:command}, ${3:exists})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerChatCommand(player,command,exists)"
+        "body": [
+            "AddEvent(\"OnPlayerChatCommand\", function(player, command, exists)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player executes a command in the chat. See AddCommand to handle specific commands. You can return false in this event to prevent the command from being passed to it's handler.\n"
     },
-    "Server.OnPlayerInteractDoor": {
+    "server.OnPlayerInteractDoor": {
         "prefix": "OnPlayerInteractDoor",
-        "body": "AddEvent(\"OnPlayerInteractDoor\", function(${1:player}, ${2:door}, ${3:bWantsOpen})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerInteractDoor(player,door,bWantsOpen)"
+        "body": [
+            "AddEvent(\"OnPlayerInteractDoor\", function(player, door, bWantsOpen)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player interacts with a door through pressing 'E'.\n"
     },
-    "Server.OnPlayerEnterVehicle": {
+    "server.OnPlayerChangeDimension": {
+        "prefix": "OnPlayerChangeDimension",
+        "body": [
+            "AddEvent(\"OnPlayerChangeDimension\", function(player, old_dimension, new_dimension)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when a player instance changes dimensions from SetPlayerDimension.\n"
+    },
+    "server.OnPlayerEnterVehicle": {
         "prefix": "OnPlayerEnterVehicle",
-        "body": "AddEvent(\"OnPlayerEnterVehicle\", function(${1:player}, ${2:vehicle}, ${3:seat})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerEnterVehicle(player,vehicle,seat)"
+        "body": [
+            "AddEvent(\"OnPlayerEnterVehicle\", function(player, vehicle, seat)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "This event is called when a player enters a vehicle.\n"
     },
-    "Server.OnPlayerLeaveVehicle": {
+    "server.OnPlayerLeaveVehicle": {
         "prefix": "OnPlayerLeaveVehicle",
-        "body": "AddEvent(\"OnPlayerLeaveVehicle\", function(${1:player}, ${2:vehicle}, ${3:seat})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerLeaveVehicle(player,vehicle,seat)"
+        "body": [
+            "AddEvent(\"OnPlayerLeaveVehicle\", function(player, vehicle, seat)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "__EDIT_ME__\n"
     },
-    "Server.OnPlayerStateChange": {
+    "server.OnPlayerStateChange": {
         "prefix": "OnPlayerStateChange",
-        "body": "AddEvent(\"OnPlayerStateChange\", function(${1:player}, ${2:newstate}, ${3:oldstate})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPlayerStateChange(player,newstate,oldstate)"
+        "body": [
+            "AddEvent(\"OnPlayerStateChange\", function(player, newstate, oldstate)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when the player state changes. PlayerState\n"
     },
-    "Server.OnVehicleRespawn": {
+    "server.OnVehicleRespawn": {
         "prefix": "OnVehicleRespawn",
-        "body": "AddEvent(\"OnVehicleRespawn\", function(${1:vehicle})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnVehicleRespawn(vehicle)"
+        "body": [
+            "AddEvent(\"OnVehicleRespawn\", function(vehicle)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "This event is called when a vehicle is respawned.\n"
     },
-    "Server.OnVehicleStreamIn": {
+    "server.OnVehicleStreamIn": {
         "prefix": "OnVehicleStreamIn",
-        "body": "AddEvent(\"OnVehicleStreamIn\", function(${1:vehicle}, ${2:player})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnVehicleStreamIn(vehicle,player)"
+        "body": [
+            "AddEvent(\"OnVehicleStreamIn\", function(vehicle, player)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Calls when a vehicle streams out of the streaming distance set in your server_config for a player.\n"
     },
-    "Server.OnVehicleStreamOut": {
+    "server.OnVehicleStreamOut": {
         "prefix": "OnVehicleStreamOut",
-        "body": "AddEvent(\"OnVehicleStreamOut\", function(${1:vehicle}, ${2:player})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnVehicleStreamOut(vehicle,player)"
+        "body": [
+            "AddEvent(\"OnVehicleStreamOut\", function(vehicle, player)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a vehicle is no longer streamed for a player. The stream distance is set through your server_config.\n"
     },
-    "Server.OnGameTick": {
-        "prefix": "OnGameTick",
-        "body": "AddEvent(\"OnGameTick\", function(${1:DeltaSeconds})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnGameTick(DeltaSeconds)"
-    },
-    "Server.OnClientConnectionRequest": {
-        "prefix": "OnClientConnectionRequest",
-        "body": "AddEvent(\"OnClientConnectionRequest\", function(${1:ip}, ${2:port})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnClientConnectionRequest(ip,port)"
-    },
-    "Server.OnPackageStart": {
-        "prefix": "OnPackageStart",
-        "body": "AddEvent(\"OnPackageStart\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPackageStart()"
-    },
-    "Server.OnPackageStop": {
-        "prefix": "OnPackageStop",
-        "body": "AddEvent(\"OnPackageStop\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnPackageStop()"
-    },
-    "Server.OnScriptError": {
-        "prefix": "OnScriptError",
-        "body": "AddEvent(\"OnScriptError\", function(${1:message})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnScriptError(message)"
-    },
-    "Server.OnNPCReachTarget": {
-        "prefix": "OnNPCReachTarget",
-        "body": "AddEvent(\"OnNPCReachTarget\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnNPCReachTarget()"
-    },
-    "Server.OnNPCDamage": {
-        "prefix": "OnNPCDamage",
-        "body": "AddEvent(\"OnNPCDamage\", function(${1:npc}, ${2:damagetype}, ${3:amount})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnNPCDamage(npc,damagetype,amount)"
-    },
-    "Server.OnNPCSpawn": {
-        "prefix": "OnNPCSpawn",
-        "body": "AddEvent(\"OnNPCSpawn\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnNPCSpawn()"
-    },
-    "Server.OnNPCDeath": {
-        "prefix": "OnNPCDeath",
-        "body": "AddEvent(\"OnNPCDeath\", function(${1:npc}, ${2:player})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnNPCDeath(npc,player)"
-    },
-    "Server.OnNPCStreamIn": {
-        "prefix": "OnNPCStreamIn",
-        "body": "AddEvent(\"OnNPCStreamIn\", function(${1:npc}, ${2:player})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnNPCStreamIn(npc,player)"
-    },
-    "Server.OnNPCStreamOut": {
-        "prefix": "OnNPCStreamOut",
-        "body": "AddEvent(\"OnNPCStreamOut\", function(${1:npc}, ${2:player})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnNPCStreamOut(npc,player)"
-    },
-    "Server.OnVehicleDamage": {
+    "server.OnVehicleDamage": {
         "prefix": "OnVehicleDamage",
-        "body": "AddEvent(\"OnVehicleDamage\", function(${1:vehicle}, ${2:healthdamage}, ${3:damageindex}, ${4:morphdamage})\r\n\t\r\nend)$0\r\n",
-        "description": "(Server) Event: OnVehicleDamage(vehicle, healthdamage, damageindex, morphdamage)"
+        "body": [
+            "AddEvent(\"OnVehicleDamage\", function(vehicle, healthDamage, damageIndex (optional), damageAmount (optional))\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "This event is called when a vehicles takes health damage or physical damage.\n"
+    },
+    "server.OnVehicleChangeDimension": {
+        "prefix": "OnVehicleChangeDimension",
+        "body": [
+            "AddEvent(\"OnVehicleChangeDimension\", function(vehicle, old_dimension, new_dimension)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when an vehicle instance changes dimensions from SetVehicleDimension.\n"
+    },
+    "server.OnVehicleCreated": {
+        "prefix": "OnVehicleCreated",
+        "body": [
+            "AddEvent(\"OnVehicleCreated\", function(vehicle)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when an vehicle instance was created through CreateVehicle.\n"
+    },
+    "server.OnVehicleDestroyed": {
+        "prefix": "OnVehicleDestroyed",
+        "body": [
+            "AddEvent(\"OnVehicleDestroyed\", function(vehicle)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when a vehicle instance was destroyed through DestroyVehicle.\n"
+    },
+    "server.OnGameTick": {
+        "prefix": "OnGameTick",
+        "body": [
+            "AddEvent(\"OnGameTick\", function(DeltaSeconds)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called on execution of the main thread. This is typically every frame (FPS) on clients. Tick rate on the server varies depending on the load. Use GetServerTickRate on the server to get that rate.\n"
+    },
+    "server.OnClientConnectionRequest": {
+        "prefix": "OnClientConnectionRequest",
+        "body": [
+            "AddEvent(\"OnClientConnectionRequest\", function(ip, port)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Early callback of when a client tries to connect to the server. Client is not fully authorized by the server in this state. You can return false in this event to disconnect the client immediately.\n"
+    },
+    "server.OnConsoleInput": {
+        "prefix": "OnConsoleInput",
+        "body": [
+            "AddEvent(\"OnConsoleInput\", function(input)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a new input in the console happened.\n"
+    },
+    "server.OnScriptError": {
+        "prefix": "OnScriptError",
+        "body": [
+            "AddEvent(\"OnScriptError\", function()\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a script error occurs. On the client side, this is only called when the game was started with the -dev switch. Available on the sever side since version 1.0.3.\n"
+    },
+    "server.OnNPCReachTarget": {
+        "prefix": "OnNPCReachTarget",
+        "body": [
+            "AddEvent(\"OnNPCReachTarget\", function(npcid)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event thats called when a NPC reaches the target. See the SetNPCTargetLocation function.\n"
+    },
+    "server.OnNPCDamage": {
+        "prefix": "OnNPCDamage",
+        "body": [
+            "AddEvent(\"OnNPCDamage\", function(npc, damagetype, amount)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event thats called when a NPC is damaged.\n"
+    },
+    "server.OnNPCSpawn": {
+        "prefix": "OnNPCSpawn",
+        "body": [
+            "AddEvent(\"OnNPCSpawn\", function(npc)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event thats called when a NPC is spawned after it died. Death time can be set with SetNPCRespawnTime.\n"
+    },
+    "server.OnNPCDeath": {
+        "prefix": "OnNPCDeath",
+        "body": [
+            "AddEvent(\"OnNPCDeath\", function(npc, player)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event thats called when a NPC dies.\n"
+    },
+    "server.OnNPCStreamIn": {
+        "prefix": "OnNPCStreamIn",
+        "body": [
+            "AddEvent(\"OnNPCStreamIn\", function(npc, player)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "The event thats called when a NPC is streamed for a player.\n"
+    },
+    "server.OnNPCStreamOut": {
+        "prefix": "OnNPCStreamOut",
+        "body": [
+            "AddEvent(\"OnNPCStreamOut\", function(npc, player)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a NPC is streamed out from the server. \n"
+    },
+    "server.OnNPCChangeDimension": {
+        "prefix": "OnNPCChangeDimension",
+        "body": [
+            "AddEvent(\"OnNPCChangeDimension\", function(npc, old_dimension, new_dimension)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when an NPC instance changes dimensions from SetNPCDimension.\n"
+    },
+    "server.OnNPCCreated": {
+        "prefix": "OnNPCCreated",
+        "body": [
+            "AddEvent(\"OnNPCCreated\", function(npc)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when an npc instance was created through CreateNPC.\n"
+    },
+    "server.OnNPCDestroyed": {
+        "prefix": "OnNPCDestroyed",
+        "body": [
+            "AddEvent(\"OnNPCDestroyed\", function(npc)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when a NPC instance was destroyed through DestroyNPC.\n"
+    },
+    "server.OnObjectStopMoving": {
+        "prefix": "OnObjectStopMoving",
+        "body": [
+            "AddEvent(\"OnObjectStopMoving\", function(object)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when an object stops moving after SetObjectMoveTo.\n"
+    },
+    "server.OnObjectChangeDimension": {
+        "prefix": "OnObjectChangeDimension",
+        "body": [
+            "AddEvent(\"OnObjectChangeDimension\", function(object, old_dimension, new_dimension)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when an object instance changes dimensions from SetObjectDimension.\n"
+    },
+    "server.OnObjectCreated": {
+        "prefix": "OnObjectCreated",
+        "body": [
+            "AddEvent(\"OnObjectCreated\", function(object)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when an object instance was created through CreateObject.\n"
+    },
+    "server.OnObjectDestroyed": {
+        "prefix": "OnObjectDestroyed",
+        "body": [
+            "AddEvent(\"OnObjectDestroyed\", function(object)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when an object instance was destroyed through DestroyObject.\n"
+    },
+    "server.OnPickupChangeDimension": {
+        "prefix": "OnPickupChangeDimension",
+        "body": [
+            "AddEvent(\"OnPickupChangeDimension\", function(pickup, old_dimension, new_dimension)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when a pickup instance changes dimensions from SetPickupDimension.\n"
+    },
+    "server.OnPickupCreated": {
+        "prefix": "OnPickupCreated",
+        "body": [
+            "AddEvent(\"OnPickupCreated\", function(pickup)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when an pickup instance was created through CreatePickup.\n"
+    },
+    "server.OnPickupDestroyed": {
+        "prefix": "OnPickupDestroyed",
+        "body": [
+            "AddEvent(\"OnPickupDestroyed\", function(pickup)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when a pickup instance was destroyed through DestroyPickup.\n"
+    },
+    "server.OnText3DChangeDimension": {
+        "prefix": "OnText3DChangeDimension",
+        "body": [
+            "AddEvent(\"OnText3DChangeDimension\", function(text3d, old_dimension, new_dimension)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when a text3d instance changes dimensions from SetText3DDimension.\n"
+    },
+    "server.OnText3DCreated": {
+        "prefix": "OnText3DCreated",
+        "body": [
+            "AddEvent(\"OnText3DCreated\", function(text3d)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when an text3d instance was created through CreateText3D.\n"
+    },
+    "server.OnText3DDestroyed": {
+        "prefix": "OnText3DDestroyed",
+        "body": [
+            "AddEvent(\"OnText3DDestroyed\", function(text3d)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when a text3d instance was destroyed through DestroyText3D.\n"
+    },
+    "server.OnDoorChangeDimension": {
+        "prefix": "OnDoorChangeDimension",
+        "body": [
+            "AddEvent(\"OnDoorChangeDimension\", function(door, old_dimension, new_dimension)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when a door instance changes dimensions from SetDoorDimension.\n"
+    },
+    "server.OnDoorCreated": {
+        "prefix": "OnDoorCreated",
+        "body": [
+            "AddEvent(\"OnDoorCreated\", function(door)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when an door instance was created through CreateDoor.\n"
+    },
+    "server.OnDoorDestroyed": {
+        "prefix": "OnDoorDestroyed",
+        "body": [
+            "AddEvent(\"OnDoorDestroyed\", function(door)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Event called when a door instance was destroyed through DestroyDoor.\n"
     }
 }

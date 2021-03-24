@@ -1,292 +1,359 @@
 {
-    "Client.OnGameTick": {
+    "client.OnGameTick": {
         "prefix": "OnGameTick",
-        "body": "AddEvent(\"OnGameTick\", function(${1:DeltaSeconds})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnGameTick(DeltaSeconds)"
+        "body": [
+            "AddEvent(\"OnGameTick\", function(DeltaSeconds)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called on execution of the main thread. This is typically every frame (FPS) on clients. Tick rate on the server varies depending on the load. Use GetServerTickRate on the server to get that rate.\n"
     },
-    "Client.OnSteamOverlayActivated": {
+    "client.OnSteamOverlayActivated": {
         "prefix": "OnSteamOverlayActivated",
-        "body": "AddEvent(\"OnSteamOverlayActivated\", function(${1:bActive})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnSteamOverlayActivated(bActive)"
+        "body": [
+            "AddEvent(\"OnSteamOverlayActivated\", function(bActive)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "__EDIT_ME__\n"
     },
-    "Client.OnResolutionChange": {
+    "client.OnResolutionChange": {
         "prefix": "OnResolutionChange",
-        "body": "AddEvent(\"OnResolutionChange\", function(${1:width}, ${2:height})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnResolutionChange(width,height)"
+        "body": [
+            "AddEvent(\"OnResolutionChange\", function(width, height)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when the size of the game window changes. Either due to manual resizing or through settings.\n"
     },
-    "Client.OnRenderHUD": {
-        "prefix": "OnRenderHUD",
-        "body": "AddEvent(\"OnRenderHUD\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnRenderHUD()"
-    },
-    "Client.OnShowMainMenu": {
+    "client.OnShowMainMenu": {
         "prefix": "OnShowMainMenu",
-        "body": "AddEvent(\"OnShowMainMenu\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnShowMainMenu()"
+        "body": [
+            "AddEvent(\"OnShowMainMenu\", function()\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "This function is called every time a player hides the main menu.\n"
     },
-    "Client.OnHideMainMenu": {
-        "prefix": "OnHideMainMenu",
-        "body": "AddEvent(\"OnHideMainMenu\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnHideMainMenu()"
+    "client.OnWhitelistAccepted": {
+        "prefix": "OnWhitelistAccepted",
+        "body": [
+            "AddEvent(\"OnWhitelistAccepted\", function()\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "This function is called once the player has accepted the whitelist request.\n"
     },
-    "Client.OnPlayerStartEnterVehicle": {
+    "client.OnVehicleStreamIn": {
+        "prefix": "OnVehicleStreamIn",
+        "body": [
+            "AddEvent(\"OnVehicleStreamIn\", function(vehicle, player)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Calls when a vehicle streams out of the streaming distance set in your server_config for a player.\n"
+    },
+    "client.OnVehicleStreamOut": {
+        "prefix": "OnVehicleStreamOut",
+        "body": [
+            "AddEvent(\"OnVehicleStreamOut\", function(vehicle, player)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a vehicle is no longer streamed for a player. The stream distance is set through your server_config.\n"
+    },
+    "client.OnPlayerStartEnterVehicle": {
         "prefix": "OnPlayerStartEnterVehicle",
-        "body": "AddEvent(\"OnPlayerStartEnterVehicle\", function(${1:vehicle}, ${2:seat})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerStartEnterVehicle(vehicle,seat)"
+        "body": [
+            "AddEvent(\"OnPlayerStartEnterVehicle\", function()\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player presses the key to start entering a vehicle. You can return false in this event to stop the player from entering.\n"
     },
-    "Client.OnPlayerStartExitVehicle": {
+    "client.OnPlayerStartExitVehicle": {
         "prefix": "OnPlayerStartExitVehicle",
-        "body": "AddEvent(\"OnPlayerStartExitVehicle\", function(${1:vehicle})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerStartExitVehicle(vehicle)"
+        "body": [
+            "AddEvent(\"OnPlayerStartExitVehicle\", function()\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player presses the key to start exiting a vehicle. You can return false in this event to stop the player from exiting.\n"
     },
-    "Client.OnPlayerEnterVehicle": {
+    "client.OnPlayerEnterVehicle": {
         "prefix": "OnPlayerEnterVehicle",
-        "body": "AddEvent(\"OnPlayerEnterVehicle\", function(${1:player}, ${2:vehicle}, ${3:seat})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerEnterVehicle(player,vehicle,seat)"
+        "body": [
+            "AddEvent(\"OnPlayerEnterVehicle\", function(player, vehicle, seat)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "This event is called when a player enters a vehicle.\n"
     },
-    "Client.OnPlayerLeaveVehicle": {
+    "client.OnPlayerLeaveVehicle": {
         "prefix": "OnPlayerLeaveVehicle",
-        "body": "AddEvent(\"OnPlayerLeaveVehicle\", function(${1:player}, ${2:vehicle}, ${3:seat})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerLeaveVehicle(player,vehicle,seat)"
+        "body": [
+            "AddEvent(\"OnPlayerLeaveVehicle\", function(player, vehicle, seat)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "__EDIT_ME__\n"
     },
-    "Client.OnPlayWeaponHitEffects": {
-        "prefix": "OnPlayWeaponHitEffects",
-        "body": "AddEvent(\"OnPlayWeaponHitEffects\", function(${1:PlayerId}, ${2:Weapon}, ${3:HitType}, ${4:HitId}, ${5:StartLocation}, ${6:HitLocation}, ${7:HitLocationRelative}, ${8:HitNormal}, ${9:HitResult})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayWeaponHitEffects(PlayerId,Weapon,HitType,HitId,StartLocation,HitLocation,HitLocationRelative,HitNormal,HitResult)"
-    },
-    "Client.OnPlayerStreamIn": {
-        "prefix": "OnPlayerStreamIn",
-        "body": "AddEvent(\"OnPlayerStreamIn\", function(${1:player}, ${2:otherplayer})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerStreamIn(player,otherplayer)"
-    },
-    "Client.OnPlayerStreamOut": {
-        "prefix": "OnPlayerStreamOut",
-        "body": "AddEvent(\"OnPlayerStreamOut\", function(${1:player}, ${2:otherplayer})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerStreamOut(player,otherplayer)"
-    },
-    "Client.OnPlayerSwitchCamera": {
-        "prefix": "OnPlayerSwitchCamera",
-        "body": "AddEvent(\"OnPlayerSwitchCamera\", function(${1:bIsFirstPerson})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerSwitchCamera(bIsFirstPerson)"
-    },
-    "Client.OnPlayerEnterWater": {
-        "prefix": "OnPlayerEnterWater",
-        "body": "AddEvent(\"OnPlayerEnterWater\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerEnterWater()"
-    },
-    "Client.OnPlayerLeaveWater": {
-        "prefix": "OnPlayerLeaveWater",
-        "body": "AddEvent(\"OnPlayerLeaveWater\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerLeaveWater()"
-    },
-    "Client.OnPlayerDeath": {
-        "prefix": "OnPlayerDeath",
-        "body": "AddEvent(\"OnPlayerDeath\", function(${1:player}, ${2:instigator})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerDeath(player,instigator)"
-    },
-    "Client.OnPlayerChatCommand": {
-        "prefix": "OnPlayerChatCommand",
-        "body": "AddEvent(\"OnPlayerChatCommand\", function(${1:player}, ${2:command}, ${3:exists})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerChatCommand(player,command,exists)"
-    },
-    "Client.OnPlayerChat": {
-        "prefix": "OnPlayerChat",
-        "body": "AddEvent(\"OnPlayerChat\", function(${1:player}, ${2:text})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerChat(player,text)"
-    },
-    "Client.OnPlayerSpawn": {
-        "prefix": "OnPlayerSpawn",
-        "body": "AddEvent(\"OnPlayerSpawn\", function(${1:playerid})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerSpawn(playerid)"
-    },
-    "Client.OnPlayerCrouch": {
-        "prefix": "OnPlayerCrouch",
-        "body": "AddEvent(\"OnPlayerCrouch\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerCrouch()"
-    },
-    "Client.OnPlayerEndCrouch": {
-        "prefix": "OnPlayerEndCrouch",
-        "body": "AddEvent(\"OnPlayerEndCrouch\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerEndCrouch()"
-    },
-    "Client.OnPlayerEndFall": {
-        "prefix": "OnPlayerEndFall",
-        "body": "AddEvent(\"OnPlayerEndFall\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerEndFall()"
-    },
-    "Client.OnPlayerFall": {
-        "prefix": "OnPlayerFall",
-        "body": "AddEvent(\"OnPlayerFall\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerFall()"
-    },
-    "Client.OnPlayerWeaponShot": {
-        "prefix": "OnPlayerWeaponShot",
-        "body": "AddEvent(\"OnPlayerWeaponShot\", function(${1:player}, ${2:player}, ${3:hittype}, ${4:hitid}, ${5:hitX}, ${6:hitY}, ${7:hitZ}, ${8:startX}, ${9:startY}, ${10:startY}, ${11:normalX}, ${12:normalY}, ${13:normalZ})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerWeaponShot(player,player,hittype,hitid,hitX,hitY,hitZ,startX,startY,startY,normalX,normalY,normalZ)"
-    },
-    "Client.OnPlayerReloaded": {
-        "prefix": "OnPlayerReloaded",
-        "body": "AddEvent(\"OnPlayerReloaded\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerReloaded()"
-    },
-    "Client.OnPlayerParachuteLand": {
-        "prefix": "OnPlayerParachuteLand",
-        "body": "AddEvent(\"OnPlayerParachuteLand\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerParachuteLand()"
-    },
-    "Client.OnPlayerSkydiveCrash": {
-        "prefix": "OnPlayerSkydiveCrash",
-        "body": "AddEvent(\"OnPlayerSkydiveCrash\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerSkydiveCrash()"
-    },
-    "Client.OnPlayerCancelSkydive": {
-        "prefix": "OnPlayerCancelSkydive",
-        "body": "AddEvent(\"OnPlayerCancelSkydive\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerCancelSkydive()"
-    },
-    "Client.OnPlayerSkydive": {
-        "prefix": "OnPlayerSkydive",
-        "body": "AddEvent(\"OnPlayerSkydive\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerSkydive()"
-    },
-    "Client.OnPlayerParachuteOpen": {
-        "prefix": "OnPlayerParachuteOpen",
-        "body": "AddEvent(\"OnPlayerParachuteOpen\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerParachuteOpen()"
-    },
-    "Client.OnPlayerParachuteClose": {
-        "prefix": "OnPlayerParachuteClose",
-        "body": "AddEvent(\"OnPlayerParachuteClose\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerParachuteClose()"
-    },
-    "Client.OnKeyPress": {
-        "prefix": "OnKeyPress",
-        "body": "AddEvent(\"OnKeyPress\", function(${1:key})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnKeyPress(key)"
-    },
-    "Client.OnKeyRelease": {
-        "prefix": "OnKeyRelease",
-        "body": "AddEvent(\"OnKeyRelease\", function(${1:key})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnKeyRelease(key)"
-    },
-    "Client.OnNPCStreamIn": {
-        "prefix": "OnNPCStreamIn",
-        "body": "AddEvent(\"OnNPCStreamIn\", function(${1:npc}, ${2:player})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnNPCStreamIn(npc,player)"
-    },
-    "Client.OnNPCStreamOut": {
-        "prefix": "OnNPCStreamOut",
-        "body": "AddEvent(\"OnNPCStreamOut\", function(${1:npc}, ${2:player})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnNPCStreamOut(npc,player)"
-    },
-    "Client.OnObjectStreamIn": {
-        "prefix": "OnObjectStreamIn",
-        "body": "AddEvent(\"OnObjectStreamIn\", function(${1:object})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnObjectStreamIn(object)"
-    },
-    "Client.OnObjectStreamOut": {
-        "prefix": "OnObjectStreamOut",
-        "body": "AddEvent(\"OnObjectStreamOut\", function(${1:object})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnObjectStreamOut(object)"
-    },
-    "Client.OnObjectHit": {
-        "prefix": "OnObjectHit",
-        "body": "AddEvent(\"OnObjectHit\", function(${1:object}, ${2:hittype}, ${3:hitid}, ${4:hitX}, ${5:hitY}, ${6:hitZ}, ${7:normalX}, ${8:normalY}, ${9:normalZ})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnObjectHit(object,hittype,hitid,hitX,hitY,hitZ,normalX,normalY,normalZ)"
-    },
-    "Client.OnPlayerEndEditObject": {
-        "prefix": "OnPlayerEndEditObject",
-        "body": "AddEvent(\"OnPlayerEndEditObject\", function(${1:object})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerEndEditObject(object)"
-    },
-    "Client.OnPlayerBeginEditObject": {
-        "prefix": "OnPlayerBeginEditObject",
-        "body": "AddEvent(\"OnPlayerBeginEditObject\", function(${1:object})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerBeginEditObject(object)"
-    },
-    "Client.OnPackageStart": {
-        "prefix": "OnPackageStart",
-        "body": "AddEvent(\"OnPackageStart\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPackageStart()"
-    },
-    "Client.OnPackageStop": {
-        "prefix": "OnPackageStop",
-        "body": "AddEvent(\"OnPackageStop\", function()\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPackageStop()"
-    },
-    "Client.OnScriptError": {
-        "prefix": "OnScriptError",
-        "body": "AddEvent(\"OnScriptError\", function(${1:message})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnScriptError(message)"
-    },
-    "Client.OnPickupStreamIn": {
-        "prefix": "OnPickupStreamIn",
-        "body": "AddEvent(\"OnPickupStreamIn\", function(${1:pickup})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPickupStreamIn(pickup)"
-    },
-    "Client.OnPickupStreamOut": {
-        "prefix": "OnPickupStreamOut",
-        "body": "AddEvent(\"OnPickupStreamOut\", function(${1:pickup})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPickupStreamOut(pickup)"
-    },
-    "Client.OnText3DStreamIn": {
-        "prefix": "OnText3DStreamIn",
-        "body": "AddEvent(\"OnText3DStreamIn\", function(${1:text3d})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnText3DStreamIn(text3d)"
-    },
-    "Client.OnWebLoadComplete": {
-        "prefix": "OnWebLoadComplete",
-        "body": "AddEvent(\"OnWebLoadComplete\", function(${1:web})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnWebLoadComplete(web)"
-    },
-    "Client.OnSoundUpdateMeta": {
-        "prefix": "OnSoundUpdateMeta",
-        "body": "AddEvent(\"OnSoundUpdateMeta\", function(${1:sound}, ${2:meta})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnSoundUpdateMeta(sound,meta)"
-    },
-    "Client.OnSoundFinished": {
-        "prefix": "OnSoundFinished",
-        "body": "AddEvent(\"OnSoundFinished\", function(${1:sound})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnSoundFinished(sound)"
-    },
-    "Client.OnPlayerNetworkUpdatePropertyValue": {
-        "prefix": "OnPlayerNetworkUpdatePropertyValue",
-        "body": "AddEvent(\"OnPlayerNetworkUpdatePropertyValue\", function(${1:player}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerNetworkUpdatePropertyValue(player,PropertyName,PropertyValue)"
-    },
-    "Client.OnVehicleNetworkUpdatePropertyValue": {
-        "prefix": "OnVehicleNetworkUpdatePropertyValue",
-        "body": "AddEvent(\"OnVehicleNetworkUpdatePropertyValue\", function(${1:vehicle}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnVehicleNetworkUpdatePropertyValue(vehicle,PropertyName,PropertyValue)"
-    },
-    "Client.OnNPCNetworkUpdatePropertyValue": {
-        "prefix": "OnNPCNetworkUpdatePropertyValue",
-        "body": "AddEvent(\"OnNPCNetworkUpdatePropertyValue\", function(${1:npc}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnNPCNetworkUpdatePropertyValue(npc,PropertyName,PropertyValue)"
-    },
-    "Client.OnText3DNetworkUpdatePropertyValue": {
-        "prefix": "OnText3DNetworkUpdatePropertyValue",
-        "body": "AddEvent(\"OnText3DNetworkUpdatePropertyValue\", function(${1:textId}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnText3DNetworkUpdatePropertyValue(textId,PropertyName,PropertyValue)"
-    },
-    "Client.OnPickupNetworkUpdatePropertyValue": {
-        "prefix": "OnPickupNetworkUpdatePropertyValue",
-        "body": "AddEvent(\"OnPickupNetworkUpdatePropertyValue\", function(${1:pickupId}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPickupNetworkUpdatePropertyValue(pickupId,PropertyName,PropertyValue)"
-    },
-    "Client.OnObjectModelChange": {
-        "prefix": "OnObjectModelChange",
-        "body": "AddEvent(\"OnObjectModelChange\", function (${1:object}, ${2:model})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnObjectModelChange(object, model)"
-    },
-    "Client.OnDoorNetworkUpdatePropertyValue": {
-        "prefix": "OnDoorNetworkUpdatePropertyValue",
-        "body": "AddEvent(\"OnDoorNetworkUpdatePropertyValue\", function(${1:door}, ${2:PropertyName}, ${3:PropertyValue})\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnDoorNetworkUpdatePropertyValue(door,PropertyName,PropertyValue)"
-    },
-    "Client.OnPlayerToggleVehicleLight": {
+    "client.OnPlayerToggleVehicleLight": {
         "prefix": "OnPlayerToggleVehicleLight",
-        "body": "AddEvent(\"OnPlayerToggleVehicleLight\", function(${1:player}, ${2:bEnable}\r\n\t\r\nend)$0\r\n",
-        "description": "(Client) Event: OnPlayerToggleVehicleLight(player, bEnable)"
+        "body": [
+            "AddEvent(\"OnPlayerToggleVehicleLight\", function()\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a (local) player presses the key to switch the vehicle light on/off.\n"
+    },
+    "client.OnPlayerToggleVehicleNitro": {
+        "prefix": "OnPlayerToggleVehicleNitro",
+        "body": [
+            "AddEvent(\"OnPlayerToggleVehicleNitro\", function()\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a (local) player presses the key to turn nitro on/off. You can return false to prevent turning it on. Requires AttachVehicleNitro to be enabled on the vehicle.\n"
+    },
+    "client.OnPlayerToggleVehicleHorn": {
+        "prefix": "OnPlayerToggleVehicleHorn",
+        "body": [
+            "AddEvent(\"OnPlayerToggleVehicleHorn\", function()\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a (local) player presses the key to turn the horn on/off. You can return false to prevent turning it on.\n"
+    },
+    "client.OnVehicleBackfire": {
+        "prefix": "OnVehicleBackfire",
+        "body": [
+            "AddEvent(\"OnVehicleBackfire\", function()\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a backfire effect is triggered on a vehicle.\n"
+    },
+    "client.OnPlayWeaponHitEffects": {
+        "prefix": "OnPlayWeaponHitEffects",
+        "body": [
+            "AddEvent(\"OnPlayWeaponHitEffects\", function(PlayerId, Weapon, HitType, HitId, StartLocation, HitLocation, HitLocationRelative, HitNormal, HitResult)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "This event handles visual effects of weapons. The Weapons.lua contains a pre-configured event that shows the same visual hit effects as always. It is called for local and remote players. If it is called for remote players the parameters will contain the synced values from the other client.\n"
+    },
+    "client.OnPlayerStreamIn": {
+        "prefix": "OnPlayerStreamIn",
+        "body": [
+            "AddEvent(\"OnPlayerStreamIn\", function(player, otherplayer)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when another user is streamed in (rendered) for the player.\n"
+    },
+    "client.OnPlayerStreamOut": {
+        "prefix": "OnPlayerStreamOut",
+        "body": [
+            "AddEvent(\"OnPlayerStreamOut\", function(player, otherplayer)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player streams out of the streaming distance set by server_config for another player.\n"
+    },
+    "client.OnPlayerSwitchCamera": {
+        "prefix": "OnPlayerSwitchCamera",
+        "body": [
+            "AddEvent(\"OnPlayerSwitchCamera\", function(bIsFirstPerson)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "__EDIT_ME__\n"
+    },
+    "client.OnPlayerDeath": {
+        "prefix": "OnPlayerDeath",
+        "body": [
+            "AddEvent(\"OnPlayerDeath\", function(player, instigator)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Calls when a player dies by any means possible. If the player wasn't killed by another player, instigator will be the same as the player.\n"
+    },
+    "client.OnPlayerChatCommand": {
+        "prefix": "OnPlayerChatCommand",
+        "body": [
+            "AddEvent(\"OnPlayerChatCommand\", function(player, command, exists)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player executes a command in the chat. See AddCommand to handle specific commands. You can return false in this event to prevent the command from being passed to it's handler.\n"
+    },
+    "client.OnPlayerChat": {
+        "prefix": "OnPlayerChat",
+        "body": [
+            "AddEvent(\"OnPlayerChat\", function(player, text)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "The event that gets called when you type a message in the chat.\n"
+    },
+    "client.OnPlayerSpawn": {
+        "prefix": "OnPlayerSpawn",
+        "body": [
+            "AddEvent(\"OnPlayerSpawn\", function(playerid)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player spawns. This usually happens after they died. Use SetPlayerRespawnTime to control how long it takes before they respawn.\n"
+    },
+    "client.OnPlayerTalking": {
+        "prefix": "OnPlayerTalking",
+        "body": [
+            "AddEvent(\"OnPlayerTalking\", function()\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player starts talking via VoIP.\n"
+    },
+    "client.OnPlayerToggleAim": {
+        "prefix": "OnPlayerToggleAim",
+        "body": [
+            "AddEvent(\"OnPlayerToggleAim\", function()\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a (local) player presses the key to go in or out of the aim state. You can return false in this event to prevent the player from aiming.\n"
+    },
+    "client.OnPlayerFootstep": {
+        "prefix": "OnPlayerFootstep",
+        "body": [
+            "AddEvent(\"OnPlayerFootstep\", function()\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player hits the ground with their feet when walking/running.\n"
+    },
+    "client.OnPlayerWeaponShot": {
+        "prefix": "OnPlayerWeaponShot",
+        "body": [
+            "AddEvent(\"OnPlayerWeaponShot\", function(player, weapon, hittype, hitid, hitX, hitY, hitZ, startX, startY, startZ, normalX, normalY, normalZ, BoneName)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a player has shot their weapon and the hit was authorized by the server but not yet processed its impact. You can call return false in this event to prevent this hit from further processing. (Server only)\n"
+    },
+    "client.OnKeyPress": {
+        "prefix": "OnKeyPress",
+        "body": [
+            "AddEvent(\"OnKeyPress\", function(key)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when the player presses a key. You can use IsCtrlPressed and IsShiftPressed to check if it is a key combination.Use OnKeyRelease to detect when they release the key.\n"
+    },
+    "client.OnKeyRelease": {
+        "prefix": "OnKeyRelease",
+        "body": [
+            "AddEvent(\"OnKeyRelease\", function(key)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when the player releases a key. Use OnKeyPress to detect key down events.\n"
+    },
+    "client.OnNPCStreamIn": {
+        "prefix": "OnNPCStreamIn",
+        "body": [
+            "AddEvent(\"OnNPCStreamIn\", function(npc, player)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "The event thats called when a NPC is streamed for a player.\n"
+    },
+    "client.OnNPCStreamOut": {
+        "prefix": "OnNPCStreamOut",
+        "body": [
+            "AddEvent(\"OnNPCStreamOut\", function(npc, player)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a NPC is streamed out from the server. \n"
+    },
+    "client.OnObjectStreamIn": {
+        "prefix": "OnObjectStreamIn",
+        "body": [
+            "AddEvent(\"OnObjectStreamIn\", function(object)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when an object is streamed in from the server.\n"
+    },
+    "client.OnObjectStreamOut": {
+        "prefix": "OnObjectStreamOut",
+        "body": [
+            "AddEvent(\"OnObjectStreamOut\", function(object)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when an object is streamed out from the server.\n"
+    },
+    "client.OnObjectHit": {
+        "prefix": "OnObjectHit",
+        "body": [
+            "AddEvent(\"OnObjectHit\", function(object, hittype, hitid, hitX, hitY, hitZ, normalX, normalY, normalZ)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when something hits the object. Requires EnableObjectHitEvents to be called on the object before.\n"
+    },
+    "client.OnPlayerEndEditObject": {
+        "prefix": "OnPlayerEndEditObject",
+        "body": [
+            "AddEvent(\"OnPlayerEndEditObject\", function(object)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "__EDIT_ME__\n"
+    },
+    "client.OnPlayerBeginEditObject": {
+        "prefix": "OnPlayerBeginEditObject",
+        "body": [
+            "AddEvent(\"OnPlayerBeginEditObject\", function(object)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "__EDIT_ME__\n"
+    },
+    "client.OnObjectModelChange": {
+        "prefix": "OnObjectModelChange",
+        "body": [
+            "AddEvent(\"OnObjectModelChange\", function(object, model)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when the model of an object is changed by SetObjectModel.\n"
+    },
+    "client.OnScriptError": {
+        "prefix": "OnScriptError",
+        "body": [
+            "AddEvent(\"OnScriptError\", function()\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a script error occurs. On the client side, this is only called when the game was started with the -dev switch. Available on the sever side since version 1.0.3.\n"
+    },
+    "client.OnPickupStreamIn": {
+        "prefix": "OnPickupStreamIn",
+        "body": [
+            "AddEvent(\"OnPickupStreamIn\", function(pickup)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "This function is called when a player streams in the pickup.\n"
+    },
+    "client.OnPickupStreamOut": {
+        "prefix": "OnPickupStreamOut",
+        "body": [
+            "AddEvent(\"OnPickupStreamOut\", function(pickup)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "This function is called when a player streams out the pickup.\n"
+    },
+    "client.OnText3DStreamIn": {
+        "prefix": "OnText3DStreamIn",
+        "body": [
+            "AddEvent(\"OnText3DStreamIn\", function(text3d)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "This event is called when a player streams in the text 3d label.\n"
+    },
+    "client.OnWebLoadComplete": {
+        "prefix": "OnWebLoadComplete",
+        "body": [
+            "AddEvent(\"OnWebLoadComplete\", function(web)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a web browser created by CreateWebUI is ready to use.\n"
+    },
+    "client.OnSoundUpdateMeta": {
+        "prefix": "OnSoundUpdateMeta",
+        "body": [
+            "AddEvent(\"OnSoundUpdateMeta\", function(sound, meta)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when new metadata was received from a network stream. (.pls playlist streams) This can be the name of the station, song, and artist.\n"
+    },
+    "client.OnSoundFinished": {
+        "prefix": "OnSoundFinished",
+        "body": [
+            "AddEvent(\"OnSoundFinished\", function(sound)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a sound created by CreateSound or CreateSound3D stopped playing.\n"
+    },
+    "client.OnObjectNetworkUpdatePropertyValue": {
+        "prefix": "OnObjectNetworkUpdatePropertyValue",
+        "body": [
+            "AddEvent(\"OnObjectNetworkUpdatePropertyValue\", function(object, PropertyName, PropertyValue)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a property value is updated from the network.\n"
+    },
+    "client.OnPlayerNetworkUpdatePropertyValue": {
+        "prefix": "OnPlayerNetworkUpdatePropertyValue",
+        "body": [
+            "AddEvent(\"OnPlayerNetworkUpdatePropertyValue\", function(player, PropertyName, PropertyValue)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a property value is updated from the network.\n"
+    },
+    "client.OnVehicleNetworkUpdatePropertyValue": {
+        "prefix": "OnVehicleNetworkUpdatePropertyValue",
+        "body": [
+            "AddEvent(\"OnVehicleNetworkUpdatePropertyValue\", function(vehicle, PropertyName, PropertyValue)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a property value is updated from the network.\n"
+    },
+    "client.OnNPCNetworkUpdatePropertyValue": {
+        "prefix": "OnNPCNetworkUpdatePropertyValue",
+        "body": [
+            "AddEvent(\"OnNPCNetworkUpdatePropertyValue\", function(npc, PropertyName, PropertyValue)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a property value is updated from the network.\n"
+    },
+    "client.OnText3DNetworkUpdatePropertyValue": {
+        "prefix": "OnText3DNetworkUpdatePropertyValue",
+        "body": [
+            "AddEvent(\"OnText3DNetworkUpdatePropertyValue\", function(textId, PropertyName, PropertyValue)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a property value is updated from the network.\n"
+    },
+    "client.OnPickupNetworkUpdatePropertyValue": {
+        "prefix": "OnPickupNetworkUpdatePropertyValue",
+        "body": [
+            "AddEvent(\"OnPickupNetworkUpdatePropertyValue\", function(pickupId, PropertyName, PropertyValue)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a property value is updated from the network.\n"
+    },
+    "client.OnDoorNetworkUpdatePropertyValue": {
+        "prefix": "OnDoorNetworkUpdatePropertyValue",
+        "body": [
+            "AddEvent(\"OnDoorNetworkUpdatePropertyValue\", function(door, PropertyName, PropertyValue)\r\n\t$0\r\nend)\r\n"
+        ],
+        "description": "Called when a property value is updated from the network.\n"
     }
 }
