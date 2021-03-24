@@ -1,5 +1,5 @@
 # vscode-olua for Onset V1.4.3
-### Snippets for [Onset Game](https://playonset.com/)
+### [Snippets](https://forum.playonset.com/forum/onset/scripting/releases/647-vscode-onset-snippets) for [Onset Game](https://playonset.com/)
 
 ## Onset functions, events and enums supported
 ![Event](./images/372139c84c4274acdd6ae74b23832b2e.gif)
